@@ -1,0 +1,22 @@
+PODS:
+  - BaasBoxSDK (0.9.0)
+  - Crashlytics (3.8.1):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.8)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - BaasBoxSDK (~> 0.9.0)
+  - Crashlytics
+  - Fabric
+  - PureLayout
+
+SPEC CHECKSUMS:
+  BaasBoxSDK: 56dc8b1a0b38adb404e64a32e1ed34037a3e9aa2
+  Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: c050f84f59b49c4bf0a1966578d333d9860b6669
+
+COCOAPODS: 1.0.1
