@@ -14,9 +14,14 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var jobTitleLabel: UILabel!
   @IBOutlet weak var workPlaceLabel: UILabel!
   
+  @IBOutlet weak var navBar: UINavigationBar!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "logo-red"))
+    navBar.setBackgroundImage(UIImage(), for:.default)
+    navBar.shadowImage = UIImage()
+    navBar.backgroundColor = UIColor.clear
     
     db.child("cards").child(uid!).observe(.value, with: { (snapshot) in
       if let dataDict = snapshot.value as? [String : AnyObject]

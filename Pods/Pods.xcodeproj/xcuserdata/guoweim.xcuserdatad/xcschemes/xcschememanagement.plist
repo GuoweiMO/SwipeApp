@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BaasBoxSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Swipe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,17 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>26D15AE2DA7515CA8804ADD135187577</key>
+		<key>78905A3AD0D19466173F0FC82931C7BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56BD70EE2734C5B061E159E495ADF035</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA64658662745A0A48FC45B02A7B8F26</key>
+		<key>C987DEFD6542F497040184354D1E36A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
