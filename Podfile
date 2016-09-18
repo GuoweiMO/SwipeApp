@@ -6,7 +6,8 @@ target 'Swipe' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'PureLayout'
-  pod 'BaasBoxSDK', '~>0.9.0'
+  pod 'Firebase'
+  pod 'Firebase/Database'
 end
 
 target 'SwipeTests' do

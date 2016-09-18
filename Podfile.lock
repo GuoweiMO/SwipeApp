@@ -1,22 +1,50 @@
 PODS:
-  - BaasBoxSDK (0.9.0)
   - Crashlytics (3.8.1):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
+  - Firebase (3.5.2):
+    - Firebase/Core (= 3.5.2)
+  - Firebase/Analytics (3.5.2):
+    - FirebaseAnalytics (~> 3.3)
+  - Firebase/Core (3.5.2):
+    - Firebase/Analytics
+  - Firebase/Database (3.5.2):
+    - Firebase/Analytics
+    - FirebaseDatabase (= 3.0.2)
+  - FirebaseAnalytics (3.3.1):
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleUtilities (~> 1.2)
+  - FirebaseDatabase (3.0.2):
+    - FirebaseAnalytics (~> 3.2)
+  - FirebaseInstanceID (1.0.8)
+  - GoogleInterchangeUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.1.1)
+  - GoogleUtilities (1.3.1):
+    - GoogleSymbolUtilities (~> 1.0)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
-  - BaasBoxSDK (~> 0.9.0)
   - Crashlytics
   - Fabric
+  - Firebase
+  - Firebase/Database
   - PureLayout
 
 SPEC CHECKSUMS:
-  BaasBoxSDK: 56dc8b1a0b38adb404e64a32e1ed34037a3e9aa2
   Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
+  FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
+  FirebaseDatabase: 59bea2e7dfd81b3b8b2f8e396caf1a52c2ced6f7
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
+  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
+  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: c050f84f59b49c4bf0a1966578d333d9860b6669
+PODFILE CHECKSUM: 91753ab2d8d1237ce706ed38b16fea210cc69dcf
 
 COCOAPODS: 1.0.1

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>824755664412-as4t81e7gsfev9e6mrtip8055nipfk0a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.824755664412-as4t81e7gsfev9e6mrtip8055nipfk0a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB7iDDqmWBfN0sa_-BV0XsU1QHPacPzB-A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>824755664412</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>GuoweiMo.SwipeApp</string>
+	<key>PROJECT_ID</key>
+	<string>swipe-3b687</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swipe-3b687.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:824755664412:ios:2e7a031925cc1d89</string>
+	<key>DATABASE_URL</key>
+	<string>https://swipe-3b687.firebaseio.com</string>
+</dict>
+</plist>

@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		2AC8A42E5070D4761691B49A /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9D07EA4CC21EDBC9CC87DE /* libPods-Swipe.a */; };
 		A2E0393832631E7A6A6BC22A /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECBE2EC7D395EFFFF536F72 /* libPods-SwipeTests.a */; };
-		E40A63AF1D85C743005D2B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63AE1D85C743005D2B3C /* AppDelegate.swift */; };
-		E40A63B11D85C743005D2B3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63B01D85C743005D2B3C /* ViewController.swift */; };
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
-		E40A63B61D85C743005D2B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B51D85C743005D2B3C /* Assets.xcassets */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
 		E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63C31D85C743005D2B3C /* SwipeTests.swift */; };
+		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
+		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
+		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
+		E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */; };
+		E4BC3DEC1D8C62E600D01BD9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DEB1D8C62E600D01BD9 /* Info.plist */; };
+		E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */; };
+		E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */; };
+		E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */; };
+		E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */; };
+		E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF61D8EAA6900D01BD9 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +41,22 @@
 		A4D5FC42927161E41C2E36D2 /* Pods-SwipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AECBE2EC7D395EFFFF536F72 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63AB1D85C743005D2B3C /* Swipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E40A63AE1D85C743005D2B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E40A63B01D85C743005D2B3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E40A63B31D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E40A63B51D85C743005D2B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E40A63B81D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E40A63BA1D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E40A63BF1D85C743005D2B3C /* SwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63C31D85C743005D2B3C /* SwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTests.swift; sourceTree = "<group>"; };
 		E40A63C51D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E40A63D61D85E045005D2B3C /* Swipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swipe-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
+		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
+		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
+		E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardInfoView.xib; path = "Scenes/Create Card/CardInfoView.xib"; sourceTree = "<group>"; };
+		E4BC3DEA1D8C626500D01BD9 /* Swipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swipe-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4BC3DEB1D8C62E600D01BD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardInfoView.swift; path = "Scenes/Create Card/CardInfoView.swift"; sourceTree = "<group>"; };
+		E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWCard.swift; path = Models/SWCard.swift; sourceTree = "<group>"; };
+		E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Scenes/Home/HomeViewController.swift; sourceTree = "<group>"; };
+		E4BC3DF61D8EAA6900D01BD9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,13 +123,11 @@
 		E40A63AD1D85C743005D2B3C /* Swipe */ = {
 			isa = PBXGroup;
 			children = (
-				E40A63AE1D85C743005D2B3C /* AppDelegate.swift */,
-				E40A63B01D85C743005D2B3C /* ViewController.swift */,
-				E40A63B21D85C743005D2B3C /* Main.storyboard */,
-				E40A63B51D85C743005D2B3C /* Assets.xcassets */,
-				E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */,
-				E40A63BA1D85C743005D2B3C /* Info.plist */,
-				E40A63D61D85E045005D2B3C /* Swipe-Bridging-Header.h */,
+				E40A63ED1D88A605005D2B3C /* Application */,
+				E4BC3DDC1D8C5D9200D01BD9 /* Common */,
+				E4BC3DDA1D8C5D7700D01BD9 /* Models */,
+				E4BC3DDB1D8C5D8400D01BD9 /* Scenes */,
+				E40A63EE1D88A61B005D2B3C /* Supporting Files */,
 			);
 			path = Swipe;
 			sourceTree = "<group>";
@@ -128,6 +139,70 @@
 				E40A63C51D85C743005D2B3C /* Info.plist */,
 			);
 			path = SwipeTests;
+			sourceTree = "<group>";
+		};
+		E40A63ED1D88A605005D2B3C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */,
+				E4BC3DEA1D8C626500D01BD9 /* Swipe-Bridging-Header.h */,
+				E40A63B21D85C743005D2B3C /* Main.storyboard */,
+				E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		E40A63EE1D88A61B005D2B3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */,
+				E4BC3DEB1D8C62E600D01BD9 /* Info.plist */,
+				E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E4BC3DDB1D8C5D8400D01BD9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DF31D8EA80800D01BD9 /* Home */,
+				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E4BC3DDC1D8C5D9200D01BD9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E4BC3DE31D8C5DF200D01BD9 /* Create Card */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
+				E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */,
+				E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */,
+			);
+			name = "Create Card";
+			sourceTree = "<group>";
+		};
+		E4BC3DF31D8EA80800D01BD9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +261,13 @@
 				TargetAttributes = {
 					E40A63AA1D85C743005D2B3C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6CN522LZF3;
+						DevelopmentTeam = 385HFV6T8Z;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					E40A63BE1D85C743005D2B3C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = E40A63AA1D85C743005D2B3C;
 					};
 				};
@@ -219,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
-				E40A63B61D85C743005D2B3C /* Assets.xcassets in Resources */,
+				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
+				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
+				E4BC3DEC1D8C62E600D01BD9 /* Info.plist in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
+				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +412,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40A63B11D85C743005D2B3C /* ViewController.swift in Sources */,
-				E40A63AF1D85C743005D2B3C /* AppDelegate.swift in Sources */,
+				E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */,
+				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
+				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
+				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
+				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
+				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,16 +549,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 385HFV6T8Z;
 				INFOPLIST_FILE = Swipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Swipe",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Swipe;
+				PRODUCT_BUNDLE_IDENTIFIER = GuoweiMo.SwipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07f7a379-4923-439e-bec7-bc8ab67aefce";
+				PROVISIONING_PROFILE_SPECIFIER = SwipeApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -484,15 +574,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 385HFV6T8Z;
 				INFOPLIST_FILE = Swipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Swipe",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Guowei.Swipe;
+				PRODUCT_BUNDLE_IDENTIFIER = GuoweiMo.SwipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07f7a379-4923-439e-bec7-bc8ab67aefce";
+				PROVISIONING_PROFILE_SPECIFIER = SwipeApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -500,11 +595,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4D5FC42927161E41C2E36D2 /* Pods-SwipeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.SwipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};
 			name = Debug;
@@ -513,11 +610,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.SwipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};
 			name = Release;
