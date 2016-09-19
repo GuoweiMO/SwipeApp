@@ -16,12 +16,14 @@
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
 		E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */; };
-		E4BC3DEC1D8C62E600D01BD9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DEB1D8C62E600D01BD9 /* Info.plist */; };
 		E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */; };
 		E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */; };
 		E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */; };
 		E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */; };
 		E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF61D8EAA6900D01BD9 /* Common.swift */; };
+		E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */; };
+		E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */; };
+		E4BC3E011D90780500D01BD9 /* SWCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Scenes/Home/HomeViewController.swift; sourceTree = "<group>"; };
 		E4BC3DF61D8EAA6900D01BD9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
+		E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendingView.swift; path = "Scenes/Home/Sending View/SendingView.swift"; sourceTree = "<group>"; };
+		E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SendingView.xib; path = "Scenes/Home/Sending View/SendingView.xib"; sourceTree = "<group>"; };
+		E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWCircleButton.swift; path = Common/SWCircleButton.swift; sourceTree = "<group>"; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
+				E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -201,8 +207,18 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
+				E4BC3DFB1D90717200D01BD9 /* sending view */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		E4BC3DFB1D90717200D01BD9 /* sending view */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
+				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
+			);
+			name = "sending view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Guowei Mo";
 				TargetAttributes = {
 					E40A63AA1D85C743005D2B3C = {
@@ -299,9 +315,9 @@
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
 				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
-				E4BC3DEC1D8C62E600D01BD9 /* Info.plist in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
+				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +429,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */,
+				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
+				E4BC3E011D90780500D01BD9 /* SWCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,8 +491,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -518,8 +538,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -538,6 +560,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SendingView" customModule="Swipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhZ-Pg-YCP">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="pcW-C3-v2j"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your card to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-Ep-bXw">
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-v6-hBo" customClass="SWCircleButton" customModule="Swipe" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2bj-Jx-pVJ"/>
+                        <constraint firstAttribute="width" constant="80" id="sIm-eZ-WNL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="YES">
+                        <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-Tl-QBq" customClass="SWCircleButton" customModule="Swipe" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="1Fe-BB-ERJ"/>
+                        <constraint firstAttribute="width" constant="80" id="eeV-oP-3Z7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="NO">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="noButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wv3-Ct-hZf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Z4z-Tl-QBq" firstAttribute="centerY" secondItem="LMG-v6-hBo" secondAttribute="centerY" id="51Z-vU-5Ua"/>
+                <constraint firstItem="TKU-K4-Y0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="7Sc-V5-0qS"/>
+                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="rhZ-Pg-YCP" secondAttribute="bottom" constant="24" id="9pe-Wg-LLO"/>
+                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="D1Y-fS-8iT"/>
+                <constraint firstItem="TKU-K4-Y0o" firstAttribute="top" secondItem="GQ6-Ep-bXw" secondAttribute="bottom" constant="12" id="F20-mm-gX8"/>
+                <constraint firstItem="rhZ-Pg-YCP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="HuI-Wn-Z6L"/>
+                <constraint firstAttribute="trailingMargin" secondItem="TKU-K4-Y0o" secondAttribute="trailing" constant="30" id="LSW-9W-bVK"/>
+                <constraint firstItem="rhZ-Pg-YCP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NqA-IS-2n4"/>
+                <constraint firstAttribute="trailingMargin" secondItem="GQ6-Ep-bXw" secondAttribute="trailing" constant="30" id="VCr-BM-3Dw"/>
+                <constraint firstAttribute="trailing" secondItem="Z4z-Tl-QBq" secondAttribute="trailing" constant="60" id="VYY-iA-TVN"/>
+                <constraint firstItem="LMG-v6-hBo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="60" id="Ye5-md-98Y"/>
+                <constraint firstAttribute="trailing" secondItem="rhZ-Pg-YCP" secondAttribute="trailing" id="a5D-SM-tcQ"/>
+                <constraint firstAttribute="bottom" secondItem="LMG-v6-hBo" secondAttribute="bottom" constant="130" id="rdz-xj-fQo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="receiverLabel" destination="TKU-K4-Y0o" id="5xf-vX-fIX"/>
+                <outlet property="receiversView" destination="rhZ-Pg-YCP" id="FFe-eT-4no"/>
+            </connections>
+        </view>
+    </objects>
+</document>
