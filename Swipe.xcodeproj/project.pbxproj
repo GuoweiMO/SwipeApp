@@ -12,6 +12,7 @@
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
 		E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63C31D85C743005D2B3C /* SwipeTests.swift */; };
+		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
@@ -48,6 +49,7 @@
 		E40A63BF1D85C743005D2B3C /* SwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63C31D85C743005D2B3C /* SwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTests.swift; sourceTree = "<group>"; };
 		E40A63C51D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E49BADD51D98282300870141 /* receivers view */ = {
+			isa = PBXGroup;
+			children = (
+				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
+			);
+			name = "receivers view";
+			sourceTree = "<group>";
+		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +225,7 @@
 		E4BC3DFB1D90717200D01BD9 /* Sending view */ = {
 			isa = PBXGroup;
 			children = (
+				E49BADD51D98282300870141 /* receivers view */,
 				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
@@ -434,6 +445,7 @@
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
+				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,
 			);

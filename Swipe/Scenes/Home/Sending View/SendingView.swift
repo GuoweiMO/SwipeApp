@@ -33,14 +33,20 @@ class SendingView: UIView {
     return Bundle.main.loadNibNamed("SendingView", owner: self, options: nil)?.first as? SendingView
   }
   
+  override func awakeFromNib() {
+
+  }
+  
   override func draw(_ rect: CGRect) {
     super.draw(rect)
+    
     yesButton.whiteStyle()
     noButton.redStyle()
     contactsButton.whiteStyle()
     myCardButton.redStyle()
     receiverImageView.layer.cornerRadius = 75
     resetUI()
+    updateReceiversView()
   }
   
   func resetUI()
@@ -53,6 +59,19 @@ class SendingView: UIView {
     contactsButton.isHidden = true
     myCardButton.isHidden = true
     sendingMessageLabel.text = "Sending your card to"
+  }
+  
+  func updateReceiversView()
+  {
+    let view = ReceiversCarouselView(frame: receiversView.bounds)
+    receiversView.addSubview(view)
+    let items = [
+      UIImage(named: "bg1"),
+      UIImage(named: "bg2"),
+      UIImage(named: "bg3"),
+      UIImage(named: "receiver")
+    ]
+    view.updateView(items)
   }
   
   @IBAction func noButtonDidTap(_ sender: AnyObject) {
@@ -90,8 +109,6 @@ class SendingView: UIView {
   
   func moveViewToBack()
   {
-    UIView.animate(withDuration: 0.5) { 
-      self.superview?.sendSubview(toBack: self)
-    }
+    superview?.sendSubview(toBack: self)
   }
 }
