@@ -10,3 +10,12 @@ import Foundation
 import UIKit
 
 let uid = UIDevice.current.identifierForVendor?.uuidString
+
+class Common {
+  
+  class func appRedColor() -> UIColor
+  {
+    return UIColor(red: 1, green: 0, blue: 33.0 / 255.0 , alpha: 1)
+  }
+  
+}

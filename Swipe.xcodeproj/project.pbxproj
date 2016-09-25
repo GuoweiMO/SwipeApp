@@ -23,7 +23,7 @@
 		E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF61D8EAA6900D01BD9 /* Common.swift */; };
 		E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */; };
 		E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */; };
-		E4BC3E011D90780500D01BD9 /* SWCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */; };
+		E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		E4BC3DF61D8EAA6900D01BD9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
 		E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendingView.swift; path = "Scenes/Home/Sending View/SendingView.swift"; sourceTree = "<group>"; };
 		E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SendingView.xib; path = "Scenes/Home/Sending View/SendingView.xib"; sourceTree = "<group>"; };
-		E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWCircleButton.swift; path = Common/SWCircleButton.swift; sourceTree = "<group>"; };
+		E4BC3E001D90780500D01BD9 /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWButton.swift; path = Common/SWButton.swift; sourceTree = "<group>"; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
-				E4BC3E001D90780500D01BD9 /* SWCircleButton.swift */,
+				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -207,18 +207,18 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
-				E4BC3DFB1D90717200D01BD9 /* sending view */,
+				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 			);
 			name = Home;
 			sourceTree = "<group>";
 		};
-		E4BC3DFB1D90717200D01BD9 /* sending view */ = {
+		E4BC3DFB1D90717200D01BD9 /* Sending view */ = {
 			isa = PBXGroup;
 			children = (
 				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
-			name = "sending view";
+			name = "Sending view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,7 +435,7 @@
 				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
-				E4BC3E011D90780500D01BD9 /* SWCircleButton.swift in Sources */,
+				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

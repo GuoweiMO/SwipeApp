@@ -8,7 +8,17 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+enum CardState {
+  case Normal
+  case ToSend
+  case Sending
+  case Sent
+  case Receiving
+  case Received
+  case Else
+}
+
+class HomeViewController: UIViewController, SendingViewOutput {
   
   @IBOutlet weak var fullNameLabel: UILabel!
   @IBOutlet weak var jobTitleLabel: UILabel!
@@ -18,6 +28,11 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var homeCardView: UIView!
   
   var sendingView: SendingView!
+  var state: CardState? = .Normal {
+    didSet {
+      setCardView(toState: state!)
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,7 +57,10 @@ class HomeViewController: UIViewController {
     
     sendingView = SendingView.viewfromNib() as! SendingView
     sendingView.frame = self.view.bounds
+    sendingView.output = self
     view.insertSubview(sendingView, belowSubview: homeCardView)
+    
+    state = .Normal
   }
   
   
@@ -63,11 +81,52 @@ class HomeViewController: UIViewController {
           self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
           self.homeCardView.alpha = 0
           }, completion: { (done) in
-            self.view.bringSubview(toFront: self.sendingView)
+            self.state = .ToSend
             self.homeCardView.alpha = 1
             self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
         })
       }
+    }
+  }
+  
+  func moveSendingViewToFront()
+  {
+    view.bringSubview(toFront: sendingView)
+  }
+  
+  func refreshHomeView()
+  {
+    
+  }
+  
+  func userDidConfirmSending() {
+    state = .Sending
+    //TODO: make sending request
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      self.state = .Sent
+    }
+  }
+  
+  func cardSentNavigateToHome() {
+    state = .Normal
+  }
+  
+  func setCardView(toState state:CardState)
+  {
+    switch state {
+    case .Normal:
+      sendingView?.moveViewToBack()
+      sendingView.resetUI()
+      refreshHomeView()
+    case .ToSend:
+      moveSendingViewToFront()
+      sendingView.resetUI()
+    case .Sending:
+      sendingView.updateViewUIAtSending()
+    case .Sent:
+      sendingView.updateUIWhenSent()
+    default:
+      break
     }
   }
 }

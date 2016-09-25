@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +15,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhZ-Pg-YCP">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="160" id="pcW-C3-v2j"/>
                     </constraints>
                 </view>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reciever" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-oO-dh4">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1Uk-oO-dh4" secondAttribute="height" id="7CG-9T-q9e"/>
+                        <constraint firstAttribute="height" constant="160" id="eog-XX-ghL"/>
+                    </constraints>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your card to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-Ep-bXw">
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,53 +36,110 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-v6-hBo" customClass="SWCircleButton" customModule="Swipe" customModuleProvider="target">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="80" id="2bj-Jx-pVJ"/>
-                        <constraint firstAttribute="width" constant="80" id="sIm-eZ-WNL"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" title="YES">
-                        <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-Tl-QBq" customClass="SWCircleButton" customModule="Swipe" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-ay-eOz" userLabel="Buttons Container">
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRo-pH-odB" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5Qe-fI-OwG"/>
+                                <constraint firstAttribute="width" constant="180" id="kpY-5l-0MD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="My Contacts">
+                                <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="myContactsButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="sKb-a8-acv"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-fN-iqg" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="SyL-0f-FqA"/>
+                                <constraint firstAttribute="height" constant="60" id="pAm-Wb-QIe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="My Card">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="myCardButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ed8-TQ-3E5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-v6-hBo" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="2bj-Jx-pVJ"/>
+                                <constraint firstAttribute="width" constant="80" id="sIm-eZ-WNL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="YES">
+                                <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="yesButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="M0o-q4-9Fc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-Tl-QBq" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="1Fe-BB-ERJ"/>
+                                <constraint firstAttribute="width" constant="80" id="eeV-oP-3Z7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="NO">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="noButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wv3-Ct-hZf"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="1Fe-BB-ERJ"/>
-                        <constraint firstAttribute="width" constant="80" id="eeV-oP-3Z7"/>
+                        <constraint firstItem="iGg-fN-iqg" firstAttribute="top" secondItem="uRo-pH-odB" secondAttribute="bottom" constant="24" id="6Pw-8D-g4Y"/>
+                        <constraint firstAttribute="bottom" secondItem="LMG-v6-hBo" secondAttribute="bottom" constant="120" id="GFJ-oe-TxO"/>
+                        <constraint firstItem="uRo-pH-odB" firstAttribute="centerX" secondItem="5J6-ay-eOz" secondAttribute="centerX" id="GR6-2O-flR"/>
+                        <constraint firstItem="uRo-pH-odB" firstAttribute="top" secondItem="5J6-ay-eOz" secondAttribute="top" constant="24" id="IsW-xM-vUi"/>
+                        <constraint firstItem="LMG-v6-hBo" firstAttribute="leading" secondItem="5J6-ay-eOz" secondAttribute="leading" constant="60" id="ML6-5q-amD"/>
+                        <constraint firstItem="Z4z-Tl-QBq" firstAttribute="centerY" secondItem="LMG-v6-hBo" secondAttribute="centerY" id="fQY-3F-Wgt"/>
+                        <constraint firstItem="iGg-fN-iqg" firstAttribute="centerX" secondItem="5J6-ay-eOz" secondAttribute="centerX" id="hxg-UW-9bx"/>
+                        <constraint firstAttribute="height" constant="240" id="val-xw-GRz"/>
+                        <constraint firstAttribute="trailing" secondItem="Z4z-Tl-QBq" secondAttribute="trailing" constant="60" id="wFH-eC-kcf"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" title="NO">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="noButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wv3-Ct-hZf"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Z4z-Tl-QBq" firstAttribute="centerY" secondItem="LMG-v6-hBo" secondAttribute="centerY" id="51Z-vU-5Ua"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="7Sc-V5-0qS"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="rhZ-Pg-YCP" secondAttribute="bottom" constant="24" id="9pe-Wg-LLO"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="D1Y-fS-8iT"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="top" secondItem="GQ6-Ep-bXw" secondAttribute="bottom" constant="12" id="F20-mm-gX8"/>
                 <constraint firstItem="rhZ-Pg-YCP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="HuI-Wn-Z6L"/>
                 <constraint firstAttribute="trailingMargin" secondItem="TKU-K4-Y0o" secondAttribute="trailing" constant="30" id="LSW-9W-bVK"/>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerY" secondItem="rhZ-Pg-YCP" secondAttribute="centerY" id="Lg3-bw-JuG"/>
+                <constraint firstAttribute="trailing" secondItem="5J6-ay-eOz" secondAttribute="trailing" id="MlT-kQ-N9s"/>
                 <constraint firstItem="rhZ-Pg-YCP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NqA-IS-2n4"/>
                 <constraint firstAttribute="trailingMargin" secondItem="GQ6-Ep-bXw" secondAttribute="trailing" constant="30" id="VCr-BM-3Dw"/>
-                <constraint firstAttribute="trailing" secondItem="Z4z-Tl-QBq" secondAttribute="trailing" constant="60" id="VYY-iA-TVN"/>
-                <constraint firstItem="LMG-v6-hBo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="60" id="Ye5-md-98Y"/>
+                <constraint firstAttribute="bottom" secondItem="5J6-ay-eOz" secondAttribute="bottom" id="Wul-bL-gEy"/>
                 <constraint firstAttribute="trailing" secondItem="rhZ-Pg-YCP" secondAttribute="trailing" id="a5D-SM-tcQ"/>
-                <constraint firstAttribute="bottom" secondItem="LMG-v6-hBo" secondAttribute="bottom" constant="130" id="rdz-xj-fQo"/>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVn-3a-8ck"/>
+                <constraint firstItem="5J6-ay-eOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="is9-iQ-3yh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
+                <outlet property="contactsButton" destination="uRo-pH-odB" id="82s-Zx-zB5"/>
+                <outlet property="myCardButton" destination="iGg-fN-iqg" id="XCd-bg-C7A"/>
+                <outlet property="noButton" destination="Z4z-Tl-QBq" id="nUl-f6-Y24"/>
+                <outlet property="receiverImageView" destination="1Uk-oO-dh4" id="D8D-mx-c2p"/>
                 <outlet property="receiverLabel" destination="TKU-K4-Y0o" id="5xf-vX-fIX"/>
                 <outlet property="receiversView" destination="rhZ-Pg-YCP" id="FFe-eT-4no"/>
+                <outlet property="sendingMessageLabel" destination="GQ6-Ep-bXw" id="GEE-n9-atm"/>
+                <outlet property="yesButton" destination="LMG-v6-hBo" id="0to-R2-oEZ"/>
             </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="reciever" width="299" height="299"/>
+    </resources>
 </document>
