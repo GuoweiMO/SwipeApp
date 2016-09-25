@@ -7,92 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		116920E0331B582A5DCF6C387518F8AD /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76811A2C85145B7A0FF1A6AF5B537826 /* NSArray+PureLayout.m */; };
-		138C4DD87E8D863775F476F446852710 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4BD927C59B08099BF6FD5FA7A3BEC9 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16B0C7C8B0969F92B0108744D148F947 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB1CB69F1416D7C560B5B2A746C1B26 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32CA44B17FBB877903E3B5F2921A25B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4D2A8B5E9BD891A5DAF7E44901282595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		63F29ED6C33B1F26B8FB74A6B3CB722B /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FE00FE237C16000FE9FD4A7170631B14 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		662D01FE2FA896E9523BCDCFA8D6218F /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E5F1F6003E4A1CCB4273965F61B7A0 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0214EADB163E71E3F5FFB33AC74E7D69 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C054E1A5BFD0A3C3253FD0F030972 /* NSArray+PureLayout.m */; };
+		1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC355578BFC1E77C6AAD1DB0EC4C75E /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE1F6B42DAB3948B72F0AC7CAA6156 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2E81BFA60B43E22359E97FF5357C479A /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BC4D14FE24F754882720F4382AD8D4 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CA44B17FBB877903E3B5F2921A25B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		358DC50D5606460391097393BDCE9CF8 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A03B79C27E3BA555640ACC54E7D8C45 /* ALView+PureLayout.m */; };
+		46A7BBBA8A50E60F86689501EDB0FCA7 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A202F071AB4ECD4B1A023BAB4CF1B3 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542A153171620B330205341E0ECADA81 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3A7B89FE6B59E7AD4706C84807DABD /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		706E1E0ABCBD772C1542BD905A27A117 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC4EB744E204FF65115515E637CD3E7 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E10F35C35C62B3C38B610293FCBD353 /* Pods-SwipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */; };
-		8122C4058CF9E1B89F6FBB990D30C497 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A136BE429677477DFF5905527967C00 /* NSLayoutConstraint+PureLayout.m */; };
-		97740B403D89996158723DCF5740B962 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363C5533A7A0F08B105D3F0CA3D2DB4 /* ALView+PureLayout.m */; };
-		97805997818D67D29C56A5F888C7682A /* Pods-Swipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */; };
-		AAD8441F077BFE37197B1C6FDD26C2A4 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB3908FF551D7E3A66A48C6B4C3AD7 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D75D0CD0D4A7CB5BFE0579E90205F701 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC6E21B0862937F7E6BBD16EE9DC20 /* PureLayout-dummy.m */; };
-		E18AB0CAF257D4DC54C4927C77F4671A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F956F88F83DBD92AA83D70E6A5AA1920 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EC00E828FD4FA5AC52F1D63A9665DC5 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F35D3AAF685BFDFED21ACF1C863F912 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8136E2DA227DBA02EC9881EB7B2F4C8B /* PureLayout-dummy.m */; };
+		BF50812FDC07F5456670A679A53B9972 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFEA4B9CAC943DE1AAB4E7DC1A1B8DE /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC5BDB794C46FAFE1A8460EA6D73AFEE /* Pods-Swipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */; };
+		CCDE063BC6FD3247C88837316775932A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0885FA1C78AE2FA17CF85F6B21399B07 /* NSLayoutConstraint+PureLayout.m */; };
+		D07BF1DAB0B69C38D890E850B3B58803 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
+		D9C60DD7F56724310BCA380BBF95B493 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A31BF0EC5FC49325C9155A8C423C40 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE01EFFCD70B40229A336F4B6F9B5B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		EC1ADF6B6C76F4EFEB35C1E4B0649602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		F7C2D10CEC6AB436D02149C3A55616EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
+		FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F918736800F9576D47D5A7B2E065548 /* iCarousel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F02EBD010654BCBE7A4D0290923E123C /* PBXContainerItemProxy */ = {
+		BEB1EECDD8B51E8F47883233BD33AE4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78905A3AD0D19466173F0FC82931C7BA;
+			remoteGlobalIDString = D40F3ED66053F4536A3A341CBA6A0D22;
 			remoteInfo = PureLayout;
+		};
+		E2D0D622D12371194BD70D8D22174D46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9494390523250106847516AB47E5F9FF;
+			remoteInfo = iCarousel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0868E1243D6E1DBA1830721883F9BEA5 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		0BEA138E7551DB20BA1A42355351C1CF /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		0C705F17697842DB1940B59B5B900667 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
-		0D2CBFE5DA59147E2B81FAD895C4618F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		00B06C2F7A53CAA4461D71B9F41C22F7 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		0885FA1C78AE2FA17CF85F6B21399B07 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		129CD6C9357CF57139599DAEF495B8C2 /* Pods-Swipe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swipe-resources.sh"; sourceTree = "<group>"; };
-		1470AEB0D36F7F29E403D96E7416570E /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		15C923B26D738395EE7055A7678BFF57 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		1A136BE429677477DFF5905527967C00 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		202A28F757B727721F82516FB15FFAC1 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30DB3908FF551D7E3A66A48C6B4C3AD7 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		31EF532035143D164C34F9829CECF3EC /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		335055B422882A7AF1C5C8DD38DA93C2 /* libPureLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		39395910BE374BCA3379EF4243CB29CB /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		17E44BB84E6A726FD0192FFFBDC71DA2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		1C39BE9DDA5D9455930348E81C485599 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		1F8693D2D3F0C18615BDA82057F3E81F /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		2574828FE83CB63285C2AA751D658F02 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		2BD5FEF319BDAF21CFA817A491DBFDBB /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		3A03B79C27E3BA555640ACC54E7D8C45 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		3AFEA4B9CAC943DE1AAB4E7DC1A1B8DE /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		4009E28C44785AAD66BD7DFA74028E37 /* Pods-SwipeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeTests-frameworks.sh"; sourceTree = "<group>"; };
-		410FCB82DC64D54B0BDA08B706719BF2 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		4613CB3A2BA4B74D9C3F9D601CFF1464 /* Pods-SwipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B26E68E4AA6C77A7A2990240D6290D7 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
 		4CDA0F60869D8BE92C50943C555DE5D2 /* Pods-SwipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		514BA93679092DB27561409C849A8D75 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D12D7AC94EA4A90AAA678F9B97B30A8 /* libiCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		517A58C6C7A0803BCA687146A0A39CA8 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeTests-dummy.m"; sourceTree = "<group>"; };
-		5EC00E828FD4FA5AC52F1D63A9665DC5 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
 		66A7FB5CD8EBDAA36E8F7DC079F954FC /* Pods-SwipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		76811A2C85145B7A0FF1A6AF5B537826 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		813CF79E0C74025DA5C8FEF55B3409D5 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		68EAF65A0309C1B4261F3A69464EAFAD /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		6C3A7B89FE6B59E7AD4706C84807DABD /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		6CF7A4CBA06470E5D4BD604B20D473B2 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		7E3E531F4FE0FC22CB14FDB245E5C7C3 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		8136E2DA227DBA02EC9881EB7B2F4C8B /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		829886DB34B18C9C47592C52B787D3D4 /* Pods-Swipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swipe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8363C5533A7A0F08B105D3F0CA3D2DB4 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		8442AF26A0B87CC60B7ABDDA70DD20E3 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		8AFC6E21B0862937F7E6BBD16EE9DC20 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		8F918736800F9576D47D5A7B2E065548 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		8FC355578BFC1E77C6AAD1DB0EC4C75E /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92A202F071AB4ECD4B1A023BAB4CF1B3 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98852347DD500547CCCFA4CA9FBB3B83 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		95A31BF0EC5FC49325C9155A8C423C40 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		996D576F1BB292145655C1AA0A275765 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		997B4A69A4B517F17B8643BF10017BEF /* Pods-Swipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swipe-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C4C054E1A5BFD0A3C3253FD0F030972 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swipe-dummy.m"; sourceTree = "<group>"; };
-		9DFD93CB98C3156F89BDEB2B0D63C317 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		9EB1CB69F1416D7C560B5B2A746C1B26 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		A456FC2F5B8A152CDAA9427C58A0C7C9 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		9EC4EB744E204FF65115515E637CD3E7 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		A53FA188F66C87075885B834ACB11575 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		A747E390B5ADB02DC5B4ED4913E0CB95 /* Pods-Swipe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swipe-frameworks.sh"; sourceTree = "<group>"; };
-		A86AF813E8C9A8E9EAA137032B77F9D0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		A963B4EF5E56FC47DACFAF46733AF1F5 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		B0F20C96028CD76A66FA2897AEF73E0C /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		B4838971D10BC45642103E994509DBD4 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
-		B5E5F1F6003E4A1CCB4273965F61B7A0 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		BD4BD927C59B08099BF6FD5FA7A3BEC9 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		A7BC4D14FE24F754882720F4382AD8D4 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		B004F9C5E4AB55D9F4A6E56480904D28 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		B18E90B508939ABC693653BFCFC64AB8 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6492A0AB5FEDC45F953246E77A4AB6E /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		B6AE1F6B42DAB3948B72F0AC7CAA6156 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		BE673E31D9E4895400D9331C06C85060 /* libPureLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE4013875CFE21CD43202DE3DDB0C40 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		C5DB272F28D19D2CD044C03DB0858A93 /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
 		C7CEBAA46BF420CB20CA092537472D38 /* Pods-Swipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swipe.debug.xcconfig"; sourceTree = "<group>"; };
-		C97F41AFE60A905BDCCB1BE4B55836D2 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		CAD29CE23CBCC93DD2F8CC2CA9D0464A /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C9DE213DA1AF57D1B37EA04DE8F5BD68 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		D0687535207DBB80CB2C58F9743C445A /* Pods-SwipeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeTests-resources.sh"; sourceTree = "<group>"; };
-		DE2B749930266C1D2673215525C7BC7E /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		D95A20F980B0AE03BCC1969C33FA6B04 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		E0237ED385B6108D0640AD2DE4B003B6 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E04D1C528E731BB761CEDCEADE5537C8 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		EC1EDBDCA1DD2592B013924B4C54D583 /* Pods-Swipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swipe.release.xcconfig"; sourceTree = "<group>"; };
 		ECF99BAD5A1500440E34C5076F862AA7 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
-		FE00FE237C16000FE9FD4A7170631B14 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		EF6104ECAAC35D470CE957C5574C7CA5 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		FEA82A49A85BDCAF5BFA9C717ECC3571 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		FF944AD12B2C42334138D57FED2D5C8E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		47F6888F359E769ADAF5A5D2881292D6 /* Frameworks */ = {
+		4A91BD5D9F219640D4FCC273086A0AC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18AB0CAF257D4DC54C4927C77F4671A /* Foundation.framework in Frameworks */,
+				DE01EFFCD70B40229A336F4B6F9B5B37 /* Foundation.framework in Frameworks */,
+				D07BF1DAB0B69C38D890E850B3B58803 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,57 +124,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAD469BF95F9C4D39024430445E6C410 /* Frameworks */ = {
+		7062AA3A2771DEA7DB8A97C0AE3A6155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2A8B5E9BD891A5DAF7E44901282595 /* Foundation.framework in Frameworks */,
+				EC1ADF6B6C76F4EFEB35C1E4B0649602 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0437589FD790A4E20CD53194DFF68B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2D10CEC6AB436D02149C3A55616EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0514C04BF52005D38147512DEBE66ADE /* Fabric */ = {
+		0F32FF622D8DF4571CCCC1DB44C98F94 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C97F41AFE60A905BDCCB1BE4B55836D2 /* FABAttributes.h */,
-				31EF532035143D164C34F9829CECF3EC /* Fabric.h */,
-				47DDB6F8E9DADB6DEC4DEF4CBF6F2328 /* Frameworks */,
+				68EAF65A0309C1B4261F3A69464EAFAD /* PureLayout.xcconfig */,
+				8136E2DA227DBA02EC9881EB7B2F4C8B /* PureLayout-dummy.m */,
+				B004F9C5E4AB55D9F4A6E56480904D28 /* PureLayout-prefix.pch */,
 			);
-			path = Fabric;
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
-		080F7E71D74E65DDE9DE04F0B10A60F3 /* Frameworks */ = {
+		12657EACF64142216C51DB3A6C68FB94 /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				9DFD93CB98C3156F89BDEB2B0D63C317 /* FirebaseAnalytics.framework */,
+				8FC355578BFC1E77C6AAD1DB0EC4C75E /* iCarousel.h */,
+				B6AE1F6B42DAB3948B72F0AC7CAA6156 /* iCarousel.m */,
+				E9D100FD6FBDE4EEDCC54C29627AD919 /* Support Files */,
 			);
-			name = Frameworks;
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
-		0F8821E43280C3889D23A033B6EA44FC /* GoogleUtilities */ = {
+		1B374A727D234D26F9EF4BB39DFB274C /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				D90A651728EF359576B250784C984B11 /* Frameworks */,
+				B90B9766BF4EC37DFEB3BC7C563B6541 /* Frameworks */,
 			);
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
-		1EEF134BF9D66646B927AB324F6A8367 /* FirebaseAnalytics */ = {
+		1BBEA52C489AE87EDF89C24AD0D59952 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				080F7E71D74E65DDE9DE04F0B10A60F3 /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		296C6C5E739F68C03A6761E08D9F1070 /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				4680BCA6E3948E94541CF3ED546CDEA3 /* Frameworks */,
+				7F0991F17F78ABE71D90135E036C7672 /* Frameworks */,
 			);
 			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		20FB4E2CB12B0471059023518ADAA235 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				8AB569C4AD7D24E60B2878616CF3B941 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
 		2EC8F9A834EC1904D84A23D3701D21EC /* Pods-Swipe */ = {
@@ -172,115 +203,99 @@
 			path = "Target Support Files/Pods-Swipe";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4680BCA6E3948E94541CF3ED546CDEA3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B0F20C96028CD76A66FA2897AEF73E0C /* FirebaseDatabase.framework */,
+				89F803C7E2D77E11F2120CB28FE0B795 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47DDB6F8E9DADB6DEC4DEF4CBF6F2328 /* Frameworks */ = {
+		6A7372B4F56C638EF1A6468CB0A510FE /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				A86AF813E8C9A8E9EAA137032B77F9D0 /* Fabric.framework */,
+				996D576F1BB292145655C1AA0A275765 /* FABAttributes.h */,
+				2BD5FEF319BDAF21CFA817A491DBFDBB /* Fabric.h */,
+				BE9FD7601676DDE635A3F2FE61D0CB3D /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		6F8F524569CD0221F7FE2A0432AF2AAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2574828FE83CB63285C2AA751D658F02 /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BA541F46CA7BAB1D4DCD9857631BB95 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0868E1243D6E1DBA1830721883F9BEA5 /* PureLayout.xcconfig */,
-				8AFC6E21B0862937F7E6BBD16EE9DC20 /* PureLayout-dummy.m */,
-				A456FC2F5B8A152CDAA9427C58A0C7C9 /* PureLayout-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
-			sourceTree = "<group>";
-		};
-		60A2D12D3B281AB11941559CA87A353F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CCC2CBEBF7B055843930693BEF67286 /* Crashlytics */,
-				0514C04BF52005D38147512DEBE66ADE /* Fabric */,
-				998911CA8738330541806EE3A034255D /* Firebase */,
-				1EEF134BF9D66646B927AB324F6A8367 /* FirebaseAnalytics */,
-				296C6C5E739F68C03A6761E08D9F1070 /* FirebaseDatabase */,
-				9890D3F3552174A1E22E02C67425DB18 /* FirebaseInstanceID */,
-				99D2EBC535E1FCE3B3F78B3A2A041B64 /* GoogleInterchangeUtilities */,
-				D4B6E1AB0FA483512CC9D2D2F380B0F9 /* GoogleSymbolUtilities */,
-				0F8821E43280C3889D23A033B6EA44FC /* GoogleUtilities */,
-				D92E901BFDDFDD482B91344EF296057F /* PureLayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				60A2D12D3B281AB11941559CA87A353F /* Pods */,
-				A366B70BDCEB91D0C454F5D3C59D7E80 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				EBBBBC519A1BE0CA9F8C3D9EF4EFDB5D /* Pods */,
+				B8636BD05286D7696C84BB2069E31291 /* Products */,
 				C5D84FB531D77AF43556F8614550CE86 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		97E040623BD773A68E9EA2A626BAF5D0 /* Frameworks */ = {
+		7F0991F17F78ABE71D90135E036C7672 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98852347DD500547CCCFA4CA9FBB3B83 /* Crashlytics.framework */,
+				FF944AD12B2C42334138D57FED2D5C8E /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9890D3F3552174A1E22E02C67425DB18 /* FirebaseInstanceID */ = {
+		89F803C7E2D77E11F2120CB28FE0B795 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				813CF79E0C74025DA5C8FEF55B3409D5 /* FIRInstanceID.h */,
-				C8D7EF58A613931615FD0F230A644F41 /* Frameworks */,
+				90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */,
+				EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */,
 			);
-			path = FirebaseInstanceID;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		998911CA8738330541806EE3A034255D /* Firebase */ = {
+		8AB569C4AD7D24E60B2878616CF3B941 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4352AA5755D9F8658332F8D2199D2C5 /* Analytics */,
+				1F8693D2D3F0C18615BDA82057F3E81F /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DC5CB6CB1798FCE274DFA3F5BDD4E44 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E18DE0B3EFCFF885A2E6A529A02D13F9 /* Analytics */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		99D2EBC535E1FCE3B3F78B3A2A041B64 /* GoogleInterchangeUtilities */ = {
+		9147137B43F12084FC844903B37045E8 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				AB8CB5A964348186DE23A06AB9F5E397 /* Frameworks */,
+				E08DC876AA070C489537AF35A2A1C8E1 /* Frameworks */,
 			);
-			path = GoogleInterchangeUtilities;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		9CCC2CBEBF7B055843930693BEF67286 /* Crashlytics */ = {
+		919BDC8BFCC90DD3C31EB6E414D4E5EF /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				CAD29CE23CBCC93DD2F8CC2CA9D0464A /* ANSCompatibility.h */,
-				39395910BE374BCA3379EF4243CB29CB /* Answers.h */,
-				0C705F17697842DB1940B59B5B900667 /* CLSAttributes.h */,
-				15C923B26D738395EE7055A7678BFF57 /* CLSLogging.h */,
-				1470AEB0D36F7F29E403D96E7416570E /* CLSReport.h */,
-				0BEA138E7551DB20BA1A42355351C1CF /* CLSStackFrame.h */,
-				B4838971D10BC45642103E994509DBD4 /* Crashlytics.h */,
-				97E040623BD773A68E9EA2A626BAF5D0 /* Frameworks */,
+				6CF7A4CBA06470E5D4BD604B20D473B2 /* FIRInstanceID.h */,
+				6F8F524569CD0221F7FE2A0432AF2AAC /* Frameworks */,
 			);
-			path = Crashlytics;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		9848EBDAF8526B273860C31E71D4D129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0237ED385B6108D0640AD2DE4B003B6 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A013DB63E0741EE23BD84C11C4CD0A06 /* Pods-SwipeTests */ = {
@@ -298,36 +313,29 @@
 			path = "Target Support Files/Pods-SwipeTests";
 			sourceTree = "<group>";
 		};
-		A366B70BDCEB91D0C454F5D3C59D7E80 /* Products */ = {
+		B8636BD05286D7696C84BB2069E31291 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				514BA93679092DB27561409C849A8D75 /* libPods-Swipe.a */,
-				202A28F757B727721F82516FB15FFAC1 /* libPods-SwipeTests.a */,
-				335055B422882A7AF1C5C8DD38DA93C2 /* libPureLayout.a */,
+				4D12D7AC94EA4A90AAA678F9B97B30A8 /* libiCarousel.a */,
+				E04D1C528E731BB761CEDCEADE5537C8 /* libPods-Swipe.a */,
+				B18E90B508939ABC693653BFCFC64AB8 /* libPods-SwipeTests.a */,
+				BE673E31D9E4895400D9331C06C85060 /* libPureLayout.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB8CB5A964348186DE23A06AB9F5E397 /* Frameworks */ = {
+		B90B9766BF4EC37DFEB3BC7C563B6541 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				410FCB82DC64D54B0BDA08B706719BF2 /* GoogleInterchangeUtilities.framework */,
+				A53FA188F66C87075885B834ACB11575 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B4352AA5755D9F8658332F8D2199D2C5 /* Analytics */ = {
+		BE9FD7601676DDE635A3F2FE61D0CB3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE2B749930266C1D2673215525C7BC7E /* Firebase.h */,
-			);
-			name = Analytics;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				FEA82A49A85BDCAF5BFA9C717ECC3571 /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,81 +349,168 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C8D7EF58A613931615FD0F230A644F41 /* Frameworks */ = {
+		CBCA699843D1396E56596661402A0E00 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				8442AF26A0B87CC60B7ABDDA70DD20E3 /* FirebaseInstanceID.framework */,
+				D95A20F980B0AE03BCC1969C33FA6B04 /* ANSCompatibility.h */,
+				BEE4013875CFE21CD43202DE3DDB0C40 /* Answers.h */,
+				00B06C2F7A53CAA4461D71B9F41C22F7 /* CLSAttributes.h */,
+				B6492A0AB5FEDC45F953246E77A4AB6E /* CLSLogging.h */,
+				C9DE213DA1AF57D1B37EA04DE8F5BD68 /* CLSReport.h */,
+				1C39BE9DDA5D9455930348E81C485599 /* CLSStackFrame.h */,
+				EF6104ECAAC35D470CE957C5574C7CA5 /* Crashlytics.h */,
+				E00121EA80D7570E7C5FE4FFA3FBFFAD /* Frameworks */,
 			);
-			name = Frameworks;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
-		D4B6E1AB0FA483512CC9D2D2F380B0F9 /* GoogleSymbolUtilities */ = {
+		D90DDA54791334B1BDD3A0C8074BDB2C /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				F40909B7C5FF691E74F7B11AE6FAEB06 /* Frameworks */,
-			);
-			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		D90A651728EF359576B250784C984B11 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0D2CBFE5DA59147E2B81FAD895C4618F /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D92E901BFDDFDD482B91344EF296057F /* PureLayout */ = {
-			isa = PBXGroup;
-			children = (
-				30DB3908FF551D7E3A66A48C6B4C3AD7 /* ALView+PureLayout.h */,
-				8363C5533A7A0F08B105D3F0CA3D2DB4 /* ALView+PureLayout.m */,
-				B5E5F1F6003E4A1CCB4273965F61B7A0 /* NSArray+PureLayout.h */,
-				76811A2C85145B7A0FF1A6AF5B537826 /* NSArray+PureLayout.m */,
-				5EC00E828FD4FA5AC52F1D63A9665DC5 /* NSLayoutConstraint+PureLayout.h */,
-				1A136BE429677477DFF5905527967C00 /* NSLayoutConstraint+PureLayout.m */,
-				FE00FE237C16000FE9FD4A7170631B14 /* PureLayout.h */,
-				BD4BD927C59B08099BF6FD5FA7A3BEC9 /* PureLayout+Internal.h */,
-				9EB1CB69F1416D7C560B5B2A746C1B26 /* PureLayoutDefines.h */,
-				4BA541F46CA7BAB1D4DCD9857631BB95 /* Support Files */,
+				9EC4EB744E204FF65115515E637CD3E7 /* ALView+PureLayout.h */,
+				3A03B79C27E3BA555640ACC54E7D8C45 /* ALView+PureLayout.m */,
+				A7BC4D14FE24F754882720F4382AD8D4 /* NSArray+PureLayout.h */,
+				9C4C054E1A5BFD0A3C3253FD0F030972 /* NSArray+PureLayout.m */,
+				6C3A7B89FE6B59E7AD4706C84807DABD /* NSLayoutConstraint+PureLayout.h */,
+				0885FA1C78AE2FA17CF85F6B21399B07 /* NSLayoutConstraint+PureLayout.m */,
+				3AFEA4B9CAC943DE1AAB4E7DC1A1B8DE /* PureLayout.h */,
+				92A202F071AB4ECD4B1A023BAB4CF1B3 /* PureLayout+Internal.h */,
+				95A31BF0EC5FC49325C9155A8C423C40 /* PureLayoutDefines.h */,
+				0F32FF622D8DF4571CCCC1DB44C98F94 /* Support Files */,
 			);
 			path = PureLayout;
 			sourceTree = "<group>";
 		};
-		F40909B7C5FF691E74F7B11AE6FAEB06 /* Frameworks */ = {
+		E00121EA80D7570E7C5FE4FFA3FBFFAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A963B4EF5E56FC47DACFAF46733AF1F5 /* GoogleSymbolUtilities.framework */,
+				17E44BB84E6A726FD0192FFFBDC71DA2 /* Crashlytics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E08DC876AA070C489537AF35A2A1C8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E3E531F4FE0FC22CB14FDB245E5C7C3 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18DE0B3EFCFF885A2E6A529A02D13F9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				517A58C6C7A0803BCA687146A0A39CA8 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		E9D100FD6FBDE4EEDCC54C29627AD919 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B26E68E4AA6C77A7A2990240D6290D7 /* iCarousel.xcconfig */,
+				8F918736800F9576D47D5A7B2E065548 /* iCarousel-dummy.m */,
+				C5DB272F28D19D2CD044C03DB0858A93 /* iCarousel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iCarousel";
+			sourceTree = "<group>";
+		};
+		EBBBBC519A1BE0CA9F8C3D9EF4EFDB5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA699843D1396E56596661402A0E00 /* Crashlytics */,
+				6A7372B4F56C638EF1A6468CB0A510FE /* Fabric */,
+				8DC5CB6CB1798FCE274DFA3F5BDD4E44 /* Firebase */,
+				20FB4E2CB12B0471059023518ADAA235 /* FirebaseAnalytics */,
+				1BBEA52C489AE87EDF89C24AD0D59952 /* FirebaseDatabase */,
+				919BDC8BFCC90DD3C31EB6E414D4E5EF /* FirebaseInstanceID */,
+				ED7ABEBAFB1F7BB2EE4424FEBE77B2AA /* GoogleInterchangeUtilities */,
+				9147137B43F12084FC844903B37045E8 /* GoogleSymbolUtilities */,
+				1B374A727D234D26F9EF4BB39DFB274C /* GoogleUtilities */,
+				12657EACF64142216C51DB3A6C68FB94 /* iCarousel */,
+				D90DDA54791334B1BDD3A0C8074BDB2C /* PureLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED7ABEBAFB1F7BB2EE4424FEBE77B2AA /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9848EBDAF8526B273860C31E71D4D129 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B99C9CE78B344984502C8A8577579BC3 /* Headers */ = {
+		7FD3D4D510170DB635D93F1C6106F3F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAD8441F077BFE37197B1C6FDD26C2A4 /* ALView+PureLayout.h in Headers */,
-				662D01FE2FA896E9523BCDCFA8D6218F /* NSArray+PureLayout.h in Headers */,
-				F956F88F83DBD92AA83D70E6A5AA1920 /* NSLayoutConstraint+PureLayout.h in Headers */,
-				138C4DD87E8D863775F476F446852710 /* PureLayout+Internal.h in Headers */,
-				63F29ED6C33B1F26B8FB74A6B3CB722B /* PureLayout.h in Headers */,
-				16B0C7C8B0969F92B0108744D148F947 /* PureLayoutDefines.h in Headers */,
+				1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B9767FA0949CB0462E74D951D40856 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706E1E0ABCBD772C1542BD905A27A117 /* ALView+PureLayout.h in Headers */,
+				2E81BFA60B43E22359E97FF5357C479A /* NSArray+PureLayout.h in Headers */,
+				542A153171620B330205341E0ECADA81 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				46A7BBBA8A50E60F86689501EDB0FCA7 /* PureLayout+Internal.h in Headers */,
+				BF50812FDC07F5456670A679A53B9972 /* PureLayout.h in Headers */,
+				D9C60DD7F56724310BCA380BBF95B493 /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		78905A3AD0D19466173F0FC82931C7BA /* PureLayout */ = {
+		2CD68AA7CB72C70F856F7B0BAE55D0C1 /* Pods-Swipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B34394A11053CB4044F34DD89BEDE37D /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildConfigurationList = 93AB576507AE4320D85FC948234CFF3A /* Build configuration list for PBXNativeTarget "Pods-Swipe" */;
 			buildPhases = (
-				4C7DCAFBE8C4A5C4FEE2B08E5314C0F4 /* Sources */,
-				47F6888F359E769ADAF5A5D2881292D6 /* Frameworks */,
-				B99C9CE78B344984502C8A8577579BC3 /* Headers */,
+				64B31B1862895E990589161E346681C9 /* Sources */,
+				7062AA3A2771DEA7DB8A97C0AE3A6155 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C2E30482DE10E8986B564E78F51E90 /* PBXTargetDependency */,
+				0A8E8762EDD193A53C2CCB37FCD10347 /* PBXTargetDependency */,
+			);
+			name = "Pods-Swipe";
+			productName = "Pods-Swipe";
+			productReference = E04D1C528E731BB761CEDCEADE5537C8 /* libPods-Swipe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9494390523250106847516AB47E5F9FF /* iCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBEFCEEE7162F9A8774D9BD334236CB /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildPhases = (
+				CC84A3642910B2B5026370609C8953AA /* Sources */,
+				4A91BD5D9F219640D4FCC273086A0AC6 /* Frameworks */,
+				7FD3D4D510170DB635D93F1C6106F3F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = 4D12D7AC94EA4A90AAA678F9B97B30A8 /* libiCarousel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D40F3ED66053F4536A3A341CBA6A0D22 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2375E6BB1BADD59E8775B07264E62A2 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				494F1AE307E19B310867A50291E9F2CF /* Sources */,
+				AF0437589FD790A4E20CD53194DFF68B /* Frameworks */,
+				86B9767FA0949CB0462E74D951D40856 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -423,24 +518,7 @@
 			);
 			name = PureLayout;
 			productName = PureLayout;
-			productReference = 335055B422882A7AF1C5C8DD38DA93C2 /* libPureLayout.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C987DEFD6542F497040184354D1E36A2 /* Pods-Swipe */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7AA3663EADC319800CD8BB286C06F46 /* Build configuration list for PBXNativeTarget "Pods-Swipe" */;
-			buildPhases = (
-				A486F382AD1CC00217E8877045EF22A1 /* Sources */,
-				BAD469BF95F9C4D39024430445E6C410 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				56B9F9BEBA08C944ED44C6945CE7246E /* PBXTargetDependency */,
-			);
-			name = "Pods-Swipe";
-			productName = "Pods-Swipe";
-			productReference = 514BA93679092DB27561409C849A8D75 /* libPods-Swipe.a */;
+			productReference = BE673E31D9E4895400D9331C06C85060 /* libPureLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E47CE9DB33C8327F20036F8426ECD516 /* Pods-SwipeTests */ = {
@@ -456,7 +534,7 @@
 			);
 			name = "Pods-SwipeTests";
 			productName = "Pods-SwipeTests";
-			productReference = 202A28F757B727721F82516FB15FFAC1 /* libPods-SwipeTests.a */;
+			productReference = B18E90B508939ABC693653BFCFC64AB8 /* libPods-SwipeTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -476,34 +554,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A366B70BDCEB91D0C454F5D3C59D7E80 /* Products */;
+			productRefGroup = B8636BD05286D7696C84BB2069E31291 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C987DEFD6542F497040184354D1E36A2 /* Pods-Swipe */,
+				9494390523250106847516AB47E5F9FF /* iCarousel */,
+				2CD68AA7CB72C70F856F7B0BAE55D0C1 /* Pods-Swipe */,
 				E47CE9DB33C8327F20036F8426ECD516 /* Pods-SwipeTests */,
-				78905A3AD0D19466173F0FC82931C7BA /* PureLayout */,
+				D40F3ED66053F4536A3A341CBA6A0D22 /* PureLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C7DCAFBE8C4A5C4FEE2B08E5314C0F4 /* Sources */ = {
+		494F1AE307E19B310867A50291E9F2CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97740B403D89996158723DCF5740B962 /* ALView+PureLayout.m in Sources */,
-				116920E0331B582A5DCF6C387518F8AD /* NSArray+PureLayout.m in Sources */,
-				8122C4058CF9E1B89F6FBB990D30C497 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				D75D0CD0D4A7CB5BFE0579E90205F701 /* PureLayout-dummy.m in Sources */,
+				358DC50D5606460391097393BDCE9CF8 /* ALView+PureLayout.m in Sources */,
+				0214EADB163E71E3F5FFB33AC74E7D69 /* NSArray+PureLayout.m in Sources */,
+				CCDE063BC6FD3247C88837316775932A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				9F35D3AAF685BFDFED21ACF1C863F912 /* PureLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A486F382AD1CC00217E8877045EF22A1 /* Sources */ = {
+		64B31B1862895E990589161E346681C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97805997818D67D29C56A5F888C7682A /* Pods-Swipe-dummy.m in Sources */,
+				CC5BDB794C46FAFE1A8460EA6D73AFEE /* Pods-Swipe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC84A3642910B2B5026370609C8953AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */,
+				2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,11 +606,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		56B9F9BEBA08C944ED44C6945CE7246E /* PBXTargetDependency */ = {
+		0A8E8762EDD193A53C2CCB37FCD10347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCarousel;
+			target = 9494390523250106847516AB47E5F9FF /* iCarousel */;
+			targetProxy = E2D0D622D12371194BD70D8D22174D46 /* PBXContainerItemProxy */;
+		};
+		53C2E30482DE10E8986B564E78F51E90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PureLayout;
-			target = 78905A3AD0D19466173F0FC82931C7BA /* PureLayout */;
-			targetProxy = F02EBD010654BCBE7A4D0290923E123C /* PBXContainerItemProxy */;
+			target = D40F3ED66053F4536A3A341CBA6A0D22 /* PureLayout */;
+			targetProxy = BEB1EECDD8B51E8F47883233BD33AE4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +663,27 @@
 			};
 			name = Debug;
 		};
+		28E4695D98D0F8D4DEAC7F5D977333E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B26E68E4AA6C77A7A2990240D6290D7 /* iCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		4727DE92EE5E5C74C7D5AA8F7F562B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66A7FB5CD8EBDAA36E8F7DC079F954FC /* Pods-SwipeTests.debug.xcconfig */;
@@ -590,9 +705,30 @@
 			};
 			name = Debug;
 		};
-		61ABF5BB337564EA8D3232DD0A0A2BAF /* Debug */ = {
+		52ED79AA3152D6FE3B980A8C69744F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0868E1243D6E1DBA1830721883F9BEA5 /* PureLayout.xcconfig */;
+			baseConfigurationReference = C7CEBAA46BF420CB20CA092537472D38 /* Pods-Swipe.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		70C4BD6213EE596DF60865E286E72DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EAF65A0309C1B4261F3A69464EAFAD /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -610,6 +746,69 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		71790D431B7534B2508D36A9A74BE4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1EDBDCA1DD2592B013924B4C54D583 /* Pods-Swipe.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9E3CFDA48CBB983383DC26B1ADCC1419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B26E68E4AA6C77A7A2990240D6290D7 /* iCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AECC8B22F28CFA93405A138871FF42DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EAF65A0309C1B4261F3A69464EAFAD /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		BD0D7513608F56F7B980E3C6843A68F9 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -670,69 +869,6 @@
 			};
 			name = Release;
 		};
-		D4AF200961A9FD918EE734839000AC11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7CEBAA46BF420CB20CA092537472D38 /* Pods-Swipe.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D4D9491D55DBE6D075D0BB14C015175A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC1EDBDCA1DD2592B013924B4C54D583 /* Pods-Swipe.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		EE7A5FCBE19046FD6520B9895C779534 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0868E1243D6E1DBA1830721883F9BEA5 /* PureLayout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -741,6 +877,15 @@
 			buildConfigurations = (
 				034014829C1E4434983CF3A690C12017 /* Debug */,
 				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBEFCEEE7162F9A8774D9BD334236CB /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E4695D98D0F8D4DEAC7F5D977333E1 /* Debug */,
+				9E3CFDA48CBB983383DC26B1ADCC1419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -754,20 +899,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B34394A11053CB4044F34DD89BEDE37D /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+		93AB576507AE4320D85FC948234CFF3A /* Build configuration list for PBXNativeTarget "Pods-Swipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61ABF5BB337564EA8D3232DD0A0A2BAF /* Debug */,
-				EE7A5FCBE19046FD6520B9895C779534 /* Release */,
+				52ED79AA3152D6FE3B980A8C69744F52 /* Debug */,
+				71790D431B7534B2508D36A9A74BE4CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7AA3663EADC319800CD8BB286C06F46 /* Build configuration list for PBXNativeTarget "Pods-Swipe" */ = {
+		C2375E6BB1BADD59E8775B07264E62A2 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4AF200961A9FD918EE734839000AC11 /* Debug */,
-				D4D9491D55DBE6D075D0BB14C015175A /* Release */,
+				70C4BD6213EE596DF60865E286E72DD8 /* Debug */,
+				AECC8B22F28CFA93405A138871FF42DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
