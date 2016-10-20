@@ -16,16 +16,30 @@ class SWButton: UIButton {
   }
   
   func whiteStyle()
-  {
-    backgroundColor = UIColor.white
-    layer.borderWidth = 3.0
-    layer.borderColor = Common.appRedColor().cgColor
+  { 
+    style(with: UIColor.white , border: Common.appRedColor().cgColor)
+
   }
   
   func redStyle()
   {
-    backgroundColor = Common.appRedColor()
-    layer.borderWidth = 3.0
-    layer.borderColor = UIColor.white.cgColor
+    style(with: Common.appRedColor(), border: UIColor.white.cgColor)
+  }
+  
+  func whiteStyleNoBorder()
+  {
+    style(with: UIColor.white, border: UIColor.clear.cgColor)
+  }
+  
+  func clearStyleWhiteBorder()
+  {
+    style(with: UIColor.clear, border: UIColor.white.cgColor)
+  }
+  
+  func style(with bgColor: UIColor, border: CGColor)
+  {
+    backgroundColor = bgColor
+    layer.borderWidth = 2.0
+    layer.borderColor = border
   }
 }

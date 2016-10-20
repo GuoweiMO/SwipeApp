@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AC8A42E5070D4761691B49A /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9D07EA4CC21EDBC9CC87DE /* libPods-Swipe.a */; };
-		A2E0393832631E7A6A6BC22A /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AECBE2EC7D395EFFFF536F72 /* libPods-SwipeTests.a */; };
+		05FA05D3C15624F65DCFF768 /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */; };
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
 		E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63C31D85C743005D2B3C /* SwipeTests.swift */; };
+		E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */; };
+		E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */; };
+		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
+		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
 		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
@@ -25,6 +28,7 @@
 		E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */; };
 		E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */; };
 		E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWButton.swift */; };
+		F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +44,18 @@
 /* Begin PBXFileReference section */
 		008AD74E70D13132E308268A /* Pods-Swipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swipe/Pods-Swipe.release.xcconfig"; sourceTree = "<group>"; };
 		2CACA928A83D8E5DB4D28B04 /* Pods-Swipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swipe/Pods-Swipe.debug.xcconfig"; sourceTree = "<group>"; };
-		2F9D07EA4CC21EDBC9CC87DE /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D5FC42927161E41C2E36D2 /* Pods-SwipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AECBE2EC7D395EFFFF536F72 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63AB1D85C743005D2B3C /* Swipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63B31D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E40A63B81D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E40A63BF1D85C743005D2B3C /* SwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63C31D85C743005D2B3C /* SwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTests.swift; sourceTree = "<group>"; };
 		E40A63C51D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProfilePicView.xib; path = "Scenes/Create Card/AddProfilePicView.xib"; sourceTree = "<group>"; };
+		E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProfilePicView.swift; path = "Scenes/Create Card/AddProfilePicView.swift"; sourceTree = "<group>"; };
+		E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangeProfilePicView.xib; path = "Scenes/Create Card/ChangeProfilePicView.xib"; sourceTree = "<group>"; };
+		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -64,6 +71,7 @@
 		E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendingView.swift; path = "Scenes/Home/Sending View/SendingView.swift"; sourceTree = "<group>"; };
 		E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SendingView.xib; path = "Scenes/Home/Sending View/SendingView.xib"; sourceTree = "<group>"; };
 		E4BC3E001D90780500D01BD9 /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWButton.swift; path = Common/SWButton.swift; sourceTree = "<group>"; };
+		F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC8A42E5070D4761691B49A /* libPods-Swipe.a in Frameworks */,
+				F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E0393832631E7A6A6BC22A /* libPods-SwipeTests.a in Frameworks */,
+				05FA05D3C15624F65DCFF768 /* libPods-SwipeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +109,8 @@
 		723EEED39D80CF70DEF1EFC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F9D07EA4CC21EDBC9CC87DE /* libPods-Swipe.a */,
-				AECBE2EC7D395EFFFF536F72 /* libPods-SwipeTests.a */,
+				F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */,
+				560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +217,10 @@
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
 				E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */,
 				E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */,
+				E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */,
+				E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */,
+				E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */,
+				E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */,
 			);
 			name = "Create Card";
 			sourceTree = "<group>";
@@ -326,9 +338,11 @@
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
 				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
+				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
+				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +460,10 @@
 				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
+				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,
+				E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

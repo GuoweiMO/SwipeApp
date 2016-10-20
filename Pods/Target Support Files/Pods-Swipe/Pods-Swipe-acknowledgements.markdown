@@ -17,6 +17,10 @@ Copyright 2016 Google
 
 Copyright 2016 Google
 
+## FirebaseCore
+
+Copyright 2016 Google
+
 ## FirebaseDatabase
 
 Copyright 2016 Google
@@ -27,15 +31,15 @@ Copyright 2016 Google
 
 ## GoogleInterchangeUtilities
 
-Copyright 2015 Google Inc.
+Copyright 2016 Google
 
 ## GoogleSymbolUtilities
 
-Copyright 2015 Google Inc.
+Copyright 2016 Google
 
 ## GoogleUtilities
 
-Copyright 2015 Google Inc.
+Copyright 2016 Google
 
 ## PureLayout
 

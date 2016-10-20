@@ -49,6 +49,8 @@ class ReceiversCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
     switch(option)
     {
+      case .wrap:
+        return 1
       case .spacing:
         return value * 1.1
       default: return value

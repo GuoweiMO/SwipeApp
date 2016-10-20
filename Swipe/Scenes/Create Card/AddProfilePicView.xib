@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddProfilePicView" customModule="Swipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-xE-LDg">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="VXm-sy-i4C"/>
+                        <constraint firstAttribute="height" constant="90" id="aBU-En-wkL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="STEP 1" backgroundImage="step selected">
+                        <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHL-eB-Qq0" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="KrG-cf-iFm"/>
+                        <constraint firstAttribute="height" constant="50" id="nbY-1v-IGO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Take a photo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="takePhotoBtnDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="0MN-SW-Xtc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-Ql-XO4" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1jJ-Fb-WlP"/>
+                        <constraint firstAttribute="width" constant="190" id="O3p-c5-tw1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Choose existing photos">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="choosePhotoBtnDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="7dg-iz-tUe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2T1-xE-LDg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="829-d9-Kgj"/>
+                <constraint firstItem="YHL-eB-Qq0" firstAttribute="top" secondItem="2T1-xE-LDg" secondAttribute="bottom" constant="35" id="Fhv-Q8-ZEX"/>
+                <constraint firstItem="zpH-Ql-XO4" firstAttribute="top" secondItem="YHL-eB-Qq0" secondAttribute="bottom" constant="20" id="JMm-LK-5ps"/>
+                <constraint firstItem="YHL-eB-Qq0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JUx-Lc-lOA"/>
+                <constraint firstItem="zpH-Ql-XO4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yv8-4G-JrL"/>
+                <constraint firstItem="2T1-xE-LDg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="iLY-Cu-pVn"/>
+            </constraints>
+            <connections>
+                <outlet property="choosePhotoBtn" destination="zpH-Ql-XO4" id="iVf-gk-DO3"/>
+                <outlet property="takePhotoBtn" destination="YHL-eB-Qq0" id="JTS-8G-PXa"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="step selected" width="184" height="184"/>
+    </resources>
+</document>
