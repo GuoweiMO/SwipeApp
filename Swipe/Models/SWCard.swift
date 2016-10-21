@@ -16,5 +16,4 @@ class SWCard: NSObject {
   var email: String!
   var mobile: String?
   var website: String?
-  
 }

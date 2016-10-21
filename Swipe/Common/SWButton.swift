@@ -18,7 +18,6 @@ class SWButton: UIButton {
   func whiteStyle()
   { 
     style(with: UIColor.white , border: Common.appRedColor().cgColor)
-
   }
   
   func redStyle()
