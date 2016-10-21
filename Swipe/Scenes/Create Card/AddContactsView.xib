@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddUserInfoView" customModule="Swipe" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddContactsView" customModule="Swipe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -18,16 +18,16 @@
                         <constraint firstAttribute="height" constant="90" id="eCo-XB-Qax"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="STEP 2" backgroundImage="step selected">
+                    <state key="normal" title="STEP 3" backgroundImage="step selected">
                         <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type in your details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-Fw-scC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-Fw-scC">
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-M0-tg0">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-M0-tg0">
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="LfD-Bk-s5K"/>
                         <constraint firstAttribute="width" constant="230" id="mdd-s7-opT"/>
@@ -40,7 +40,7 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="emk-mQ-K6y"/>
                     </connections>
                 </textField>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhF-1f-SAP">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhF-1f-SAP">
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                         <constraint firstAttribute="width" constant="230" id="cLu-1P-GuW"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job title" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lJq-Ev-7zu">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lJq-Ev-7zu">
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="EjD-4V-YHr"/>
                         <constraint firstAttribute="width" constant="230" id="bTp-TO-uQI"/>
@@ -65,7 +65,7 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="Q6H-MQ-OAo"/>
                     </connections>
                 </textField>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAn-61-cjl">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAn-61-cjl">
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                         <constraint firstAttribute="height" constant="1" id="ilG-xt-y3h"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="egU-b2-zzo">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="egU-b2-zzo">
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="7tS-TN-PFV"/>
                         <constraint firstAttribute="width" constant="230" id="evK-4t-Spo"/>
@@ -90,7 +90,7 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="ozd-BA-diM"/>
                     </connections>
                 </textField>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWq-82-JVQ">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWq-82-JVQ">
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -160,15 +160,15 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
-                <outlet property="closeBtnTopConstraint" destination="g15-St-V9k" id="bD1-04-7pf"/>
-                <outlet property="companyField" destination="egU-b2-zzo" id="7BH-XV-CBK"/>
-                <outlet property="companyLabel" destination="BWq-82-JVQ" id="wQY-tP-z3L"/>
-                <outlet property="confirmBtn" destination="dLf-hY-gF9" id="Hk1-ZW-EGY"/>
-                <outlet property="fullNameField" destination="CPV-M0-tg0" id="CS3-0h-Qlb"/>
-                <outlet property="fullNameLabel" destination="dhF-1f-SAP" id="85w-yx-eTd"/>
-                <outlet property="jobTitleField" destination="lJq-Ev-7zu" id="Z9m-Be-CQe"/>
-                <outlet property="jobTitleLabel" destination="IAn-61-cjl" id="xIx-MK-kG7"/>
-                <outlet property="stepIndicatorTopConstraint" destination="c05-tw-lye" id="mR3-9k-X4S"/>
+                <outlet property="closeBtnTopConstraint" destination="g15-St-V9k" id="kF8-5Y-5pd"/>
+                <outlet property="confirmBtn" destination="dLf-hY-gF9" id="RRB-BB-LZs"/>
+                <outlet property="emailField" destination="CPV-M0-tg0" id="L8o-hy-dvV"/>
+                <outlet property="emailLabel" destination="dhF-1f-SAP" id="YIm-xn-bqK"/>
+                <outlet property="phoneField" destination="lJq-Ev-7zu" id="CL9-Lw-eMU"/>
+                <outlet property="phoneLabel" destination="IAn-61-cjl" id="yYk-Cg-q9x"/>
+                <outlet property="stepIndicatorTopConstraint" destination="c05-tw-lye" id="hbx-IT-g4R"/>
+                <outlet property="websiteField" destination="egU-b2-zzo" id="0Gp-Oh-KAZ"/>
+                <outlet property="websiteLabel" destination="BWq-82-JVQ" id="gKQ-1g-8ne"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>

@@ -54,7 +54,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38W-9J-RD2" userLabel="Home Card">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-GG-R9Y"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-GG-R9Y"/>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-JA-ZwL">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,12 +170,13 @@
                         <outlet property="homeCardView" destination="38W-9J-RD2" id="rtx-g6-R75"/>
                         <outlet property="jobTitleLabel" destination="Hym-YA-hC5" id="DxF-TB-qy2"/>
                         <outlet property="navBar" destination="qGj-Op-F21" id="g2m-zs-hm8"/>
+                        <outlet property="profilePicView" destination="Myx-GG-R9Y" id="QrD-Hw-noQ"/>
                         <outlet property="workPlaceLabel" destination="Ggr-5G-J4I" id="Gfy-O1-nNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp3-xb-bJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484" y="1086.2068965517242"/>
+            <point key="canvasLocation" x="1458" y="260"/>
         </scene>
     </scenes>
     <resources>

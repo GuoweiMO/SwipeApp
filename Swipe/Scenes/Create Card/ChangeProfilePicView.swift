@@ -10,6 +10,7 @@ import UIKit
 
 protocol ChangeProfilePicOutput: class {
   func navigateBackToAddProfileView()
+  func navigateToUserInfoView()
 }
 
 class ChangeProfilePicView: UIView {
@@ -28,7 +29,7 @@ class ChangeProfilePicView: UIView {
   }
   
   @IBAction func confirmPicBtnDidTap(_ sender: AnyObject){
-    
+    output?.navigateToUserInfoView()
   }
   
   @IBAction func chooseAnotherPhotoBtnDidTap(_ sender: AnyObject) {

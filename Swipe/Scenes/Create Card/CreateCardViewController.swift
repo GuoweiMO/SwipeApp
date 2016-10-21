@@ -12,30 +12,50 @@ protocol CreateCardDelegate {
   func createCardDidSucceed()
 }
 
-class CreateCardViewController: UIViewController, AddProfilePicOutput, ChangeProfilePicOutput {
+class CreateCardViewController: UIViewController,
+                                AddProfilePicOutput,
+                                ChangeProfilePicOutput,
+                                AddUserInfoOutput,
+                                AddContactsOutput {
   @IBOutlet weak var backgroundImageView: UIImageView!
   
   var addProfilePicView: AddProfilePicView?
   var changeProfilePicView: ChangeProfilePicView?
+  var addUserInfoView: AddUserInfoView?
+  var addContactsView: AddContactsView?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     addProfilePicView = AddProfilePicView.viewFromNib()
     addProfilePicView?.output = self
-    
+    view.addSubview(addProfilePicView!)
+
     changeProfilePicView = ChangeProfilePicView.viewFromNib()
     changeProfilePicView?.output = self
-    
     changeProfilePicView?.isHidden = true
+    view.addSubview(changeProfilePicView!)
+    
+    addUserInfoView = AddUserInfoView.viewFromNib()
+    addUserInfoView?.output = self
+    addUserInfoView?.isHidden = true
+    view.addSubview(addUserInfoView!)
+    
+    addContactsView = AddContactsView.viewFromNib()
+    addContactsView?.output = self
+    addContactsView?.isHidden = true
+    view.addSubview(addContactsView!)
   }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
-    addProfilePicView!.frame = view.bounds
-    view.addSubview(addProfilePicView!)
+    addProfilePicView?.frame = view.bounds
     
     changeProfilePicView?.frame = CGRect(x: (view.bounds.width - 190.0) / 2, y: view.bounds.height - 145.0, width: 190.0, height: 120.0)
-    view.addSubview(changeProfilePicView!)
+    
+    addUserInfoView?.frame = view.bounds
+    
+    addContactsView?.frame = view.bounds
   }
   
   func present(imagePicker: UIImagePickerController) {
@@ -53,8 +73,44 @@ class CreateCardViewController: UIViewController, AddProfilePicOutput, ChangePro
   
   func navigateBackToAddProfileView() {
     addProfilePicView?.isHidden = false
+    
     changeProfilePicView?.isHidden = true
     backgroundImageView.image = nil
+    addUserInfoView?.isHidden = true
+  }
+  
+  func navigateToUserInfoView() {
+    addUserInfoView?.isHidden = false
+    
+    addProfilePicView?.isHidden = true
+    changeProfilePicView?.isHidden = true
+  }
+  
+  func navigateToChangeProfilePic() {
+    changeProfilePicView?.isHidden = false
+
+    addUserInfoView?.isHidden = true
+    addProfilePicView?.isHidden = true
+  }
+  
+  func navigateToAddContacts() {
+    addContactsView?.isHidden = false
+    
+    changeProfilePicView?.isHidden = true
+    addUserInfoView?.isHidden = true
+    addProfilePicView?.isHidden = true
+  }
+  
+  func navigateToHomeViewController() {
+    if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
+    {
+      present(vc, animated: false) {
+        vc.profilePicView.image = self.backgroundImageView.image
+        vc.fullNameLabel.text = self.addUserInfoView?.fullNameField.text
+        vc.jobTitleLabel.text = self.addUserInfoView?.jobTitleField.text
+        vc.workPlaceLabel.text = self.addUserInfoView?.companyField.text
+      }
+    }
   }
   
   func createCardDidSucceed() {

@@ -17,7 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOX-sH-kA5">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Inc 2016. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-7c-pR6">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CTw-PB-8tI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="T8M-RC-Kqs"/>
+                                    <constraint firstAttribute="width" constant="100" id="i5s-39-IXj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AOX-sH-kA5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9sI-vc-dmK"/>
+                            <constraint firstItem="CTw-PB-8tI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ych-84-Im0"/>
+                            <constraint firstItem="CTw-PB-8tI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hHd-MH-3Am"/>
+                            <constraint firstItem="5qb-7c-pR6" firstAttribute="top" secondItem="AOX-sH-kA5" secondAttribute="bottom" constant="16" id="s0A-Ju-sWk"/>
+                            <constraint firstItem="5qb-7c-pR6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vc8-Ck-zJq"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5qb-7c-pR6" secondAttribute="bottom" constant="20" id="xTe-Kz-PmV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +51,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch Logo" width="83" height="83"/>
+    </resources>
 </document>

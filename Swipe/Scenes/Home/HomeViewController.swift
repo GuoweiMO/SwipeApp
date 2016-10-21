@@ -27,6 +27,8 @@ class HomeViewController: UIViewController, SendingViewOutput {
   @IBOutlet weak var navBar: UINavigationBar!
   @IBOutlet weak var homeCardView: UIView!
   
+  @IBOutlet weak var profilePicView: UIImageView!
+  
   var sendingView: SendingView!
   var state: CardState? = .Normal {
     didSet {
