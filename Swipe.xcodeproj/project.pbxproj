@@ -15,6 +15,7 @@
 		E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */; };
 		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
 		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
+		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProfilePicView.swift; path = "Scenes/Create Card/AddProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangeProfilePicView.xib; path = "Scenes/Create Card/ChangeProfilePicView.xib"; sourceTree = "<group>"; };
 		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
+		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -177,12 +179,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E49BADD51D98282300870141 /* receivers view */ = {
+		E49B34431DBA285F0031CB2F /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */,
+				E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */,
+			);
+			name = deprecated;
+			sourceTree = "<group>";
+		};
+		E49BADD51D98282300870141 /* receivers */ = {
 			isa = PBXGroup;
 			children = (
 				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
 			);
-			name = "receivers view";
+			name = receivers;
 			sourceTree = "<group>";
 		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
@@ -214,13 +225,13 @@
 		E4BC3DE31D8C5DF200D01BD9 /* Create Card */ = {
 			isa = PBXGroup;
 			children = (
+				E49B34431DBA285F0031CB2F /* deprecated */,
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
-				E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */,
-				E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */,
 				E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */,
 				E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */,
 				E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */,
 				E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */,
+				E49B34441DBA75530031CB2F /* AddUserInfoView.xib */,
 			);
 			name = "Create Card";
 			sourceTree = "<group>";
@@ -237,7 +248,7 @@
 		E4BC3DFB1D90717200D01BD9 /* Sending view */ = {
 			isa = PBXGroup;
 			children = (
-				E49BADD51D98282300870141 /* receivers view */,
+				E49BADD51D98282300870141 /* receivers */,
 				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
@@ -338,6 +349,7 @@
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
 				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
+				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
