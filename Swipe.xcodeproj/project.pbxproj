@@ -56,6 +56,7 @@
 		E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProfilePicView.swift; path = "Scenes/Create Card/AddProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangeProfilePicView.xib; path = "Scenes/Create Card/ChangeProfilePicView.xib"; sourceTree = "<group>"; };
 		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
+		E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swipe.entitlements; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 		E40A63AD1D85C743005D2B3C /* Swipe */ = {
 			isa = PBXGroup;
 			children = (
+				E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */,
 				E40A63ED1D88A605005D2B3C /* Application */,
 				E4BC3DDC1D8C5D9200D01BD9 /* Common */,
 				E4BC3DDA1D8C5D7700D01BD9 /* Models */,
@@ -303,6 +305,14 @@
 						DevelopmentTeam = 385HFV6T8Z;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E40A63BE1D85C743005D2B3C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -599,6 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Swipe/Swipe.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 385HFV6T8Z;
@@ -610,8 +621,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GuoweiMo.SwipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "07f7a379-4923-439e-bec7-bc8ab67aefce";
-				PROVISIONING_PROFILE_SPECIFIER = SwipeApp;
+				PROVISIONING_PROFILE = "e433204e-5787-4582-82cb-567b68ae32b8";
+				PROVISIONING_PROFILE_SPECIFIER = WeSwipe;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -624,8 +635,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Swipe/Swipe.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 385HFV6T8Z;
 				INFOPLIST_FILE = Swipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -635,8 +647,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = GuoweiMo.SwipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "07f7a379-4923-439e-bec7-bc8ab67aefce";
-				PROVISIONING_PROFILE_SPECIFIER = SwipeApp;
+				PROVISIONING_PROFILE = "89f2b777-37ce-44dd-aab0-07aac127a526";
+				PROVISIONING_PROFILE_SPECIFIER = "WeSwipe-Adhoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
