@@ -13,7 +13,7 @@ protocol SendingViewOutput:class {
   func cardSentNavigateToHome()
 }
 
-class SendingView: UIView {
+class SendingView: UIView, ReceiversCarouselOutput {
   
   @IBOutlet weak var receiversView: UIView!
   @IBOutlet weak var receiverLabel: UILabel!
@@ -64,6 +64,7 @@ class SendingView: UIView {
   func updateReceiversView()
   {
     let view = ReceiversCarouselView(frame: receiversView.bounds)
+    view.output = self
     receiversView.addSubview(view)
     let items = [
       UIImage(named: "bg1"),
@@ -72,6 +73,10 @@ class SendingView: UIView {
       UIImage(named: "receiver")
     ]
     view.updateView(items)
+  }
+  
+  func didSelectReceiver(with image: UIImage) {
+    receiverImageView.image = image
   }
   
   @IBAction func noButtonDidTap(_ sender: AnyObject) {

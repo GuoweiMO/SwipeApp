@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol ReceiversCarouselOutput: class {
+  func didSelectReceiver(with image: UIImage)
+}
+
 class ReceiversCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   
   var imageItems: [UIImage?] = []
   var viewRect: CGRect = CGRect.zero
   
   var highlightedViewInset: CGFloat = 0.0
+  weak var output: ReceiversCarouselOutput?
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -82,6 +87,7 @@ class ReceiversCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
     {
       itemView.layer.borderWidth = 5
       itemView.layer.borderColor = Common.appRedColor().cgColor
+      output?.didSelectReceiver(with: itemView.image!)
     }
   }
 }
