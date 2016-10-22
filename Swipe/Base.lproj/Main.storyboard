@@ -22,11 +22,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yat-3N-hXL"/>
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khs-2s-Hvu">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="khs-2s-Hvu" firstAttribute="top" secondItem="y6s-s1-NDH" secondAttribute="top" id="0tC-8H-DFP"/>
+                            <constraint firstAttribute="trailing" secondItem="khs-2s-Hvu" secondAttribute="trailing" id="7Zc-il-0Vh"/>
+                            <constraint firstItem="xh5-hx-rKR" firstAttribute="top" secondItem="khs-2s-Hvu" secondAttribute="bottom" id="EEc-aN-s0D"/>
                             <constraint firstItem="Yat-3N-hXL" firstAttribute="top" secondItem="y6s-s1-NDH" secondAttribute="top" id="Otg-cw-VOe"/>
                             <constraint firstItem="Yat-3N-hXL" firstAttribute="leading" secondItem="y6s-s1-NDH" secondAttribute="leading" id="ST6-m0-CUe"/>
+                            <constraint firstItem="khs-2s-Hvu" firstAttribute="leading" secondItem="y6s-s1-NDH" secondAttribute="leading" id="Ylx-k9-lc9"/>
                             <constraint firstItem="xh5-hx-rKR" firstAttribute="top" secondItem="Yat-3N-hXL" secondAttribute="bottom" id="ev6-yi-zrc"/>
                             <constraint firstAttribute="trailing" secondItem="Yat-3N-hXL" secondAttribute="trailing" id="hbC-qF-1sJ"/>
                         </constraints>
@@ -34,6 +41,7 @@
                     <navigationItem key="navigationItem" id="yrR-UZ-9Vv"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="Yat-3N-hXL" id="MeO-p5-Jwo"/>
+                        <outlet property="profilePicOverlay" destination="khs-2s-Hvu" id="osP-oQ-CHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za4-jc-VDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,6 +63,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38W-9J-RD2" userLabel="Home Card">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-GG-R9Y"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LtM-h9-WaY">
+                                        <frame key="frameInset" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-JA-ZwL">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

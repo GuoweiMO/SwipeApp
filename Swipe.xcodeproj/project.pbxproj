@@ -19,6 +19,8 @@
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
+		E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46447ED1DBBFD6300093C13 /* ReceivingView.swift */; };
+		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
@@ -68,6 +70,8 @@
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
+		E46447ED1DBBFD6300093C13 /* ReceivingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivingView.swift; path = "Scenes/Home/Receiving View/ReceivingView.swift"; sourceTree = "<group>"; };
+		E46447EE1DBBFD6300093C13 /* ReceivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReceivingView.xib; path = "Scenes/Home/Receiving View/ReceivingView.xib"; sourceTree = "<group>"; };
 		E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddContactsView.xib; path = "Scenes/Create Card/AddContactsView.xib"; sourceTree = "<group>"; };
 		E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactsView.swift; path = "Scenes/Create Card/AddContactsView.swift"; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
@@ -196,6 +200,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E46447EC1DBBFD4700093C13 /* Receiving View */ = {
+			isa = PBXGroup;
+			children = (
+				E46447ED1DBBFD6300093C13 /* ReceivingView.swift */,
+				E46447EE1DBBFD6300093C13 /* ReceivingView.xib */,
+			);
+			name = "Receiving View";
+			sourceTree = "<group>";
+		};
 		E49B34431DBA285F0031CB2F /* deprecated */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +274,7 @@
 			children = (
 				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
+				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -377,6 +391,7 @@
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
 				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
+				E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */,
 				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
 				E46447E71DBB88C700093C13 /* splash.png in Resources */,
@@ -502,6 +517,7 @@
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
+				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
 				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,

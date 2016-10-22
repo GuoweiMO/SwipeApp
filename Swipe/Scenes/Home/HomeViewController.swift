@@ -30,6 +30,7 @@ class HomeViewController: UIViewController, SendingViewOutput {
   @IBOutlet weak var profilePicView: UIImageView!
   
   var sendingView: SendingView!
+  var receivingView: ReceivingView!
   var state: CardState? = .Normal {
     didSet {
       setCardView(toState: state!)
@@ -39,7 +40,7 @@ class HomeViewController: UIViewController, SendingViewOutput {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "logo-red"))
+    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "text-logo-red"))
     navBar.setBackgroundImage(UIImage(), for:.default)
     navBar.shadowImage = UIImage()
     navBar.backgroundColor = UIColor.clear
@@ -57,14 +58,24 @@ class HomeViewController: UIViewController, SendingViewOutput {
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))
     homeCardView.addGestureRecognizer(swipeUp)
     
-    sendingView = SendingView.viewfromNib() as! SendingView
-    sendingView.frame = self.view.bounds
+    sendingView = SendingView.viewfromNib()
     sendingView.output = self
-    view.insertSubview(sendingView, belowSubview: homeCardView)
+    sendingView.alpha = 0
+    view.addSubview(sendingView)
+    
+    receivingView = ReceivingView.viewfromNib()
+//    receivingView.output = self
+    receivingView.alpha = 0
+    view.addSubview(receivingView)
     
     state = .Normal
   }
   
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    sendingView.frame = self.view.bounds
+
+  }
   
   func homeCardDidSwipe(sender: UIGestureRecognizer)
   {
@@ -72,22 +83,49 @@ class HomeViewController: UIViewController, SendingViewOutput {
     {
       let yPoints = view.frame.height
       let velocityY = (sender as! UIPanGestureRecognizer).velocity(in: homeCardView).y
-      if velocityY < 0
+      let duration = abs((yPoints / velocityY) / 2.0)
+      var offScreenCenter = homeCardView.center
+      var stateToChange: CardState?
+      
+      guard velocityY < -200 || velocityY > 200 else { return}
+      
+      if velocityY < -200
       {
-        let duration = abs((yPoints / velocityY) / 2.0)
-        var offScreenCenter = homeCardView.center
         offScreenCenter.y -= yPoints * 0.8
-        
-        UIView.animate(withDuration: Double(duration), animations: {
-          self.homeCardView.center = offScreenCenter
-          self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-          self.homeCardView.alpha = 0
-          }, completion: { (done) in
-            self.state = .ToSend
-            self.homeCardView.alpha = 1
-            self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
-        })
+        stateToChange = .ToSend
+        sendingView.isHidden = false
+        sendingView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
       }
+      else if velocityY > 200
+      {
+        offScreenCenter.y += yPoints * 0.8
+        stateToChange = .Receiving
+        receivingView.isHidden = false
+        receivingView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+
+      }
+
+      UIView.animate(withDuration: Double(duration), animations: {
+        self.homeCardView.center = offScreenCenter
+        self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        self.homeCardView.alpha = 0
+        
+        if stateToChange == .ToSend
+        {
+          self.sendingView.alpha = 1
+          self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+        else if stateToChange == .Receiving
+        {
+          self.receivingView.alpha = 1
+          self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+        
+        }, completion: { (done) in
+          self.state = stateToChange
+          self.homeCardView.alpha = 1
+          self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
+      })
     }
   }
   
@@ -117,16 +155,36 @@ class HomeViewController: UIViewController, SendingViewOutput {
   {
     switch state {
     case .Normal:
-      sendingView?.moveViewToBack()
-      sendingView.resetUI()
+//      sendingView?.moveViewToBack()
+      
+      homeCardView.isHidden = false
+      
+      sendingView.isHidden = true
+      receivingView.isHidden = true
+      
+      sendingView.resetView()
+      receivingView.resetView()
+      
       refreshHomeView()
+      
     case .ToSend:
-      moveSendingViewToFront()
-      sendingView.resetUI()
+//      moveSendingViewToFront()
+      
+      homeCardView.isHidden = true
+      
+      sendingView.resetView()
+      
     case .Sending:
-      sendingView.updateViewUIAtSending()
+      sendingView.updateViewAtSending()
     case .Sent:
-      sendingView.updateUIWhenSent()
+      sendingView.updateViewWhenSent()
+    case .Receiving:
+      DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        self.state = .Received
+      }
+    case .Received:
+      receivingView.updateViewWhenReceived()
+
     default:
       break
     }

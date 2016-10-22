@@ -42,7 +42,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="5Qe-fI-OwG"/>
-                                <constraint firstAttribute="width" constant="180" id="kpY-5l-0MD"/>
+                                <constraint firstAttribute="width" constant="190" id="kpY-5l-0MD"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                             <state key="normal" title="My Contacts">
@@ -54,7 +54,7 @@
                         </button>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-fN-iqg" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
                             <constraints>
-                                <constraint firstAttribute="width" constant="180" id="SyL-0f-FqA"/>
+                                <constraint firstAttribute="width" constant="190" id="SyL-0f-FqA"/>
                                 <constraint firstAttribute="height" constant="60" id="pAm-Wb-QIe"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>

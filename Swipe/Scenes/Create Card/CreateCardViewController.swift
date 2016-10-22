@@ -18,7 +18,8 @@ class CreateCardViewController: UIViewController,
                                 AddUserInfoOutput,
                                 AddContactsOutput {
   @IBOutlet weak var backgroundImageView: UIImageView!
-  
+  @IBOutlet weak var profilePicOverlay: UIView!
+
   var addProfilePicView: AddProfilePicView?
   var changeProfilePicView: ChangeProfilePicView?
   var addUserInfoView: AddUserInfoView?
@@ -68,12 +69,17 @@ class CreateCardViewController: UIViewController,
     imagePicker.dismiss(animated: true, completion: nil)
     
     changeProfilePicView?.isHidden = false
+    profilePicOverlay.isHidden = false
+    profilePicOverlay?.alpha = 0.3
+    
     addProfilePicView?.isHidden = true
   }
   
   func navigateBackToAddProfileView() {
     addProfilePicView?.isHidden = false
     
+    profilePicOverlay.isHidden = true
+
     changeProfilePicView?.isHidden = true
     backgroundImageView.image = nil
     addUserInfoView?.isHidden = true
@@ -82,12 +88,15 @@ class CreateCardViewController: UIViewController,
   func navigateToUserInfoView() {
     addUserInfoView?.isHidden = false
     
+    profilePicOverlay?.alpha = 0.6
     addProfilePicView?.isHidden = true
     changeProfilePicView?.isHidden = true
   }
   
   func navigateToChangeProfilePic() {
     changeProfilePicView?.isHidden = false
+    profilePicOverlay.isHidden = false
+    profilePicOverlay?.alpha = 0.3
 
     addUserInfoView?.isHidden = true
     addProfilePicView?.isHidden = true
@@ -112,6 +121,9 @@ class CreateCardViewController: UIViewController,
   func navigateToHomeViewController() {
     if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
     {
+      let userDefault = UserDefaults.standard
+      userDefault.setValue(true, forKey: "hasCard")
+      
       present(vc, animated: false) {
         vc.profilePicView.image = self.backgroundImageView.image
         vc.fullNameLabel.text = self.addUserInfoView?.fullNameField.text

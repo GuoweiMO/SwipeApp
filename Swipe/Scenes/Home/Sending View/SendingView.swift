@@ -28,13 +28,18 @@ class SendingView: UIView, ReceiversCarouselOutput {
   
   weak var output: SendingViewOutput?
   
-  class func viewfromNib() -> UIView?
+  class func viewfromNib() -> SendingView?
   {
     return Bundle.main.loadNibNamed("SendingView", owner: self, options: nil)?.first as? SendingView
   }
   
   override func awakeFromNib() {
-
+    super.awakeFromNib()
+    
+//    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "text-logo-white"))
+//    navBar.setBackgroundImage(UIImage(), for:.default)
+//    navBar.shadowImage = UIImage()
+//    navBar.backgroundColor = UIColor.clear
   }
   
   override func draw(_ rect: CGRect) {
@@ -45,11 +50,11 @@ class SendingView: UIView, ReceiversCarouselOutput {
     contactsButton.whiteStyle()
     myCardButton.redStyle()
     receiverImageView.layer.cornerRadius = 75
-    resetUI()
+    resetView()
     updateReceiversView()
   }
   
-  func resetUI()
+  func resetView()
   {
     yesButton.isHidden = false
     noButton.isHidden = false
@@ -87,7 +92,7 @@ class SendingView: UIView, ReceiversCarouselOutput {
     output?.userDidConfirmSending()
   }
   
-  func updateViewUIAtSending() {
+  func updateViewAtSending() {
     yesButton.isHidden = true
     noButton.isHidden = true
     receiversView.isHidden = true
@@ -95,7 +100,7 @@ class SendingView: UIView, ReceiversCarouselOutput {
     receiverImageView.isHidden = false
   }
   
-  func updateUIWhenSent(){
+  func updateViewWhenSent(){
     sendingMessageLabel.text = "Your card has been sent to"
     //TODO: update receiver image UI
     

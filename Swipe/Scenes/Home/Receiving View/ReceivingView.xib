@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReceivingView" customModule="Swipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receiver" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-oO-dh4">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1Uk-oO-dh4" secondAttribute="height" id="7CG-9T-q9e"/>
+                        <constraint firstAttribute="height" constant="160" id="eog-XX-ghL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is sending you a card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-Ep-bXw">
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-ay-eOz" userLabel="Buttons Container">
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRo-pH-odB" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5Qe-fI-OwG"/>
+                                <constraint firstAttribute="width" constant="190" id="kpY-5l-0MD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="See Tim Cook's Card">
+                                <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-fN-iqg" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="SyL-0f-FqA"/>
+                                <constraint firstAttribute="height" constant="60" id="pAm-Wb-QIe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="MY CARD">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iGg-fN-iqg" firstAttribute="top" secondItem="uRo-pH-odB" secondAttribute="bottom" constant="24" id="6Pw-8D-g4Y"/>
+                        <constraint firstItem="uRo-pH-odB" firstAttribute="centerX" secondItem="5J6-ay-eOz" secondAttribute="centerX" id="GR6-2O-flR"/>
+                        <constraint firstItem="uRo-pH-odB" firstAttribute="top" secondItem="5J6-ay-eOz" secondAttribute="top" constant="24" id="IsW-xM-vUi"/>
+                        <constraint firstItem="iGg-fN-iqg" firstAttribute="centerX" secondItem="5J6-ay-eOz" secondAttribute="centerX" id="hxg-UW-9bx"/>
+                        <constraint firstAttribute="height" constant="240" id="val-xw-GRz"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwx-M0-2Ec">
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="6xh-ga-OT0">
+                            <barButtonItem key="leftBarButtonItem" image="search" id="J7D-3c-9uj">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" image="navBtn" id="hK8-q0-la5">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TKU-K4-Y0o" firstAttribute="top" secondItem="1Uk-oO-dh4" secondAttribute="bottom" constant="20" id="2X4-bB-g8Q"/>
+                <constraint firstItem="rwx-M0-2Ec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5js-0P-h1U"/>
+                <constraint firstItem="TKU-K4-Y0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="7Sc-V5-0qS"/>
+                <constraint firstItem="rwx-M0-2Ec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="9yH-xC-LPk"/>
+                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="D1Y-fS-8iT"/>
+                <constraint firstAttribute="trailingMargin" secondItem="TKU-K4-Y0o" secondAttribute="trailing" constant="30" id="LSW-9W-bVK"/>
+                <constraint firstAttribute="trailing" secondItem="5J6-ay-eOz" secondAttribute="trailing" id="MlT-kQ-N9s"/>
+                <constraint firstAttribute="trailingMargin" secondItem="GQ6-Ep-bXw" secondAttribute="trailing" constant="30" id="VCr-BM-3Dw"/>
+                <constraint firstAttribute="bottom" secondItem="5J6-ay-eOz" secondAttribute="bottom" id="Wul-bL-gEy"/>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVn-3a-8ck"/>
+                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="TKU-K4-Y0o" secondAttribute="bottom" constant="8" id="dgV-UH-0f8"/>
+                <constraint firstItem="5J6-ay-eOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="is9-iQ-3yh"/>
+                <constraint firstAttribute="trailing" secondItem="rwx-M0-2Ec" secondAttribute="trailing" id="l9k-Fo-8tY"/>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="top" secondItem="rwx-M0-2Ec" secondAttribute="bottom" constant="40" id="t0w-Rg-20u"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="contactsButton" destination="uRo-pH-odB" id="82s-Zx-zB5"/>
+                <outlet property="myCardButton" destination="iGg-fN-iqg" id="XCd-bg-C7A"/>
+                <outlet property="navBar" destination="rwx-M0-2Ec" id="NJi-su-16c"/>
+                <outlet property="receiverImageView" destination="1Uk-oO-dh4" id="D8D-mx-c2p"/>
+                <outlet property="receivingMessageLabel" destination="GQ6-Ep-bXw" id="zmj-LW-IwH"/>
+                <outlet property="senderLabel" destination="TKU-K4-Y0o" id="Xlq-UJ-17e"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBtn" width="26" height="6"/>
+        <image name="receiver" width="299" height="299"/>
+        <image name="search" width="22" height="22"/>
+    </resources>
+</document>
