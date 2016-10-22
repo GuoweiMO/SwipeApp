@@ -103,9 +103,26 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   
   @IBAction func closeBtnDidTap(_ sender: AnyObject) {
     output?.navigateToChangeProfilePic()
+    hideKeyboard()
   }
   
   @IBAction func confirmBtnDidTap(_ sender: AnyObject) {
     output?.navigateToAddContacts()
+    hideKeyboard()
+  }
+  
+  func hideKeyboard() {
+    if fullNameField.isFirstResponder
+    {
+      fullNameField.resignFirstResponder()
+    }
+    else if jobTitleField.isFirstResponder
+    {
+      jobTitleField.resignFirstResponder()
+    }
+    else if companyField.isFirstResponder
+    {
+      companyField.resignFirstResponder()
+    }
   }
 }

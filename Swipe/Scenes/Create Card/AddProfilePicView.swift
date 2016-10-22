@@ -48,7 +48,7 @@ class AddProfilePicView: UIView, UIImagePickerControllerDelegate, UINavigationCo
     if imagePicker == nil
     {
       imagePicker = UIImagePickerController()
-      imagePicker?.allowsEditing = true
+      imagePicker?.allowsEditing = false
       imagePicker?.delegate = self
     }
     imagePicker!.sourceType = type

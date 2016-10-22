@@ -100,6 +100,14 @@ class CreateCardViewController: UIViewController,
     addUserInfoView?.isHidden = true
     addProfilePicView?.isHidden = true
   }
+
+  func navigateBackToAddUserInfoView() {
+    addUserInfoView?.isHidden = false
+
+    addContactsView?.isHidden = true
+    changeProfilePicView?.isHidden = true
+    addProfilePicView?.isHidden = true
+  }
   
   func navigateToHomeViewController() {
     if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController

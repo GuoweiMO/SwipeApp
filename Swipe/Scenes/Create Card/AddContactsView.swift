@@ -10,6 +10,7 @@ import UIKit
 
 protocol AddContactsOutput {
   func navigateToHomeViewController()
+  func navigateBackToAddUserInfoView()
 }
 
 class AddContactsView: UIView, UITextFieldDelegate {
@@ -103,10 +104,28 @@ class AddContactsView: UIView, UITextFieldDelegate {
   }
   
   @IBAction func closeBtnDidTap(_ sender: AnyObject) {
-    
+    output?.navigateBackToAddUserInfoView()
+    hideKeyboard()
   }
   
   @IBAction func confirmBtnDidTap(_ sender: AnyObject) {
     output?.navigateToHomeViewController()
+    hideKeyboard()
   }
+  
+  func hideKeyboard() {
+    if emailField.isFirstResponder
+    {
+      emailField.resignFirstResponder()
+    }
+    else if phoneField.isFirstResponder
+    {
+      phoneField.resignFirstResponder()
+    }
+    else if websiteField.isFirstResponder
+    {
+      websiteField.resignFirstResponder()
+    }
+  }
+
 }
