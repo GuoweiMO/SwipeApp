@@ -16,6 +16,9 @@
 		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
 		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
+		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
+		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
+		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
@@ -62,6 +65,9 @@
 		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swipe.entitlements; sourceTree = "<group>"; };
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
+		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
+		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
 		E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddContactsView.xib; path = "Scenes/Create Card/AddContactsView.xib"; sourceTree = "<group>"; };
 		E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactsView.swift; path = "Scenes/Create Card/AddContactsView.swift"; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
@@ -180,6 +186,9 @@
 		E40A63EE1D88A61B005D2B3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E46447E61DBB88C700093C13 /* splash.png */,
+				E46447E81DBB88EF00093C13 /* splash-logo.png */,
+				E46447EA1DBB890D00093C13 /* splash-text-logo.png */,
 				E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */,
 				E4BC3DEB1D8C62E600D01BD9 /* Info.plist */,
 				E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */,
@@ -370,8 +379,11 @@
 				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
 				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
+				E46447E71DBB88C700093C13 /* splash.png in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
+				E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */,
+				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
 				E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */,
