@@ -18,7 +18,7 @@ enum CardState {
   case Else
 }
 
-class HomeViewController: UIViewController, SendingViewOutput {
+class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutput {
   
   @IBOutlet weak var fullNameLabel: UILabel!
   @IBOutlet weak var jobTitleLabel: UILabel!
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, SendingViewOutput {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "text-logo-red"))
+    updateNavBarTitleImage(named: "text-logo-red")
     navBar.setBackgroundImage(UIImage(), for:.default)
     navBar.shadowImage = UIImage()
     navBar.backgroundColor = UIColor.clear
@@ -64,10 +64,11 @@ class HomeViewController: UIViewController, SendingViewOutput {
     view.addSubview(sendingView)
     
     receivingView = ReceivingView.viewfromNib()
-//    receivingView.output = self
+    receivingView.output = self
     receivingView.alpha = 0
     view.addSubview(receivingView)
     
+    view.bringSubview(toFront: navBar)
     state = .Normal
   }
   
@@ -151,14 +152,18 @@ class HomeViewController: UIViewController, SendingViewOutput {
     state = .Normal
   }
   
+  func cardReceivedNavigateToHome() {
+    state = .Normal
+  }
+  
   func setCardView(toState state:CardState)
   {
     switch state {
     case .Normal:
-//      sendingView?.moveViewToBack()
       
       homeCardView.isHidden = false
-      
+      updateNavBarTitleImage(named: "text-logo-red")
+
       sendingView.isHidden = true
       receivingView.isHidden = true
       
@@ -168,17 +173,20 @@ class HomeViewController: UIViewController, SendingViewOutput {
       refreshHomeView()
       
     case .ToSend:
-//      moveSendingViewToFront()
       
       homeCardView.isHidden = true
-      
+      updateNavBarTitleImage(named: "text-logo-white")
       sendingView.resetView()
       
     case .Sending:
       sendingView.updateViewAtSending()
     case .Sent:
       sendingView.updateViewWhenSent()
+      
     case .Receiving:
+      homeCardView.isHidden = true
+      updateNavBarTitleImage(named: "text-logo-white")
+      
       DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
         self.state = .Received
       }
@@ -188,5 +196,10 @@ class HomeViewController: UIViewController, SendingViewOutput {
     default:
       break
     }
+  }
+  
+  func updateNavBarTitleImage(named name: String)
+  {
+    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
   }
 }

@@ -48,15 +48,22 @@
                         <action selector="choosePhotoBtnDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="7dg-iz-tUe"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a best photo of yourself" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-eV-mk1">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="YHL-eB-Qq0" firstAttribute="top" secondItem="Ina-eV-mk1" secondAttribute="bottom" constant="20" id="3vU-Jt-aiP"/>
                 <constraint firstItem="2T1-xE-LDg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="829-d9-Kgj"/>
-                <constraint firstItem="YHL-eB-Qq0" firstAttribute="top" secondItem="2T1-xE-LDg" secondAttribute="bottom" constant="35" id="Fhv-Q8-ZEX"/>
+                <constraint firstItem="Ina-eV-mk1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cvv-fK-HBp"/>
                 <constraint firstItem="zpH-Ql-XO4" firstAttribute="top" secondItem="YHL-eB-Qq0" secondAttribute="bottom" constant="20" id="JMm-LK-5ps"/>
                 <constraint firstItem="YHL-eB-Qq0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JUx-Lc-lOA"/>
                 <constraint firstItem="zpH-Ql-XO4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yv8-4G-JrL"/>
                 <constraint firstItem="2T1-xE-LDg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="iLY-Cu-pVn"/>
+                <constraint firstItem="Ina-eV-mk1" firstAttribute="top" secondItem="2T1-xE-LDg" secondAttribute="bottom" constant="16" id="qMg-ld-erS"/>
             </constraints>
             <connections>
                 <outlet property="choosePhotoBtn" destination="zpH-Ql-XO4" id="iVf-gk-DO3"/>

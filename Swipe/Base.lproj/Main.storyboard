@@ -159,8 +159,11 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem id="Rqw-CJ-OA8">
+                                        <barButtonItem key="leftBarButtonItem" image="search" id="itT-qK-kTE">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="navBtn" id="sOq-kJ-eHM">
-                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -197,6 +200,7 @@
         <image name="edit" width="90" height="90"/>
         <image name="email" width="160" height="160"/>
         <image name="navBtn" width="26" height="6"/>
+        <image name="search" width="22" height="22"/>
         <image name="telephone" width="160" height="160"/>
         <image name="website" width="160" height="160"/>
     </resources>

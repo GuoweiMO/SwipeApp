@@ -28,8 +28,6 @@
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
-		E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */; };
-		E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */; };
 		E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */; };
 		E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */; };
 		E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */; };
@@ -79,10 +77,8 @@
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
-		E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardInfoView.xib; path = "Scenes/Create Card/CardInfoView.xib"; sourceTree = "<group>"; };
 		E4BC3DEA1D8C626500D01BD9 /* Swipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swipe-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4BC3DEB1D8C62E600D01BD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardInfoView.swift; path = "Scenes/Create Card/CardInfoView.swift"; sourceTree = "<group>"; };
 		E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWCard.swift; path = Models/SWCard.swift; sourceTree = "<group>"; };
 		E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Scenes/Home/HomeViewController.swift; sourceTree = "<group>"; };
@@ -209,21 +205,28 @@
 			name = "Receiving View";
 			sourceTree = "<group>";
 		};
-		E49B34431DBA285F0031CB2F /* deprecated */ = {
+		E46447F11DBCBC5900093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
-				E4BC3DE81D8C5E9200D01BD9 /* CardInfoView.xib */,
-				E4BC3DED1D8C63BF00D01BD9 /* CardInfoView.swift */,
+				E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */,
+				E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */,
+				E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */,
+				E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */,
+				E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */,
+				E49B34441DBA75530031CB2F /* AddUserInfoView.xib */,
+				E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */,
+				E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */,
 			);
-			name = deprecated;
+			name = "UI Source";
 			sourceTree = "<group>";
 		};
-		E49BADD51D98282300870141 /* receivers */ = {
+		E46447F21DBCBC8700093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
-				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
+				E4BC3DFB1D90717200D01BD9 /* Sending view */,
+				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
-			name = receivers;
+			name = "UI Source";
 			sourceTree = "<group>";
 		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
@@ -255,16 +258,8 @@
 		E4BC3DE31D8C5DF200D01BD9 /* Create Card */ = {
 			isa = PBXGroup;
 			children = (
-				E49B34431DBA285F0031CB2F /* deprecated */,
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
-				E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */,
-				E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */,
-				E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */,
-				E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */,
-				E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */,
-				E49B34441DBA75530031CB2F /* AddUserInfoView.xib */,
-				E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */,
-				E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */,
+				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
 			name = "Create Card";
 			sourceTree = "<group>";
@@ -273,8 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
-				E4BC3DFB1D90717200D01BD9 /* Sending view */,
-				E46447EC1DBBFD4700093C13 /* Receiving View */,
+				E46447F21DBCBC8700093C13 /* UI Source */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -282,7 +276,7 @@
 		E4BC3DFB1D90717200D01BD9 /* Sending view */ = {
 			isa = PBXGroup;
 			children = (
-				E49BADD51D98282300870141 /* receivers */,
+				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
 				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
@@ -390,7 +384,6 @@
 			files = (
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
-				E4BC3DE91D8C5E9200D01BD9 /* CardInfoView.xib in Resources */,
 				E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */,
 				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
@@ -518,7 +511,6 @@
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
-				E4BC3DEE1D8C63BF00D01BD9 /* CardInfoView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,

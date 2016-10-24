@@ -9,8 +9,7 @@
 import UIKit
 
 protocol ReceivingViewOutput:class {
-  func userDidConfirmSending()
-  func cardSentNavigateToHome()
+  func cardReceivedNavigateToHome()
 }
 
 class ReceivingView: UIView {
@@ -23,7 +22,6 @@ class ReceivingView: UIView {
   
   @IBOutlet weak var contactsButton: SWButton!
   @IBOutlet weak var myCardButton: SWButton!
-  @IBOutlet weak var navBar: UINavigationBar!
   
   weak var output: ReceivingViewOutput?
   
@@ -35,10 +33,6 @@ class ReceivingView: UIView {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "text-logo-white"))
-    navBar.setBackgroundImage(UIImage(), for:.default)
-    navBar.shadowImage = UIImage()
-    navBar.backgroundColor = UIColor.clear
   }
   
   override func draw(_ rect: CGRect) {
@@ -59,5 +53,9 @@ class ReceivingView: UIView {
     receivingMessageLabel.text = "sent you a card"
     contactsButton.isHidden = false
     myCardButton.isHidden = false
+  }
+  
+  @IBAction func myCardBtnDidTap(_ sender: AnyObject) {
+    output?.cardReceivedNavigateToHome()
   }
 }

@@ -47,6 +47,9 @@
                             <state key="normal" title="MY CARD">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="myCardBtnDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="jQO-JU-X2j"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -58,22 +61,6 @@
                         <constraint firstAttribute="height" constant="240" id="val-xw-GRz"/>
                     </constraints>
                 </view>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwx-M0-2Ec">
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <textAttributes key="titleTextAttributes">
-                        <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </textAttributes>
-                    <items>
-                        <navigationItem id="6xh-ga-OT0">
-                            <barButtonItem key="leftBarButtonItem" image="search" id="J7D-3c-9uj">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" image="navBtn" id="hK8-q0-la5">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,10 +69,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="1LJ-3W-q9X"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="top" secondItem="1Uk-oO-dh4" secondAttribute="bottom" constant="20" id="2X4-bB-g8Q"/>
-                <constraint firstItem="rwx-M0-2Ec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5js-0P-h1U"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="7Sc-V5-0qS"/>
-                <constraint firstItem="rwx-M0-2Ec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="9yH-xC-LPk"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="D1Y-fS-8iT"/>
                 <constraint firstAttribute="trailingMargin" secondItem="TKU-K4-Y0o" secondAttribute="trailing" constant="30" id="LSW-9W-bVK"/>
                 <constraint firstAttribute="trailing" secondItem="5J6-ay-eOz" secondAttribute="trailing" id="MlT-kQ-N9s"/>
@@ -94,14 +80,11 @@
                 <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVn-3a-8ck"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="TKU-K4-Y0o" secondAttribute="bottom" constant="8" id="dgV-UH-0f8"/>
                 <constraint firstItem="5J6-ay-eOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="is9-iQ-3yh"/>
-                <constraint firstAttribute="trailing" secondItem="rwx-M0-2Ec" secondAttribute="trailing" id="l9k-Fo-8tY"/>
-                <constraint firstItem="1Uk-oO-dh4" firstAttribute="top" secondItem="rwx-M0-2Ec" secondAttribute="bottom" constant="40" id="t0w-Rg-20u"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="contactsButton" destination="uRo-pH-odB" id="82s-Zx-zB5"/>
                 <outlet property="myCardButton" destination="iGg-fN-iqg" id="XCd-bg-C7A"/>
-                <outlet property="navBar" destination="rwx-M0-2Ec" id="NJi-su-16c"/>
                 <outlet property="receiverImageView" destination="1Uk-oO-dh4" id="D8D-mx-c2p"/>
                 <outlet property="receivingMessageLabel" destination="GQ6-Ep-bXw" id="zmj-LW-IwH"/>
                 <outlet property="senderLabel" destination="TKU-K4-Y0o" id="Xlq-UJ-17e"/>
@@ -110,8 +93,6 @@
         </view>
     </objects>
     <resources>
-        <image name="navBtn" width="26" height="6"/>
         <image name="receiver" width="299" height="299"/>
-        <image name="search" width="22" height="22"/>
     </resources>
 </document>
