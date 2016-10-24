@@ -72,6 +72,19 @@
 		E46447EE1DBBFD6300093C13 /* ReceivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReceivingView.xib; path = "Scenes/Home/Receiving View/ReceivingView.xib"; sourceTree = "<group>"; };
 		E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddContactsView.xib; path = "Scenes/Create Card/AddContactsView.xib"; sourceTree = "<group>"; };
 		E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactsView.swift; path = "Scenes/Create Card/AddContactsView.swift"; sourceTree = "<group>"; };
+		E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-B.ttf"; path = "Supporting Files/Fonts/Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-BI.ttf"; path = "Supporting Files/Fonts/Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-C.ttf"; path = "Supporting Files/Fonts/Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		E47D3B8D1DBE0C9B004D6A43 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-L.ttf"; path = "Supporting Files/Fonts/Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		E47D3B8E1DBE0C9B004D6A43 /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-LI.ttf"; path = "Supporting Files/Fonts/Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		E47D3B8F1DBE0C9B004D6A43 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-M.ttf"; path = "Supporting Files/Fonts/Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		E47D3B901DBE0C9B004D6A43 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-MI.ttf"; path = "Supporting Files/Fonts/Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		E47D3B911DBE0C9B004D6A43 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-R.ttf"; path = "Supporting Files/Fonts/Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		E47D3B921DBE0C9B004D6A43 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-RI.ttf"; path = "Supporting Files/Fonts/Ubuntu-RI.ttf"; sourceTree = "<group>"; };
+		E47D3B931DBE0C9B004D6A43 /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-B.ttf"; path = "Supporting Files/Fonts/UbuntuMono-B.ttf"; sourceTree = "<group>"; };
+		E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-BI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
+		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
+		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +199,7 @@
 		E40A63EE1D88A61B005D2B3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E47D3B891DBE0C8A004D6A43 /* Fonts */,
 				E46447E61DBB88C700093C13 /* splash.png */,
 				E46447E81DBB88EF00093C13 /* splash-logo.png */,
 				E46447EA1DBB890D00093C13 /* splash-text-logo.png */,
@@ -227,6 +241,26 @@
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
 			name = "UI Source";
+			sourceTree = "<group>";
+		};
+		E47D3B891DBE0C8A004D6A43 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */,
+				E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */,
+				E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */,
+				E47D3B8D1DBE0C9B004D6A43 /* Ubuntu-L.ttf */,
+				E47D3B8E1DBE0C9B004D6A43 /* Ubuntu-LI.ttf */,
+				E47D3B8F1DBE0C9B004D6A43 /* Ubuntu-M.ttf */,
+				E47D3B901DBE0C9B004D6A43 /* Ubuntu-MI.ttf */,
+				E47D3B911DBE0C9B004D6A43 /* Ubuntu-R.ttf */,
+				E47D3B921DBE0C9B004D6A43 /* Ubuntu-RI.ttf */,
+				E47D3B931DBE0C9B004D6A43 /* UbuntuMono-B.ttf */,
+				E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */,
+				E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */,
+				E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
