@@ -21,6 +21,7 @@
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
 		E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46447ED1DBBFD6300093C13 /* ReceivingView.swift */; };
 		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
+		E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46D06771DC0FA23004066F8 /* SWActions.swift */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
@@ -70,6 +71,7 @@
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
 		E46447ED1DBBFD6300093C13 /* ReceivingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivingView.swift; path = "Scenes/Home/Receiving View/ReceivingView.swift"; sourceTree = "<group>"; };
 		E46447EE1DBBFD6300093C13 /* ReceivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReceivingView.xib; path = "Scenes/Home/Receiving View/ReceivingView.xib"; sourceTree = "<group>"; };
+		E46D06771DC0FA23004066F8 /* SWActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWActions.swift; path = Models/SWActions.swift; sourceTree = "<group>"; };
 		E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddContactsView.xib; path = "Scenes/Create Card/AddContactsView.xib"; sourceTree = "<group>"; };
 		E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactsView.swift; path = "Scenes/Create Card/AddContactsView.swift"; sourceTree = "<group>"; };
 		E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-B.ttf"; path = "Supporting Files/Fonts/Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -166,7 +168,6 @@
 		E40A63AD1D85C743005D2B3C /* Swipe */ = {
 			isa = PBXGroup;
 			children = (
-				E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */,
 				E40A63ED1D88A605005D2B3C /* Application */,
 				E4BC3DDC1D8C5D9200D01BD9 /* Common */,
 				E4BC3DDA1D8C5D7700D01BD9 /* Models */,
@@ -204,6 +205,7 @@
 				E46447E81DBB88EF00093C13 /* splash-logo.png */,
 				E46447EA1DBB890D00093C13 /* splash-text-logo.png */,
 				E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */,
+				E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */,
 				E4BC3DEB1D8C62E600D01BD9 /* Info.plist */,
 				E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */,
 			);
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */,
+				E46D06771DC0FA23004066F8 /* SWActions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */,
+				E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */,
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,

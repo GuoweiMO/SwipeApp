@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-let db = FIRDatabase.database().reference()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

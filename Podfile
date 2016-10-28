@@ -8,6 +8,7 @@ target 'Swipe' do
   pod 'PureLayout'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'iCarousel'
 end
 

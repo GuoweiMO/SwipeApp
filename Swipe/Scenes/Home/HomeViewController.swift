@@ -45,14 +45,10 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     navBar.shadowImage = UIImage()
     navBar.backgroundColor = UIColor.clear
     
-    db.child("cards").child(uid!).observe(.value, with: { (snapshot) in
-      if let dataDict = snapshot.value as? [String : AnyObject]
-      {
-        self.fullNameLabel.text = dataDict["fullName"] as? String
-        self.jobTitleLabel.text = dataDict["jobTitle"] as? String
-        self.workPlaceLabel.text = dataDict["employer"] as? String
-      }
-      }) { (err) in }
+//    db.child("cards").child(uid!).observe(.value, with: { (snapshot) in
+//      if let dataDict = snapshot.value as? [String : AnyObject] {
+//      }
+//      }) { (err) in }
     
     homeCardView.isUserInteractionEnabled = true
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))

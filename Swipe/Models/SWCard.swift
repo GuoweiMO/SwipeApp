@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SWCard: NSObject {
+class SWCard {
 
   var fullName: String!
   var jobTitle: String!

@@ -35,11 +35,6 @@ class SendingView: UIView, ReceiversCarouselOutput {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    
-//    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: "text-logo-white"))
-//    navBar.setBackgroundImage(UIImage(), for:.default)
-//    navBar.shadowImage = UIImage()
-//    navBar.backgroundColor = UIColor.clear
   }
   
   override func draw(_ rect: CGRect) {

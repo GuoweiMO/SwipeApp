@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0214EADB163E71E3F5FFB33AC74E7D69 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD6EB75F4087CD1A15C418736B1DCBE /* NSArray+PureLayout.m */; };
-		1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = C17F94430C62CB0CB49823E656E431FF /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD76C4E1492238064D9124F0C70AD1E /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2E81BFA60B43E22359E97FF5357C479A /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5914A514641A09EF4629ACBF0A1F85AD /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0214EADB163E71E3F5FFB33AC74E7D69 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 909C2E09C11EFCCD9BED971B7BC79B4E /* NSArray+PureLayout.m */; };
+		1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1896121757881C8678D8740D3CD20A3C /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = A34F00989189A186FC7B54F8C4973AB0 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2E81BFA60B43E22359E97FF5357C479A /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C91A7FA0D58981735F011E5D1EBA5ADF /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32CA44B17FBB877903E3B5F2921A25B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		358DC50D5606460391097393BDCE9CF8 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D63543FCFCFD6C0366A798B3E71DD4 /* ALView+PureLayout.m */; };
-		46A7BBBA8A50E60F86689501EDB0FCA7 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D1504124906D7BE721FEB89106F12E /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		542A153171620B330205341E0ECADA81 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4545CF2D627052964500E1765CB51380 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		706E1E0ABCBD772C1542BD905A27A117 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 728CDD82C9B87394E6A80DA295D0187A /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358DC50D5606460391097393BDCE9CF8 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AC4CB5D5E0289BD309D6AC7B67A14 /* ALView+PureLayout.m */; };
+		46A7BBBA8A50E60F86689501EDB0FCA7 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CA5298145BA322872672740A32E948 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542A153171620B330205341E0ECADA81 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4C5B148BF5A767DA36834FAF718E41 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		706E1E0ABCBD772C1542BD905A27A117 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 08030B0F6D3439C6682DB4FD8DDD4662 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E10F35C35C62B3C38B610293FCBD353 /* Pods-SwipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */; };
-		9F35D3AAF685BFDFED21ACF1C863F912 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B7423D308BA2C98F2F3FECE40F4945 /* PureLayout-dummy.m */; };
-		BF50812FDC07F5456670A679A53B9972 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D691A237BAFE8D1A0BA62AEA9200727 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F35D3AAF685BFDFED21ACF1C863F912 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F69BA90802D54B0080E9BB1791FD393 /* PureLayout-dummy.m */; };
+		BF50812FDC07F5456670A679A53B9972 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C01360E0189E6ED5743BA78CBC2718F9 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC5BDB794C46FAFE1A8460EA6D73AFEE /* Pods-Swipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */; };
-		CCDE063BC6FD3247C88837316775932A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB7ABABA694F8B4883AD4790756908 /* NSLayoutConstraint+PureLayout.m */; };
+		CCDE063BC6FD3247C88837316775932A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7287B51B6A1390B43C6C3C5E43BED783 /* NSLayoutConstraint+PureLayout.m */; };
 		D07BF1DAB0B69C38D890E850B3B58803 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
-		D9C60DD7F56724310BCA380BBF95B493 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A82877DF3369E93A24E4434E58072B66 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9C60DD7F56724310BCA380BBF95B493 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0F924920BCB77E14362F1161A56B56 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE01EFFCD70B40229A336F4B6F9B5B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
 		EC1ADF6B6C76F4EFEB35C1E4B0649602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
 		F7C2D10CEC6AB436D02149C3A55616EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE36E37B16990416EF17BFB70B0990C /* iCarousel-dummy.m */; };
+		FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 170D8C43C9907E285A6A96635AF4ACB3 /* iCarousel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,64 +47,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B045BC46FBD043F13567C1E9A2EC06 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		0B2EBE1548C43D723927CB26E38EFB3A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		0148F4A5A70A452225C829967E2B79D4 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		03921CF30EC69C3F6DE4B1F9C699890E /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		05646C2D8D2434C4AFB21E1265B21D7E /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		08030B0F6D3439C6682DB4FD8DDD4662 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		0FC360554C8F620ADBB779CABFD3C5D3 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		129CD6C9357CF57139599DAEF495B8C2 /* Pods-Swipe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swipe-resources.sh"; sourceTree = "<group>"; };
-		1648B7E9BB8134CA10EBA74B2767279E /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
-		1B0D42F7126A18ACB3E9FF69F0D428CB /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		25D1504124906D7BE721FEB89106F12E /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		26AB41E86250454E17B95EC8D803929B /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		357F1991A946877A2E4E638D22DED580 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
-		3DB82FCE667F34BBF1907B05D2EE9070 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		170D8C43C9907E285A6A96635AF4ACB3 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		1896121757881C8678D8740D3CD20A3C /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		18AFC9BEFBF8819D6144A676599CD774 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
+		1F57A5C2084151EAC39B218464AC8D0C /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		23CA5298145BA322872672740A32E948 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		2FF3A1A8976FC162707966BDEAB0FA76 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		37A343C47550327CC7C646A1E329F54E /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		4009E28C44785AAD66BD7DFA74028E37 /* Pods-SwipeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeTests-frameworks.sh"; sourceTree = "<group>"; };
-		41D475D678006E2FC493164E6CB1F00A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		4545CF2D627052964500E1765CB51380 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		430C7622F27B0E8B8DB42F43A0FE967B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		4613CB3A2BA4B74D9C3F9D601CFF1464 /* Pods-SwipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4649D74D8451F1BAC2D97743BB2F18B4 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		46F0734AE4E3E021639F4BE783E24135 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		4CDA0F60869D8BE92C50943C555DE5D2 /* Pods-SwipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D12D7AC94EA4A90AAA678F9B97B30A8 /* libiCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D691A237BAFE8D1A0BA62AEA9200727 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		4F8820EBFA9161BF24113C3CF03FBBD4 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeTests-dummy.m"; sourceTree = "<group>"; };
-		58CEEB4C8984836F6659E68839909497 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		5914A514641A09EF4629ACBF0A1F85AD /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		5AA2D45EBF352425608E3597E3D7A48D /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		5AD76C4E1492238064D9124F0C70AD1E /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
-		661317E3AFD3B9EDCEE40180D1294382 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		53C6A60EF9E11F0392976A3C537101A7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		5ECE1004DC102160B5C5A29CBA34AAA9 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		66A7FB5CD8EBDAA36E8F7DC079F954FC /* Pods-SwipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		688428842712C84C7A7B2327DAC33992 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		728CDD82C9B87394E6A80DA295D0187A /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		747CA5BD16413131EAE00CD6608652BE /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6B495F28F6CD797BD30A8B7262EFAF7C /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
+		6E0F924920BCB77E14362F1161A56B56 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		7287B51B6A1390B43C6C3C5E43BED783 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		7F69BA90802D54B0080E9BB1791FD393 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		829886DB34B18C9C47592C52B787D3D4 /* Pods-Swipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swipe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83BD7332D1F26CA151E202910DE6D134 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
-		8BE36E37B16990416EF17BFB70B0990C /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		88C421431F27A08C75C7B964D8D0AA92 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		8D99BB539FF06BD7719619280B296FEE /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		8F4C5B148BF5A767DA36834FAF718E41 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		907AC4CB5D5E0289BD309D6AC7B67A14 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		909C2E09C11EFCCD9BED971B7BC79B4E /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		925719A88386154E45995B47A554B050 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		92D63543FCFCFD6C0366A798B3E71DD4 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96685FCCA93A405A9FDE91B1EB7A363B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		9884094FC46789B7AD8226F6797BB1DB /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		997B4A69A4B517F17B8643BF10017BEF /* Pods-Swipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swipe-acknowledgements.plist"; sourceTree = "<group>"; };
+		99B8BD3186BEEF99B57B99D70B4F7EFC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swipe-dummy.m"; sourceTree = "<group>"; };
-		9DEB7ABABA694F8B4883AD4790756908 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		A1FBC5AC1326DE30274BE51B06E80D5C /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
-		A60FD68D6053D6BEC46902DFA30A4B53 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		A107B7F10970A8DB29658C01CA9942FC /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		A34F00989189A186FC7B54F8C4973AB0 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
 		A747E390B5ADB02DC5B4ED4913E0CB95 /* Pods-Swipe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swipe-frameworks.sh"; sourceTree = "<group>"; };
-		A82877DF3369E93A24E4434E58072B66 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		A942FBB7AA7BE2B07BD2B5DD80EC799E /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		B165109AA05434DF8268BA17110F371C /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		B18E90B508939ABC693653BFCFC64AB8 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B74D883F61C1D57EB09BD8C99C91C349 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		BC69B4871CA022CF00C8053C28E12991 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		B7800D6447AF0E524E57C796E713F909 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		BE673E31D9E4895400D9331C06C85060 /* libPureLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C17F94430C62CB0CB49823E656E431FF /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		C01360E0189E6ED5743BA78CBC2718F9 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		C7CEBAA46BF420CB20CA092537472D38 /* Pods-Swipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swipe.debug.xcconfig"; sourceTree = "<group>"; };
-		CFD6EB75F4087CD1A15C418736B1DCBE /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		C91A7FA0D58981735F011E5D1EBA5ADF /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		CF3CC11EE30B2C1330A715A2764A9402 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		D0687535207DBB80CB2C58F9743C445A /* Pods-SwipeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeTests-resources.sh"; sourceTree = "<group>"; };
-		D7B7423D308BA2C98F2F3FECE40F4945 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		E04D1C528E731BB761CEDCEADE5537C8 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3A39C00536240223ACF34C9A9610E46 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		E958A58C837671BA73A2BFD480575134 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		E8228A8476049B0702D792A88950577E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		E96B65CEDA98885A2395A55CCED041C4 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		EC1EDBDCA1DD2592B013924B4C54D583 /* Pods-Swipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swipe.release.xcconfig"; sourceTree = "<group>"; };
 		ECF99BAD5A1500440E34C5076F862AA7 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
-		F6797BA8372F5C4E5761EE8909995423 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		FAAB5991B4E1C04DD2255B1F1FC2252D /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,46 +146,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		157164293F907402D79EC410D52534ED /* iCarousel */ = {
+		0DD2D60894FC21C7D309DB302CBB3B9C /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				C17F94430C62CB0CB49823E656E431FF /* iCarousel.h */,
-				5AD76C4E1492238064D9124F0C70AD1E /* iCarousel.m */,
-				6A252C68B323A73F53C42BAD8C082819 /* Support Files */,
+				1779DFFAC2EACB729AD63FF2758B47BF /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		1199AB074C2FE298765583DD45660F9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F8820EBFA9161BF24113C3CF03FBBD4 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1207B4F6D53554D3717F80CBCE614D2E /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				1896121757881C8678D8740D3CD20A3C /* iCarousel.h */,
+				A34F00989189A186FC7B54F8C4973AB0 /* iCarousel.m */,
+				A54AFA8A5CFF70B6826189F84D641826 /* Support Files */,
 			);
 			path = iCarousel;
 			sourceTree = "<group>";
 		};
-		175A524EBFD9310C8D1CD4B34B5253F9 /* GoogleInterchangeUtilities */ = {
+		1779DFFAC2EACB729AD63FF2758B47BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				831AAB10C53A77098DB6BEDE312EF6B6 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		191F835D4022E8B81151625D7D93E99E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0B2EBE1548C43D723927CB26E38EFB3A /* Crashlytics.framework */,
+				88C421431F27A08C75C7B964D8D0AA92 /* GoogleNetworkingUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1BE561AB38AFB00ACA725D81479EF944 /* Frameworks */ = {
+		1D225160E3193C7766F9C35451801E70 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				A60FD68D6053D6BEC46902DFA30A4B53 /* FirebaseCore.framework */,
+				B36910BC79AA9A6EB941BE63FAA7B6E5 /* Frameworks */,
+			);
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		2589958507610418A5D89E12834B7872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C6A60EF9E11F0392976A3C537101A7 /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1C1E5689A5C7389026F7F096F68224BF /* Frameworks */ = {
+		28DAB03D8AD91BF87DFEC4EBC8012CD6 /* FirebaseStorage */ = {
 			isa = PBXGroup;
 			children = (
-				41D475D678006E2FC493164E6CB1F00A /* Fabric.framework */,
+				8B8A7EAE7E133DDDEC092F36647E8783 /* Frameworks */,
 			);
-			name = Frameworks;
+			path = FirebaseStorage;
 			sourceTree = "<group>";
 		};
 		2EC8F9A834EC1904D84A23D3701D21EC /* Pods-Swipe */ = {
@@ -201,20 +219,12 @@
 			path = "Target Support Files/Pods-Swipe";
 			sourceTree = "<group>";
 		};
-		3C514AEC0A8580BCD72A954BB5949A00 /* GoogleSymbolUtilities */ = {
+		36048D36CE3BC28DC4BBCF906C929C18 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				75B617019BB7EEC70166409404E94603 /* Frameworks */,
+				2FF3A1A8976FC162707966BDEAB0FA76 /* Firebase.h */,
 			);
-			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		3DD890EC55DE90FA1F3542A8FD107319 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1B0D42F7126A18ACB3E9FF69F0D428CB /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -225,81 +235,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		475376F4080ADCC7768312FEF4B6184F /* Fabric */ = {
+		49E995A6787049C60D097F5325301708 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6797BA8372F5C4E5761EE8909995423 /* FABAttributes.h */,
-				03B045BC46FBD043F13567C1E9A2EC06 /* Fabric.h */,
-				1C1E5689A5C7389026F7F096F68224BF /* Frameworks */,
-			);
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		4952378EF162855910A47D9139F22B64 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				6755449506BE78A1A03AA73282ED1C52 /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		4C69699E58CB8692B53685119EA7FD2C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				747CA5BD16413131EAE00CD6608652BE /* FirebaseInstanceID.framework */,
+				E8228A8476049B0702D792A88950577E /* Crashlytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5699E57B8A3476A610D2A32CD615A8D1 /* Firebase */ = {
+		669845230896733FFEF6A4AA39C2B3F3 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				A74032B45006C330F7AE1770D5F7230F /* Core */,
+				AE11EF645D72D7AB6F995A2A933F297B /* Frameworks */,
 			);
-			path = Firebase;
+			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
-		6755449506BE78A1A03AA73282ED1C52 /* Frameworks */ = {
+		6D9266FBB34F26332338976D70F5CB80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4871CA022CF00C8053C28E12991 /* FirebaseAnalytics.framework */,
+				430C7622F27B0E8B8DB42F43A0FE967B /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6A252C68B323A73F53C42BAD8C082819 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1FBC5AC1326DE30274BE51B06E80D5C /* iCarousel.xcconfig */,
-				8BE36E37B16990416EF17BFB70B0990C /* iCarousel-dummy.m */,
-				1648B7E9BB8134CA10EBA74B2767279E /* iCarousel-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/iCarousel";
-			sourceTree = "<group>";
-		};
-		6F4DBF6624CF0FACD923881BFD28A245 /* FirebaseCore */ = {
-			isa = PBXGroup;
-			children = (
-				1BE561AB38AFB00ACA725D81479EF944 /* Frameworks */,
-			);
-			path = FirebaseCore;
-			sourceTree = "<group>";
-		};
-		75B617019BB7EEC70166409404E94603 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				925719A88386154E45995B47A554B050 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7BC9D3F87B2A3FB694D63699AB5CEF82 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				3DD890EC55DE90FA1F3542A8FD107319 /* Frameworks */,
-			);
-			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -307,37 +264,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				870FDA75D52C1AC747E9CF281378FDFF /* Pods */,
+				AEF4CC357658BE3AD6FFAE43B808C8E9 /* Pods */,
 				B8636BD05286D7696C84BB2069E31291 /* Products */,
 				C5D84FB531D77AF43556F8614550CE86 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		831AAB10C53A77098DB6BEDE312EF6B6 /* Frameworks */ = {
+		8114ABBD778F71483C1949FF3AB4A7AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DB82FCE667F34BBF1907B05D2EE9070 /* GoogleInterchangeUtilities.framework */,
+				4649D74D8451F1BAC2D97743BB2F18B4 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		870FDA75D52C1AC747E9CF281378FDFF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F80F8C3E703D8C8BFDC68C9815BBFB05 /* Crashlytics */,
-				475376F4080ADCC7768312FEF4B6184F /* Fabric */,
-				5699E57B8A3476A610D2A32CD615A8D1 /* Firebase */,
-				4952378EF162855910A47D9139F22B64 /* FirebaseAnalytics */,
-				6F4DBF6624CF0FACD923881BFD28A245 /* FirebaseCore */,
-				E07BB7705DF212E7C9406D9A45E37238 /* FirebaseDatabase */,
-				8C201A77F2F48ACF692B847A70880127 /* FirebaseInstanceID */,
-				175A524EBFD9310C8D1CD4B34B5253F9 /* GoogleInterchangeUtilities */,
-				3C514AEC0A8580BCD72A954BB5949A00 /* GoogleSymbolUtilities */,
-				7BC9D3F87B2A3FB694D63699AB5CEF82 /* GoogleUtilities */,
-				157164293F907402D79EC410D52534ED /* iCarousel */,
-				BE4774697D06E3915EFA68050DAF2363 /* PureLayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		89F803C7E2D77E11F2120CB28FE0B795 /* iOS */ = {
@@ -349,13 +287,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8C201A77F2F48ACF692B847A70880127 /* FirebaseInstanceID */ = {
+		8B8A7EAE7E133DDDEC092F36647E8783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E958A58C837671BA73A2BFD480575134 /* FIRInstanceID.h */,
-				4C69699E58CB8692B53685119EA7FD2C /* Frameworks */,
+				9884094FC46789B7AD8226F6797BB1DB /* FirebaseStorage.framework */,
 			);
-			path = FirebaseInstanceID;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C62769D4D128564B832BE23C4B50DBF /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D107C321EFDC7F16700933F26721D6B /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		9D107C321EFDC7F16700933F26721D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37A343C47550327CC7C646A1E329F54E /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A013DB63E0741EE23BD84C11C4CD0A06 /* Pods-SwipeTests */ = {
@@ -373,12 +326,62 @@
 			path = "Target Support Files/Pods-SwipeTests";
 			sourceTree = "<group>";
 		};
-		A74032B45006C330F7AE1770D5F7230F /* Core */ = {
+		A54AFA8A5CFF70B6826189F84D641826 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				688428842712C84C7A7B2327DAC33992 /* Firebase.h */,
+				18AFC9BEFBF8819D6144A676599CD774 /* iCarousel.xcconfig */,
+				170D8C43C9907E285A6A96635AF4ACB3 /* iCarousel-dummy.m */,
+				6B495F28F6CD797BD30A8B7262EFAF7C /* iCarousel-prefix.pch */,
 			);
-			name = Core;
+			name = "Support Files";
+			path = "../Target Support Files/iCarousel";
+			sourceTree = "<group>";
+		};
+		A9DF6B972980820CB09352874E244C5C /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				0FC360554C8F620ADBB779CABFD3C5D3 /* FABAttributes.h */,
+				0148F4A5A70A452225C829967E2B79D4 /* Fabric.h */,
+				2589958507610418A5D89E12834B7872 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		AE11EF645D72D7AB6F995A2A933F297B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96B65CEDA98885A2395A55CCED041C4 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEF4CC357658BE3AD6FFAE43B808C8E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA74DE66867AFA76F0146BA3F01323C5 /* Crashlytics */,
+				A9DF6B972980820CB09352874E244C5C /* Fabric */,
+				C09D3BF08CDF68988554B3EC32ADA152 /* Firebase */,
+				DEBBB9DB18F7702D260399EF90F2C170 /* FirebaseAnalytics */,
+				1D225160E3193C7766F9C35451801E70 /* FirebaseCore */,
+				669845230896733FFEF6A4AA39C2B3F3 /* FirebaseDatabase */,
+				FD82AD2A9F51B9997C7342CD316E5FA2 /* FirebaseInstanceID */,
+				28DAB03D8AD91BF87DFEC4EBC8012CD6 /* FirebaseStorage */,
+				8C62769D4D128564B832BE23C4B50DBF /* GoogleInterchangeUtilities */,
+				0DD2D60894FC21C7D309DB302CBB3B9C /* GoogleNetworkingUtilities */,
+				EFA743DB5C07FD8A3379029AD1C8F55C /* GoogleSymbolUtilities */,
+				E3EAD9A5EF72B857DD69FA00EF77444D /* GoogleUtilities */,
+				1207B4F6D53554D3717F80CBCE614D2E /* iCarousel */,
+				FE10A143ABCDA4EAF1A13C136DF5B4C5 /* PureLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B36910BC79AA9A6EB941BE63FAA7B6E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7800D6447AF0E524E57C796E713F909 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B8636BD05286D7696C84BB2069E31291 /* Products */ = {
@@ -392,32 +395,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA9A5EE229D6968A44D9887E3CDA1AA8 /* Support Files */ = {
+		BA74DE66867AFA76F0146BA3F01323C5 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				E3A39C00536240223ACF34C9A9610E46 /* PureLayout.xcconfig */,
-				D7B7423D308BA2C98F2F3FECE40F4945 /* PureLayout-dummy.m */,
-				58CEEB4C8984836F6659E68839909497 /* PureLayout-prefix.pch */,
+				B165109AA05434DF8268BA17110F371C /* ANSCompatibility.h */,
+				A107B7F10970A8DB29658C01CA9942FC /* Answers.h */,
+				8D99BB539FF06BD7719619280B296FEE /* CLSAttributes.h */,
+				1F57A5C2084151EAC39B218464AC8D0C /* CLSLogging.h */,
+				CF3CC11EE30B2C1330A715A2764A9402 /* CLSReport.h */,
+				5ECE1004DC102160B5C5A29CBA34AAA9 /* CLSStackFrame.h */,
+				99B8BD3186BEEF99B57B99D70B4F7EFC /* Crashlytics.h */,
+				49E995A6787049C60D097F5325301708 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
-		BE4774697D06E3915EFA68050DAF2363 /* PureLayout */ = {
+		C09D3BF08CDF68988554B3EC32ADA152 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				728CDD82C9B87394E6A80DA295D0187A /* ALView+PureLayout.h */,
-				92D63543FCFCFD6C0366A798B3E71DD4 /* ALView+PureLayout.m */,
-				5914A514641A09EF4629ACBF0A1F85AD /* NSArray+PureLayout.h */,
-				CFD6EB75F4087CD1A15C418736B1DCBE /* NSArray+PureLayout.m */,
-				4545CF2D627052964500E1765CB51380 /* NSLayoutConstraint+PureLayout.h */,
-				9DEB7ABABA694F8B4883AD4790756908 /* NSLayoutConstraint+PureLayout.m */,
-				4D691A237BAFE8D1A0BA62AEA9200727 /* PureLayout.h */,
-				25D1504124906D7BE721FEB89106F12E /* PureLayout+Internal.h */,
-				A82877DF3369E93A24E4434E58072B66 /* PureLayoutDefines.h */,
-				BA9A5EE229D6968A44D9887E3CDA1AA8 /* Support Files */,
+				36048D36CE3BC28DC4BBCF906C929C18 /* Core */,
 			);
-			path = PureLayout;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		C5D84FB531D77AF43556F8614550CE86 /* Targets Support Files */ = {
@@ -429,35 +427,73 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DC5FBA8700AC6CDA437C45ED5EB3BD07 /* Frameworks */ = {
+		C95FB4AB463C0CCD62AF7F191A935F71 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B74D883F61C1D57EB09BD8C99C91C349 /* FirebaseDatabase.framework */,
+				05646C2D8D2434C4AFB21E1265B21D7E /* PureLayout.xcconfig */,
+				7F69BA90802D54B0080E9BB1791FD393 /* PureLayout-dummy.m */,
+				46F0734AE4E3E021639F4BE783E24135 /* PureLayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		CACB241C3CBF8F521B11AC4138D67C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96685FCCA93A405A9FDE91B1EB7A363B /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E07BB7705DF212E7C9406D9A45E37238 /* FirebaseDatabase */ = {
+		DEBBB9DB18F7702D260399EF90F2C170 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				DC5FBA8700AC6CDA437C45ED5EB3BD07 /* Frameworks */,
+				CACB241C3CBF8F521B11AC4138D67C8A /* Frameworks */,
 			);
-			path = FirebaseDatabase;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		F80F8C3E703D8C8BFDC68C9815BBFB05 /* Crashlytics */ = {
+		E3EAD9A5EF72B857DD69FA00EF77444D /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5991B4E1C04DD2255B1F1FC2252D /* ANSCompatibility.h */,
-				83BD7332D1F26CA151E202910DE6D134 /* Answers.h */,
-				A942FBB7AA7BE2B07BD2B5DD80EC799E /* CLSAttributes.h */,
-				5AA2D45EBF352425608E3597E3D7A48D /* CLSLogging.h */,
-				26AB41E86250454E17B95EC8D803929B /* CLSReport.h */,
-				661317E3AFD3B9EDCEE40180D1294382 /* CLSStackFrame.h */,
-				357F1991A946877A2E4E638D22DED580 /* Crashlytics.h */,
-				191F835D4022E8B81151625D7D93E99E /* Frameworks */,
+				8114ABBD778F71483C1949FF3AB4A7AD /* Frameworks */,
 			);
-			path = Crashlytics;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		EFA743DB5C07FD8A3379029AD1C8F55C /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1199AB074C2FE298765583DD45660F9E /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		FD82AD2A9F51B9997C7342CD316E5FA2 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				03921CF30EC69C3F6DE4B1F9C699890E /* FIRInstanceID.h */,
+				6D9266FBB34F26332338976D70F5CB80 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		FE10A143ABCDA4EAF1A13C136DF5B4C5 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				08030B0F6D3439C6682DB4FD8DDD4662 /* ALView+PureLayout.h */,
+				907AC4CB5D5E0289BD309D6AC7B67A14 /* ALView+PureLayout.m */,
+				C91A7FA0D58981735F011E5D1EBA5ADF /* NSArray+PureLayout.h */,
+				909C2E09C11EFCCD9BED971B7BC79B4E /* NSArray+PureLayout.m */,
+				8F4C5B148BF5A767DA36834FAF718E41 /* NSLayoutConstraint+PureLayout.h */,
+				7287B51B6A1390B43C6C3C5E43BED783 /* NSLayoutConstraint+PureLayout.m */,
+				C01360E0189E6ED5743BA78CBC2718F9 /* PureLayout.h */,
+				23CA5298145BA322872672740A32E948 /* PureLayout+Internal.h */,
+				6E0F924920BCB77E14362F1161A56B56 /* PureLayoutDefines.h */,
+				C95FB4AB463C0CCD62AF7F191A935F71 /* Support Files */,
+			);
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -683,7 +719,7 @@
 		};
 		28E4695D98D0F8D4DEAC7F5D977333E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1FBC5AC1326DE30274BE51B06E80D5C /* iCarousel.xcconfig */;
+			baseConfigurationReference = 18AFC9BEFBF8819D6144A676599CD774 /* iCarousel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -746,7 +782,7 @@
 		};
 		70C4BD6213EE596DF60865E286E72DD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3A39C00536240223ACF34C9A9610E46 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 05646C2D8D2434C4AFB21E1265B21D7E /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -788,7 +824,7 @@
 		};
 		9E3CFDA48CBB983383DC26B1ADCC1419 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1FBC5AC1326DE30274BE51B06E80D5C /* iCarousel.xcconfig */;
+			baseConfigurationReference = 18AFC9BEFBF8819D6144A676599CD774 /* iCarousel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -809,7 +845,7 @@
 		};
 		AECC8B22F28CFA93405A138871FF42DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3A39C00536240223ACF34C9A9610E46 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 05646C2D8D2434C4AFB21E1265B21D7E /* PureLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
