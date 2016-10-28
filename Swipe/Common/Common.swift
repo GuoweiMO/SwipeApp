@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-let uid = UIDevice.current.identifierForVendor?.uuidString
-
 class Common {
   
   class func appRedColor() -> UIColor

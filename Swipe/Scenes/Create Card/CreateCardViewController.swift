@@ -119,6 +119,23 @@ class CreateCardViewController: UIViewController,
   }
   
   func navigateToHomeViewController() {
+    
+//    let newCard = [
+//      "fullName": "",
+//      "jobTitle": "",
+//      "employer" : "",
+//      "email"   : "",
+//      "mobile"  : "",
+//      "website" : "",
+//      "status"  : "normal"
+//      ] as [String : String]
+//    db.child("cards").child(uid!).setValue(newCard)
+    if let image = backgroundImageView.image,
+       let imageData = UIImagePNGRepresentation(image) //should be a cropped image
+    {
+      SWActions.uploadProfileImage(withData: imageData, name: "trial-01")
+    }
+    
     if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
     {
       let userDefault = UserDefaults.standard
