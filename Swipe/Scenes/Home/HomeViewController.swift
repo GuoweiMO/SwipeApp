@@ -31,6 +31,8 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   
   var sendingView: SendingView!
   var receivingView: ReceivingView!
+  var navigationView: NavigationView?
+  
   var state: CardState? = .Normal {
     didSet {
       setCardView(toState: state!)
@@ -223,4 +225,17 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   {
     navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
   }
+  
+  @IBAction func navigationBtnDidTap(_ sender: Any) {
+    let navView = NavigationView.viewFromNib()
+    view.addSubview(navView!)
+    navView!.frame = view.bounds
+    navView!.buttonsContainerView.frame.origin.y -= navView!.frame.size.height - 60
+    
+    UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseInOut, animations: {
+      navView!.buttonsContainerView.frame.origin.y = 60
+    }, completion: nil)
+  }
+  
+  
 }

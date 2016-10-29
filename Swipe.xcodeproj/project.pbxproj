@@ -24,6 +24,8 @@
 		E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46D06771DC0FA23004066F8 /* SWActions.swift */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
+		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
+		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
@@ -87,6 +89,8 @@
 		E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-BI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
 		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
+		E493F39F1DC519FC00D7298C /* NavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationView.xib; path = Scenes/Navigation/NavigationView.xib; sourceTree = "<group>"; };
+		E493F3A41DC5209100D7298C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Scenes/Navigation/NavigationView.swift; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +269,15 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		E493F39E1DC519D600D7298C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E493F39F1DC519FC00D7298C /* NavigationView.xib */,
+				E493F3A41DC5209100D7298C /* NavigationView.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +290,7 @@
 		E4BC3DDB1D8C5D8400D01BD9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E493F39E1DC519D600D7298C /* Navigation */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
 			);
@@ -425,6 +439,7 @@
 				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
 				E46447E71DBB88C700093C13 /* splash.png in Resources */,
+				E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
 				E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */,
@@ -549,6 +564,7 @@
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
+				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
