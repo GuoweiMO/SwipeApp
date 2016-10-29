@@ -27,18 +27,37 @@ class SWActions: NSObject {
     db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
   }
   
-  class func uploadProfileImage(withData data: Data, name: String){
-    storage.child("images/\(uid!)/\(name).png").put(data, metadata: nil) { metadata, error in
+  class func retrieveMyCard(withCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)? ){
+    db.child("cards").child(uid!).observe(.value, with: {
+      (snapshot) -> Void in
+      if let dataDict = snapshot.value as? [String : AnyObject] {
+        completion(dataDict)
+      }
+    }, withCancel: errorBlock)
+  }
+  
+  class func uploadProfileImage(withData data: Data, name: String, extra: [String: String] ){
+    let metadata = FIRStorageMetadata()
+    metadata.customMetadata = extra
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    storage.child("images/\(uid!)/\(name).png").put(data, metadata: metadata) { metadata, error in
       if (error != nil) {
         print(error.debugDescription)
       } else {
         // Metadata contains file metadata such as size, content-type, and download URL.
         let downloadURL = metadata!.downloadURL
-        print(downloadURL)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
       }
     }
-    
   }
   
+  class func downloadProfileImage(withName name: String, completion: @escaping (Data?, Error?) -> Void){
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    storage.child("images/\(uid!)/\(name).png").data(withMaxSize: 5 * 1024 * 1024, completion: completion)
+  }
+  
+  class func getFileMetadata(ofName name: String, withCompletion completion: @escaping (FIRStorageMetadata?, Error?) -> Void){
+    storage.child("images/\(uid!)/\(name).png").metadata(completion: completion)
+  }
   
 }

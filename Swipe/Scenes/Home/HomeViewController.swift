@@ -45,10 +45,35 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     navBar.shadowImage = UIImage()
     navBar.backgroundColor = UIColor.clear
     
-//    db.child("cards").child(uid!).observe(.value, with: { (snapshot) in
-//      if let dataDict = snapshot.value as? [String : AnyObject] {
-//      }
-//      }) { (err) in }
+    SWActions.retrieveMyCard(withCompletion: {
+      (dataDict) in
+        self.fullNameLabel.text = dataDict["fullName"] as? String
+        self.jobTitleLabel.text = dataDict["jobTitle"] as? String
+        self.workPlaceLabel.text = "at " + (dataDict["employer"] as! String)
+    }, andError: {
+      err in
+    })
+    
+    SWActions.downloadProfileImage(withName: "profile", completion: {
+      data, error in
+      if data != nil && error == nil {
+        if let image = UIImage(data: data!)
+        {
+          SWActions.getFileMetadata(ofName: "profile", withCompletion: { (data, error) in
+             if let info = data?.customMetadata {
+              if info["orientation"] == "portrait" && image.size.width > image.size.height {
+                self.profilePicView.image = image
+                self.profilePicView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));
+              }
+              
+            }
+          })
+          
+          self.profilePicView.contentMode = .scaleAspectFill
+          UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
+      }
+    })
     
     homeCardView.isUserInteractionEnabled = true
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))

@@ -8,8 +8,8 @@
 
 import UIKit
 protocol AddUserInfoOutput: class {
-  func navigateToAddContacts()
-  func navigateToChangeProfilePic()
+  func didConfirmNavigateToAddContacts()
+  func didCancelNavigateToChangeProfilePic()
 }
 
 class AddUserInfoView: UIView, UITextFieldDelegate {
@@ -102,12 +102,12 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   }
   
   @IBAction func closeBtnDidTap(_ sender: AnyObject) {
-    output?.navigateToChangeProfilePic()
+    output?.didCancelNavigateToChangeProfilePic()
     hideKeyboard()
   }
   
   @IBAction func confirmBtnDidTap(_ sender: AnyObject) {
-    output?.navigateToAddContacts()
+    output?.didConfirmNavigateToAddContacts()
     hideKeyboard()
   }
   

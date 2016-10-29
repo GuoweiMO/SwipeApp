@@ -24,6 +24,7 @@ class CreateCardViewController: UIViewController,
   var changeProfilePicView: ChangeProfilePicView?
   var addUserInfoView: AddUserInfoView?
   var addContactsView: AddContactsView?
+  let myCard = SWCard()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -93,7 +94,7 @@ class CreateCardViewController: UIViewController,
     changeProfilePicView?.isHidden = true
   }
   
-  func navigateToChangeProfilePic() {
+  func didCancelNavigateToChangeProfilePic() {
     changeProfilePicView?.isHidden = false
     profilePicOverlay.isHidden = false
     profilePicOverlay?.alpha = 0.3
@@ -102,15 +103,20 @@ class CreateCardViewController: UIViewController,
     addProfilePicView?.isHidden = true
   }
   
-  func navigateToAddContacts() {
+  func didConfirmNavigateToAddContacts() {
     addContactsView?.isHidden = false
     
     changeProfilePicView?.isHidden = true
     addUserInfoView?.isHidden = true
     addProfilePicView?.isHidden = true
+    
+    myCard.fullName = addUserInfoView?.fullNameField.text
+    myCard.jobTitle = addUserInfoView?.jobTitleField.text
+    myCard.employer = addUserInfoView?.companyField.text
+
   }
 
-  func navigateBackToAddUserInfoView() {
+  func didCancelNavigateBackToAddUserInfoView() {
     addUserInfoView?.isHidden = false
 
     addContactsView?.isHidden = true
@@ -118,22 +124,28 @@ class CreateCardViewController: UIViewController,
     addProfilePicView?.isHidden = true
   }
   
-  func navigateToHomeViewController() {
+  func didConfirmNavigateToHomeViewController() {
     
-//    let newCard = [
-//      "fullName": "",
-//      "jobTitle": "",
-//      "employer" : "",
-//      "email"   : "",
-//      "mobile"  : "",
-//      "website" : "",
-//      "status"  : "normal"
-//      ] as [String : String]
-//    db.child("cards").child(uid!).setValue(newCard)
+    myCard.email = addContactsView?.emailField.text
+    myCard.mobile = addContactsView?.phoneField.text
+    myCard.website = addContactsView?.websiteField.text
+    
+    SWActions.createCard(withInfo: myCard.dictInfo(), andCompletion: {
+      error, dbRef in
+      if error == nil {
+        
+      } else {
+        
+      }
+    })
+
     if let image = backgroundImageView.image,
        let imageData = UIImagePNGRepresentation(image) //should be a cropped image
     {
-      SWActions.uploadProfileImage(withData: imageData, name: "trial-01")
+      let extraInfo = [
+        "orientation" : image.size.height > image.size.width ? "portrait" : "landscape"
+      ]
+      SWActions.uploadProfileImage(withData: imageData, name: "profile", extra: extraInfo)
     }
     
     if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController

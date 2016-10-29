@@ -9,8 +9,8 @@
 import UIKit
 
 protocol AddContactsOutput {
-  func navigateToHomeViewController()
-  func navigateBackToAddUserInfoView()
+  func didConfirmNavigateToHomeViewController()
+  func didCancelNavigateBackToAddUserInfoView()
 }
 
 class AddContactsView: UIView, UITextFieldDelegate {
@@ -104,12 +104,12 @@ class AddContactsView: UIView, UITextFieldDelegate {
   }
   
   @IBAction func closeBtnDidTap(_ sender: AnyObject) {
-    output?.navigateBackToAddUserInfoView()
+    output?.didCancelNavigateBackToAddUserInfoView()
     hideKeyboard()
   }
   
   @IBAction func confirmBtnDidTap(_ sender: AnyObject) {
-    output?.navigateToHomeViewController()
+    output?.didConfirmNavigateToHomeViewController()
     hideKeyboard()
   }
   
