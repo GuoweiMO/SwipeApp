@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol NavigationViewDelegate {
+  func present(withViewController viewController: UIViewController)
+}
+
 class NavigationView: UIView {
 
   @IBOutlet weak var buttonsContainerView: UIView!
+  
+  var delegate: NavigationViewDelegate?
   
   class func viewFromNib() -> NavigationView?
   {
@@ -32,18 +38,27 @@ class NavigationView: UIView {
   }
 
   @IBAction func myCardBtnDidTap(_ sender: Any) {
+    closeBtnDidTap(sender)
+    if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController {
+      delegate?.present(withViewController: vc)
+    }
   }
   
   @IBAction func myContactsBtnDidTap(_ sender: Any) {
-    
+    closeBtnDidTap(sender)
+    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contacts") as? ContactsViewController {
+      delegate?.present(withViewController: vc)
+    }
   }
   
   @IBAction func searchBtnDidTap(_ sender: Any) {
-    
+    closeBtnDidTap(sender)
+
   }
   
   @IBAction func settingBtnDidTap(_ sender: Any) {
-    
+    closeBtnDidTap(sender)
+
   }
   
 }

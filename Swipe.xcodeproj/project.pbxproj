@@ -11,6 +11,9 @@
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
 		E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63C31D85C743005D2B3C /* SwipeTests.swift */; };
+		E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */; };
+		E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */; };
+		E4145AB41DCE95BB00B905F1 /* ContactViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */; };
 		E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */; };
 		E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */; };
 		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
@@ -62,6 +65,9 @@
 		E40A63BF1D85C743005D2B3C /* SwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63C31D85C743005D2B3C /* SwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTests.swift; sourceTree = "<group>"; };
 		E40A63C51D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = Scenes/Contacts/ContactsViewController.swift; sourceTree = "<group>"; };
+		E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewCell.swift; path = Scenes/Contacts/ContactViewCell.swift; sourceTree = "<group>"; };
+		E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactViewCell.xib; path = Scenes/Contacts/ContactViewCell.xib; sourceTree = "<group>"; };
 		E41CD8461DB95B560025DE8A /* AddProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProfilePicView.xib; path = "Scenes/Create Card/AddProfilePicView.xib"; sourceTree = "<group>"; };
 		E41CD8481DB95D610025DE8A /* AddProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProfilePicView.swift; path = "Scenes/Create Card/AddProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangeProfilePicView.xib; path = "Scenes/Create Card/ChangeProfilePicView.xib"; sourceTree = "<group>"; };
@@ -216,6 +222,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4145AA91DCE8B8D00B905F1 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */,
+				E4145AB01DCE90C200B905F1 /* UI Source */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+		E4145AB01DCE90C200B905F1 /* UI Source */ = {
+			isa = PBXGroup;
+			children = (
+				E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */,
+				E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */,
+			);
+			name = "UI Source";
+			sourceTree = "<group>";
+		};
 		E46447EC1DBBFD4700093C13 /* Receiving View */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +317,7 @@
 				E493F39E1DC519D600D7298C /* Navigation */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
+				E4145AA91DCE8B8D00B905F1 /* Contacts */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -443,6 +468,7 @@
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
 				E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */,
+				E4145AB41DCE95BB00B905F1 /* ContactViewCell.xib in Resources */,
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
@@ -562,12 +588,14 @@
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
+				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
+				E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,
 				E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */,

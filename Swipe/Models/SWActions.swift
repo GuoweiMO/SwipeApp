@@ -35,7 +35,7 @@ class SWActions: NSObject {
       }
     }, withCancel: errorBlock)
   }
-  
+
   class func uploadProfileImage(withData data: Data, name: String, extra: [String: String] ){
     let metadata = FIRStorageMetadata()
     metadata.customMetadata = extra
@@ -44,8 +44,7 @@ class SWActions: NSObject {
       if (error != nil) {
         print(error.debugDescription)
       } else {
-        // Metadata contains file metadata such as size, content-type, and download URL.
-        let downloadURL = metadata!.downloadURL
+        let _ = metadata!.downloadURL
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
       }
     }

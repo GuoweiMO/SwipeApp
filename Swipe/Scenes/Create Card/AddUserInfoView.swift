@@ -33,6 +33,11 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
     return Bundle.main.loadNibNamed("AddUserInfoView", owner: self, options: nil)?.first as? AddUserInfoView
   }
   
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+  }
+  
   override func draw(_ rect: CGRect) {
     super.draw(rect)
     
@@ -42,6 +47,14 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   func textFieldDidBeginEditing(_ textField: UITextField) {
     setLabel(of: textField, hide: false)
     stepIndicatorTopConstraint.constant = 20
+  }
+  
+  func keyboardWillShow(notification:NSNotification){
+    if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+      let keyboardHeight = keyboardSize.height
+      //stepIndicatorTopConstraint.constant = 140 - keyboardHeight
+    }
+
   }
   
   func textFieldShouldClear(_ textField: UITextField) -> Bool {

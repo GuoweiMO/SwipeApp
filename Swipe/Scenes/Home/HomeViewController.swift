@@ -226,16 +226,20 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
   }
   
+}
+
+
+extension HomeViewController: NavigationViewDelegate {
+  
   @IBAction func navigationBtnDidTap(_ sender: Any) {
-    let navView = NavigationView.viewFromNib()
-    view.addSubview(navView!)
-    navView!.frame = view.bounds
-    navView!.buttonsContainerView.frame.origin.y -= navView!.frame.size.height - 60
-    
-    UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseInOut, animations: {
-      navView!.buttonsContainerView.frame.origin.y = 60
-    }, completion: nil)
+    Common.createNavigationIn(viewController: self)
   }
   
-  
+  func present(withViewController viewController: UIViewController) {
+    if !(viewController is HomeViewController) {
+      present(viewController, animated: false, completion: {
+        
+      })
+    }
+  }
 }
