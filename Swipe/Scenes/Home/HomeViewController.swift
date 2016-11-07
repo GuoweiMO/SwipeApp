@@ -62,7 +62,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
         if let image = UIImage(data: data!)
         {
           SWActions.getFileMetadata(ofName: "profile", withCompletion: { (data, error) in
-             if let info = data?.customMetadata {
+             if let info = data {
               if info["orientation"] == "portrait" && image.size.width > image.size.height {
                 self.profilePicView.image = image
                 self.profilePicView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));

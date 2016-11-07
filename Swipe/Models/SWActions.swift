@@ -55,8 +55,10 @@ class SWActions: NSObject {
     storage.child("images/\(uid!)/\(name).png").data(withMaxSize: 5 * 1024 * 1024, completion: completion)
   }
   
-  class func getFileMetadata(ofName name: String, withCompletion completion: @escaping (FIRStorageMetadata?, Error?) -> Void){
-    storage.child("images/\(uid!)/\(name).png").metadata(completion: completion)
+  class func getFileMetadata(ofName name: String, withCompletion completion: @escaping ([String: String]?, Error?) -> Void){
+    storage.child("images/\(uid!)/\(name).png").metadata { (data, error) in
+      completion(data?.customMetadata, error)
+    }
   }
   
 }
