@@ -17,6 +17,7 @@ class ContactsViewController: UIViewController {
   
   @IBOutlet weak var contactsView: UIView!
   var collectionView: UICollectionView?
+  var slideView: ContactsCarouselView?
   
   @IBOutlet weak var searchBarHeight: NSLayoutConstraint!
   
@@ -52,6 +53,7 @@ class ContactsViewController: UIViewController {
   }
   
   func showCollectionView() {
+    slideView?.isHidden = true
     if collectionView == nil {
       let frame = CGRect(x: 40 , y: 0, width: contactsView.bounds.width - 80, height: contactsView.bounds.height)
       collectionView = UICollectionView(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
@@ -62,7 +64,18 @@ class ContactsViewController: UIViewController {
       collectionView?.showsVerticalScrollIndicator = false
       contactsView.addSubview(collectionView!)
     }
+    collectionView?.isHidden = false
     collectionView?.reloadData()
+  }
+  
+  func showSlideCarouselView() {
+    collectionView?.isHidden = true
+    if slideView == nil {
+      slideView = ContactsCarouselView(frame: contactsView.bounds)
+      contactsView.addSubview(slideView!)
+    }
+    slideView?.isHidden = false
+    slideView?.reloadData()
   }
   
   @IBAction func listViewDidSelect(_ sender: ViewModeButton) {
@@ -83,6 +96,8 @@ class ContactsViewController: UIViewController {
     sender.layer.borderWidth = 2.0
     listButton.layer.borderWidth = 0
     gridButton.layer.borderWidth = 0
+    
+    showSlideCarouselView()
   }
   
 }

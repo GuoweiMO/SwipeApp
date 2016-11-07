@@ -33,6 +33,21 @@
 		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
 		E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */; };
+		E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */; };
+		E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */; };
+		E4B1ABD51DD1320800BFB3DB /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */; };
+		E4B1ABD61DD1320800BFB3DB /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */; };
+		E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */; };
+		E4B1ABD81DD1320800BFB3DB /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8D1DBE0C9B004D6A43 /* Ubuntu-L.ttf */; };
+		E4B1ABD91DD1320800BFB3DB /* Ubuntu-LI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8E1DBE0C9B004D6A43 /* Ubuntu-LI.ttf */; };
+		E4B1ABDA1DD1320800BFB3DB /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8F1DBE0C9B004D6A43 /* Ubuntu-M.ttf */; };
+		E4B1ABDB1DD1320800BFB3DB /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B901DBE0C9B004D6A43 /* Ubuntu-MI.ttf */; };
+		E4B1ABDC1DD1320800BFB3DB /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B911DBE0C9B004D6A43 /* Ubuntu-R.ttf */; };
+		E4B1ABDD1DD1320800BFB3DB /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B921DBE0C9B004D6A43 /* Ubuntu-RI.ttf */; };
+		E4B1ABDE1DD1320800BFB3DB /* UbuntuMono-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B931DBE0C9B004D6A43 /* UbuntuMono-B.ttf */; };
+		E4B1ABDF1DD1320800BFB3DB /* UbuntuMono-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */; };
+		E4B1ABE01DD1320800BFB3DB /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */; };
+		E4B1ABE11DD1320800BFB3DB /* UbuntuMono-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
@@ -103,6 +118,8 @@
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModeButton.swift; path = Scenes/Contacts/ViewModeButton.swift; sourceTree = "<group>"; };
 		E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactSlideView.xib; path = Scenes/Contacts/ContactSlideView.xib; sourceTree = "<group>"; };
+		E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactSlideView.swift; path = Scenes/Contacts/ContactSlideView.swift; sourceTree = "<group>"; };
+		E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsCarouselView.swift; path = Scenes/Contacts/ContactsCarouselView.swift; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
@@ -242,6 +259,8 @@
 				E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */,
 				E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */,
 				E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */,
+				E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */,
+				E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */,
 			);
 			name = "UI Source";
 			sourceTree = "<group>";
@@ -464,6 +483,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B1ABD51DD1320800BFB3DB /* Ubuntu-B.ttf in Resources */,
+				E4B1ABD61DD1320800BFB3DB /* Ubuntu-BI.ttf in Resources */,
+				E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */,
+				E4B1ABD81DD1320800BFB3DB /* Ubuntu-L.ttf in Resources */,
+				E4B1ABD91DD1320800BFB3DB /* Ubuntu-LI.ttf in Resources */,
+				E4B1ABDA1DD1320800BFB3DB /* Ubuntu-M.ttf in Resources */,
+				E4B1ABDB1DD1320800BFB3DB /* Ubuntu-MI.ttf in Resources */,
+				E4B1ABDC1DD1320800BFB3DB /* Ubuntu-R.ttf in Resources */,
+				E4B1ABDD1DD1320800BFB3DB /* Ubuntu-RI.ttf in Resources */,
+				E4B1ABDE1DD1320800BFB3DB /* UbuntuMono-B.ttf in Resources */,
+				E4B1ABDF1DD1320800BFB3DB /* UbuntuMono-BI.ttf in Resources */,
+				E4B1ABE01DD1320800BFB3DB /* UbuntuMono-R.ttf in Resources */,
+				E4B1ABE11DD1320800BFB3DB /* UbuntuMono-RI.ttf in Resources */,
 				E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */,
 				E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */,
 				E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */,
@@ -594,6 +626,7 @@
 				E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */,
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
+				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
@@ -602,6 +635,7 @@
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
+				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
 				E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
