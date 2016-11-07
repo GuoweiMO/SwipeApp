@@ -32,6 +32,7 @@
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
+		E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
@@ -101,6 +102,7 @@
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModeButton.swift; path = Scenes/Contacts/ViewModeButton.swift; sourceTree = "<group>"; };
+		E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactSlideView.xib; path = Scenes/Contacts/ContactSlideView.xib; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */,
 				E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */,
 				E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */,
+				E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */,
 			);
 			name = "UI Source";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				E4145AB41DCE95BB00B905F1 /* ContactViewCell.xib in Resources */,
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
+				E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
 				E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */,
 			);

@@ -51,6 +51,11 @@ class AddContactsView: UIView, UITextFieldDelegate {
     return true
   }
   
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    confirmBtnDidTap(textField)
+    return true
+  }
+  
   func setLabel(of textField: UITextField, hide: Bool)
   {
     if textField == emailField

@@ -52,9 +52,16 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   func keyboardWillShow(notification:NSNotification){
     if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
       let keyboardHeight = keyboardSize.height
-      //stepIndicatorTopConstraint.constant = 140 - keyboardHeight
+//      if UIScreen.main.bounds.height <= 667 {
+//        stepIndicatorTopConstraint.constant = 140 - keyboardHeight
+//      }
     }
 
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    confirmBtnDidTap(textField)
+    return true
   }
   
   func textFieldShouldClear(_ textField: UITextField) -> Bool {
