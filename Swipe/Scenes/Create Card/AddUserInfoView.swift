@@ -51,7 +51,7 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   
   func keyboardWillShow(notification:NSNotification){
     if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-      let keyboardHeight = keyboardSize.height
+//      let keyboardHeight = keyboardSize.height
 //      if UIScreen.main.bounds.height <= 667 {
 //        stepIndicatorTopConstraint.constant = 140 - keyboardHeight
 //      }

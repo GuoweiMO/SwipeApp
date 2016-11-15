@@ -32,6 +32,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   var sendingView: SendingView!
   var receivingView: ReceivingView!
   var navigationView: NavigationView?
+  var numberPadView: NumberPadView?
   
   var state: CardState? = .Normal {
     didSet {
@@ -128,29 +129,45 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
         receivingView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
 
       }
-
-      UIView.animate(withDuration: Double(duration), animations: {
-        self.homeCardView.center = offScreenCenter
-        self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        self.homeCardView.alpha = 0
-        
-        if stateToChange == .ToSend
-        {
-          self.sendingView.alpha = 1
-          self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-        }
-        else if stateToChange == .Receiving
-        {
-          self.receivingView.alpha = 1
-          self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-        }
-        
-        }, completion: { (done) in
-          self.state = stateToChange
-          self.homeCardView.alpha = 1
-          self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
-      })
+      
+      creatNumberPad()
+      
+      
+//      UIView.animate(withDuration: Double(duration), animations: {
+//        self.homeCardView.center = offScreenCenter
+//        self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+//        self.homeCardView.alpha = 0
+//        
+//        if stateToChange == .ToSend
+//        {
+//          self.sendingView.alpha = 1
+//          self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+//        }
+//        else if stateToChange == .Receiving
+//        {
+//          self.receivingView.alpha = 1
+//          self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+//        }
+//        
+//        }, completion: { (done) in
+//          self.state = stateToChange
+//          self.homeCardView.alpha = 1
+//          self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
+//      })
     }
+  }
+  
+  func creatNumberPad() {
+    if numberPadView == nil {
+      numberPadView = NumberPadView.viewfromNib()
+      numberPadView?.frame = view.bounds.insetBy(dx: 30, dy: 80)
+      numberPadView?.alpha = 0
+      view.addSubview(numberPadView!)
+    }
+
+    UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseInOut, animations: {
+      self.numberPadView?.alpha = 1
+    }, completion: nil)
   }
   
   func moveSendingViewToFront()
@@ -225,6 +242,8 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   {
     navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
   }
+  
+  
   
 }
 

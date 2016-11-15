@@ -15,30 +15,50 @@ class SWButton: UIButton {
     layer.cornerRadius = bounds.height / 2.0
   }
   
-  func whiteStyle()
-  { 
-    style(with: UIColor.white , border: Common.appRedColor().cgColor)
+  func whiteStyle() {
+    style(withBGColor: UIColor.white , borderColor: Common.appRedColor().cgColor)
   }
   
-  func redStyle()
-  {
-    style(with: Common.appRedColor(), border: UIColor.white.cgColor)
+  func redStyle() {
+    style(withBGColor: Common.appRedColor(), borderColor: UIColor.white.cgColor)
   }
   
-  func whiteStyleNoBorder()
-  {
-    style(with: UIColor.white, border: UIColor.clear.cgColor)
+  func whiteStyleNoBorder() {
+    style(withBGColor: UIColor.white, borderColor: UIColor.clear.cgColor)
   }
   
-  func clearStyleWhiteBorder()
-  {
-    style(with: UIColor.clear, border: UIColor.white.cgColor)
+  func clearStyleWhiteBorder() {
+    style(withBGColor: UIColor.clear, borderColor: UIColor.white.cgColor)
   }
   
-  func style(with bgColor: UIColor, border: CGColor)
-  {
+  func style(withBGColor bgColor: UIColor, borderColor: CGColor) {
     backgroundColor = bgColor
     layer.borderWidth = 2.0
-    layer.borderColor = border
+    layer.borderColor = borderColor
+  }
+}
+
+class SWButton1: SWButton {
+  var btnSelected = false
+  override func draw(_ rect: CGRect) {
+    super.draw(rect)
+    btnSelected = false
+    clearStyleWhiteBorder()
+  }
+  
+  func selectedStyle() {
+    btnSelected = true
+    setTitleColor(Common.appRedColor(), for: .normal)
+    layer.borderColor = Common.appRedColor().cgColor
+  }
+  
+  func defaultStyle() {
+    btnSelected = false
+    clearStyleWhiteBorder()
+  }
+  
+  func disabledStyle() {
+    isEnabled = false
+    alpha = 0.5
   }
 }

@@ -41,9 +41,10 @@ class ContactsCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
     switch(option)
     {
-    case .spacing:
-      return value * 1.1
-    default: return value
+      case .spacing:
+        return value * 1.1
+      default:
+        return value
     }
   }
   

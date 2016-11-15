@@ -48,6 +48,9 @@
 		E4B1ABDF1DD1320800BFB3DB /* UbuntuMono-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */; };
 		E4B1ABE01DD1320800BFB3DB /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */; };
 		E4B1ABE11DD1320800BFB3DB /* UbuntuMono-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */; };
+		E4B1AC121DD8BFE100BFB3DB /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */; };
+		E4B1AC141DD8C1C000BFB3DB /* numberlock.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E4B1AC131DD8C1C000BFB3DB /* numberlock.PNG */; };
+		E4B1AC181DD9112800BFB3DB /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
@@ -120,6 +123,9 @@
 		E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactSlideView.xib; path = Scenes/Contacts/ContactSlideView.xib; sourceTree = "<group>"; };
 		E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactSlideView.swift; path = Scenes/Contacts/ContactSlideView.swift; sourceTree = "<group>"; };
 		E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsCarouselView.swift; path = Scenes/Contacts/ContactsCarouselView.swift; sourceTree = "<group>"; };
+		E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NumberPadView.xib; path = "Scenes/Home/Number Pad Overlay/NumberPadView.xib"; sourceTree = "<group>"; };
+		E4B1AC131DD8C1C000BFB3DB /* numberlock.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberlock.PNG; sourceTree = "<group>"; };
+		E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPadView.swift; path = "Scenes/Home/Number Pad Overlay/NumberPadView.swift"; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 				E46447E61DBB88C700093C13 /* splash.png */,
 				E46447E81DBB88EF00093C13 /* splash-logo.png */,
 				E46447EA1DBB890D00093C13 /* splash-text-logo.png */,
+				E4B1AC131DD8C1C000BFB3DB /* numberlock.PNG */,
 				E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */,
 				E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */,
 				E4BC3DEB1D8C62E600D01BD9 /* Info.plist */,
@@ -292,6 +299,7 @@
 		E46447F21DBCBC8700093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1AC101DD8BF9200BFB3DB /* Number Pad Overlay */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
@@ -325,6 +333,15 @@
 				E493F3A41DC5209100D7298C /* NavigationView.swift */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		E4B1AC101DD8BF9200BFB3DB /* Number Pad Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */,
+				E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */,
+			);
+			name = "Number Pad Overlay";
 			sourceTree = "<group>";
 		};
 		E4BC3DDA1D8C5D7700D01BD9 /* Models */ = {
@@ -484,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B1ABD51DD1320800BFB3DB /* Ubuntu-B.ttf in Resources */,
+				E4B1AC121DD8BFE100BFB3DB /* NumberPadView.xib in Resources */,
 				E4B1ABD61DD1320800BFB3DB /* Ubuntu-BI.ttf in Resources */,
 				E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */,
 				E4B1ABD81DD1320800BFB3DB /* Ubuntu-L.ttf in Resources */,
@@ -492,6 +510,7 @@
 				E4B1ABDB1DD1320800BFB3DB /* Ubuntu-MI.ttf in Resources */,
 				E4B1ABDC1DD1320800BFB3DB /* Ubuntu-R.ttf in Resources */,
 				E4B1ABDD1DD1320800BFB3DB /* Ubuntu-RI.ttf in Resources */,
+				E4B1AC141DD8C1C000BFB3DB /* numberlock.PNG in Resources */,
 				E4B1ABDE1DD1320800BFB3DB /* UbuntuMono-B.ttf in Resources */,
 				E4B1ABDF1DD1320800BFB3DB /* UbuntuMono-BI.ttf in Resources */,
 				E4B1ABE01DD1320800BFB3DB /* UbuntuMono-R.ttf in Resources */,
@@ -552,7 +571,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6FE51DDDC0E9F0AB328CCCFB /* [CP] Copy Pods Resources */ = {
@@ -582,7 +601,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BE35E10F2D94FF2BAEFDA01C /* [CP] Embed Pods Frameworks */ = {
@@ -632,6 +651,7 @@
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
+				E4B1AC181DD9112800BFB3DB /* NumberPadView.swift in Sources */,
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
