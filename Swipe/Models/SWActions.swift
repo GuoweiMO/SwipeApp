@@ -19,11 +19,11 @@ typealias SWCompletion = (Error?, FIRDatabaseReference) -> Void
 
 class SWActions: NSObject {
 
-  class func createCard(withInfo info: [String: String], andCompletion completion: @escaping SWCompletion) {
+  class func createCard(withInfo info: [String: Any], andCompletion completion: @escaping SWCompletion) {
     db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
   }
   
-  class func updateCard(withInfo info: [String: String], andCompletion completion: @escaping SWCompletion) {
+  class func updateCard(withInfo info: [String: Any], andCompletion completion: @escaping SWCompletion) {
     db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
   }
   
@@ -35,7 +35,49 @@ class SWActions: NSObject {
       }
     }, withCancel: errorBlock)
   }
-
+  
+  class func requestToSendCard(withToken token: String, andCompletion completion: @escaping SWCompletion) {
+    let info = ["token": token, "status" : CardStatus.Sending.rawValue]
+    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+  }
+  
+  class func sendCardTimeExpires(andCompletion completion: @escaping SWCompletion) {
+    let info = ["token": nil, "status" : CardStatus.Normal.rawValue]
+    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+  }
+  
+  class func requestToReceiveCard(withToken token: String, senderFoundCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+    let info = ["token": token, "status" : CardStatus.Receiving.rawValue]
+    db.child("cards").child(uid!).setValue(info, withCompletionBlock: {
+      (err, ref) -> Void in
+      queryForSender(withToken: token, withCompletion: completion, andError: errorBlock)
+    })
+  }
+  
+  class func queryForSender(withToken token: String, withCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+    db.child("cards").queryOrdered(byChild: "status").queryEqual(toValue: CardStatus.Sending.rawValue)
+                     .queryOrdered(byChild: "token").queryEqual(toValue: token)
+                     .observe(.value, with: {
+                      (snapshot) -> Void in
+                        if let dataDict = snapshot.value as? [String : AnyObject] {
+                          completion(dataDict)
+                        }
+                     }, withCancel: errorBlock )
+  }
+  
+  class func updateContactsWhenCardReceived(fromSender sender: String) {
+    let contactsRef = db.child("cards").child("\(uid!)/contacts")
+    contactsRef.observe(.value, with: {
+      (snapshot) -> Void in
+      var contacts = snapshot.value as? [String]
+      if contacts != nil {
+        contacts!.append(sender)
+        print(contacts!)
+        contactsRef.setValue(contacts!)
+      }
+    })
+  }
+  
   class func uploadProfileImage(withData data: Data, name: String, extra: [String: String] ){
     let metadata = FIRStorageMetadata()
     metadata.customMetadata = extra

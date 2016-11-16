@@ -25,7 +25,7 @@ class SWCard {
   var website: String?
   var status: CardStatus = .Normal
   
-  func dictInfo() -> [String: String] {
+  func dictInfo() -> [String: Any] {
     return [
             "fullName" : fullName,
             "jobTitle" : jobTitle,
@@ -33,6 +33,7 @@ class SWCard {
             "email"    : email,
             "mobile"   : mobile ?? "",
             "website"  : website ?? "",
+            "contacts" : [],
             "status"   : status.rawValue
     ]
     
