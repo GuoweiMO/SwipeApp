@@ -8,30 +8,21 @@
 
 import UIKit
 
-class AddProfilePicViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-  
-  var imagePicker: UIImagePickerController?
-  
+protocol ImagePickerProtocol: UIImagePickerControllerDelegate, UINavigationControllerDelegate { }
+
+class AddProfilePicViewController: UIViewController, ImagePickerProtocol {
   override func viewDidLoad() {
     super.viewDidLoad()
   }
   
   @IBAction func cameraButtonDidTap(_ sender: Any) {
-    createPhotoPicker(with: .camera)
+    let vc = Common.createImagePicker(withType: .camera, andDelegate: self)
+    present(vc, animated: true, completion: nil)
   }
   
   @IBAction func photoButtonDidTap(_ sender: Any) {
-    createPhotoPicker(with: .photoLibrary)
-  }
-
-  private func createPhotoPicker(with type: UIImagePickerControllerSourceType) {
-    if imagePicker == nil {
-      imagePicker = UIImagePickerController()
-      imagePicker?.allowsEditing = false
-      imagePicker?.delegate = self
-    }
-    imagePicker!.sourceType = type
-    present(imagePicker!, animated: true, completion: nil)
+    let vc = Common.createImagePicker(withType: .photoLibrary, andDelegate: self)
+    present(vc, animated: true, completion: nil)
   }
   
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

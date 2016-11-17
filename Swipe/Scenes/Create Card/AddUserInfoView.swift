@@ -35,7 +35,6 @@ class AddUserInfoView: UIView, UITextFieldDelegate {
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
   }
   
   override func draw(_ rect: CGRect) {

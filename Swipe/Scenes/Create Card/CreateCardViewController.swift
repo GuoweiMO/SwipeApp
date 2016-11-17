@@ -127,7 +127,7 @@ class CreateCardViewController: UIViewController,
   func didConfirmNavigateToHomeViewController() {
     
     myCard.email = addContactsView?.emailField.text
-    myCard.mobile = addContactsView?.phoneField.text
+    myCard.phone1 = addContactsView?.phoneField.text
     myCard.website = addContactsView?.websiteField.text
     
     SWActions.createCard(withInfo: myCard.dictInfo(), andCompletion: {

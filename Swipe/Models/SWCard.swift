@@ -17,13 +17,19 @@ enum CardStatus: String {
 
 class SWCard {
 
+  static let myCard = SWCard()
+  
+  var largeProfileImage: UIImage?
+  
   var fullName: String!
   var jobTitle: String!
   var employer: String!
   var email: String!
-  var mobile: String?
+  var phone1: String!
+  var phone2: String?
   var website: String?
   var status: CardStatus = .Normal
+  var contacts = [String]()
   
   func dictInfo() -> [String: Any] {
     return [
@@ -31,9 +37,10 @@ class SWCard {
             "jobTitle" : jobTitle,
             "employer" : employer,
             "email"    : email,
-            "mobile"   : mobile ?? "",
+            "phone1"   : phone1,
+            "phone2"   : phone2 ?? "",
             "website"  : website ?? "",
-            "contacts" : [],
+            "contacts" : contacts,
             "status"   : status.rawValue
     ]
     

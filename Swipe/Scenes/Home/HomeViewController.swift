@@ -43,6 +43,10 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    
+    profilePicView.image = SWCard.myCard.largeProfileImage
+
+    
     updateNavBarTitleImage(named: "text-logo-red")
     navBar.setBackgroundImage(UIImage(), for:.default)
     navBar.shadowImage = UIImage()

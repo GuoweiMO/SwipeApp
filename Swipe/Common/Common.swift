@@ -35,4 +35,12 @@ class Common: NSObject {
     }
     return nil
   }
+  
+  class func createImagePicker(withType type: UIImagePickerControllerSourceType, andDelegate delegate: ImagePickerProtocol) -> UIImagePickerController {
+    let imagePicker = UIImagePickerController()
+    imagePicker.allowsEditing = false
+    imagePicker.delegate = delegate
+    imagePicker.sourceType = type
+    return imagePicker
+  }
 }

@@ -12,16 +12,14 @@ class AddSocialMediaViewController: UIViewController {
   
   @IBOutlet weak var backgroundImageView: UIImageView!
   
-  var bgImage: UIImage?
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    backgroundImageView.image = bgImage
+    backgroundImageView.image = SWCard.myCard.largeProfileImage
   }
   
   @IBAction func doneButtonDidTap(_ sender: Any) {
+    
     initHomeController()
-    navigationController?.popToRootViewController(animated: false)
   }
   
   func initHomeController() {
@@ -30,8 +28,12 @@ class AddSocialMediaViewController: UIViewController {
       let userDefault = UserDefaults.standard
       userDefault.setValue(true, forKey: "hasCard")
       
-      vc.profilePicView.image = bgImage
-      present(vc, animated: false, completion: nil)
+      navigationController?.pushViewController(vc, animated: true)
     }
   }
+  
+  @IBAction func prevStepButtonDidTap(_ sender: Any) {
+    _ = navigationController?.popViewController(animated: true)
+  }
+
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChangeProfilePicViewController: UIViewController, UIScrollViewDelegate {
+class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIScrollViewDelegate {
   
   @IBOutlet weak var imageScrollView: UIScrollView!
   @IBOutlet weak var yesButton: SWButton!
@@ -27,14 +27,16 @@ class ChangeProfilePicViewController: UIViewController, UIScrollViewDelegate {
     imageScrollView.bounces = false
     imageScrollView.showsVerticalScrollIndicator = false
     imageScrollView.showsHorizontalScrollIndicator = false
+    
+    if profileImage != nil {
+      setupBackgroundImage()
+    }
   }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     yesButton.clearStyleWhiteBorder()
     noButton.clearStyleWhiteBorder()
-    
-    setupBackgroundImage()
   }
   
   private func setupBackgroundImage() {
@@ -43,9 +45,9 @@ class ChangeProfilePicViewController: UIViewController, UIScrollViewDelegate {
         imageView = UIImageView()
         imageScrollView.addSubview(imageView!)
       }
-      imageView?.image = image
-      imageView?.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: image.size)
-      imageScrollView.contentSize = image.size
+      imageView!.image = image
+      imageView!.frame = CGRect(x: 0, y: 0, width: image.size.width/2, height: image.size.height/2)
+      imageScrollView.contentSize = imageView!.bounds.size
     }
   }
   
@@ -67,11 +69,27 @@ class ChangeProfilePicViewController: UIViewController, UIScrollViewDelegate {
 
   }
   
+  @IBAction func cameraButtonDidTap(_ sender: Any) {
+    let vc = Common.createImagePicker(withType: .camera, andDelegate: self)
+    present(vc, animated: true, completion: nil)
+  }
+  
+  @IBAction func photoButtonDidTap(_ sender: Any) {
+    let vc = Common.createImagePicker(withType: .photoLibrary, andDelegate: self)
+    present(vc, animated: true, completion: nil)
+  }
+  
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+      picker.dismiss(animated: true, completion: nil)
+      profileImage = pickedImage
+      setupBackgroundImage()
+    }
+  }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let outputImage = Common.crop(profileImage!, toRect: view.frame),
-       let vc = segue.destination as? AddUserInfoViewController,
-       segue.identifier == "add info" {
-       vc.bgImage = outputImage
+    if let outputImage = Common.crop(profileImage!, toRect: view.frame) {
+       SWCard.myCard.largeProfileImage = outputImage
     }
   }
   

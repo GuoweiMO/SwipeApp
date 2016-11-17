@@ -52,6 +52,7 @@
 		E4B1AC181DD9112800BFB3DB /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */; };
 		E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC1F1DDD05D300BFB3DB /* AddProfilePicViewController.swift */; };
 		E4B1AC221DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC211DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift */; };
+		E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
 		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
@@ -132,6 +133,7 @@
 		E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPadView.swift; path = "Scenes/Home/Number Pad Overlay/NumberPadView.swift"; sourceTree = "<group>"; };
 		E4B1AC1F1DDD05D300BFB3DB /* AddProfilePicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddProfilePicViewController.swift; path = "Scenes/Create Card/Add Profile Pic/AddProfilePicViewController.swift"; sourceTree = "<group>"; };
 		E4B1AC211DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicViewController.swift; path = "Scenes/Create Card/Change Profile Pic/ChangeProfilePicViewController.swift"; sourceTree = "<group>"; };
+		E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoInputView.swift; path = Common/InfoInputView.swift; sourceTree = "<group>"; };
 		E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
 		E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCardViewController.swift; path = "Scenes/Create Card/CreateCardViewController.swift"; sourceTree = "<group>"; };
@@ -414,8 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				E493F39E1DC519D600D7298C /* Navigation */,
-				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
+				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4145AA91DCE8B8D00B905F1 /* Contacts */,
 			);
 			name = Scenes;
@@ -426,6 +428,7 @@
 			children = (
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
 				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
+				E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -729,6 +732,7 @@
 				E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
+				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
 				E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */,
