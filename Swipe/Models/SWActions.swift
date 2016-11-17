@@ -78,6 +78,16 @@ class SWActions: NSObject {
     })
   }
   
+  class func retrieveContactList(withCompletion completion:@escaping ([String]) -> Void) {
+    let contactsRef = db.child("cards").child("\(uid!)/contacts")
+    contactsRef.observe(.value, with: {
+      (snapshot) -> Void in
+      if let contacts = snapshot.value as? [String] {
+        completion(contacts)
+      }
+    })
+  }
+  
   class func uploadProfileImage(withData data: Data, name: String, extra: [String: String] ){
     let metadata = FIRStorageMetadata()
     metadata.customMetadata = extra
