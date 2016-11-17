@@ -63,6 +63,18 @@ class ChangeProfilePicViewController: UIViewController, UIScrollViewDelegate {
     setPhotoButtons(hidden: sender.currentTitle == "NO")
   }
   
+  @IBAction func yesButtonDidTap(_ sender: UIButton) {
+
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let outputImage = Common.crop(profileImage!, toRect: view.frame),
+       let vc = segue.destination as? AddUserInfoViewController,
+       segue.identifier == "add info" {
+       vc.bgImage = outputImage
+    }
+  }
+  
   func setPhotoButtons(hidden: Bool) {
     cameraButton.isHidden = hidden
     photoButton.isHidden = hidden

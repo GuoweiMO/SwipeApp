@@ -28,4 +28,11 @@ class Common: NSObject {
       navView!.buttonsContainerView.frame.origin.y = 60
     }, completion: nil)
   }
+  
+  class func crop(_ image: UIImage, toRect rect: CGRect) -> UIImage? {
+    if let imageRef = image.cgImage?.cropping(to: rect) {
+      return UIImage(cgImage: imageRef)
+    }
+    return nil
+  }
 }

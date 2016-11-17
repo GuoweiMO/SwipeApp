@@ -24,7 +24,6 @@
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
 		E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46447ED1DBBFD6300093C13 /* ReceivingView.swift */; };
 		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
-		E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46D06771DC0FA23004066F8 /* SWActions.swift */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
 		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
@@ -63,6 +62,10 @@
 		E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */; };
 		E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */; };
 		E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWButton.swift */; };
+		E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2531DDDF48B0054BF01 /* SWActions.swift */; };
+		E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */; };
+		E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */; };
+		E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */; };
 		F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +104,6 @@
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
 		E46447ED1DBBFD6300093C13 /* ReceivingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivingView.swift; path = "Scenes/Home/Receiving View/ReceivingView.swift"; sourceTree = "<group>"; };
 		E46447EE1DBBFD6300093C13 /* ReceivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReceivingView.xib; path = "Scenes/Home/Receiving View/ReceivingView.xib"; sourceTree = "<group>"; };
-		E46D06771DC0FA23004066F8 /* SWActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWActions.swift; path = Models/SWActions.swift; sourceTree = "<group>"; };
 		E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddContactsView.xib; path = "Scenes/Create Card/AddContactsView.xib"; sourceTree = "<group>"; };
 		E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactsView.swift; path = "Scenes/Create Card/AddContactsView.swift"; sourceTree = "<group>"; };
 		E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-B.ttf"; path = "Supporting Files/Fonts/Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -142,6 +144,10 @@
 		E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendingView.swift; path = "Scenes/Home/Sending View/SendingView.swift"; sourceTree = "<group>"; };
 		E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SendingView.xib; path = "Scenes/Home/Sending View/SendingView.xib"; sourceTree = "<group>"; };
 		E4BC3E001D90780500D01BD9 /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWButton.swift; path = Common/SWButton.swift; sourceTree = "<group>"; };
+		E4C5B2531DDDF48B0054BF01 /* SWActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWActions.swift; path = API/SWActions.swift; sourceTree = "<group>"; };
+		E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoViewController.swift; path = "Scenes/Create Card/Add User Info/AddUserInfoViewController.swift"; sourceTree = "<group>"; };
+		E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactInfoViewController.swift; path = "Scenes/Create Card/Add Contact Info/AddContactInfoViewController.swift"; sourceTree = "<group>"; };
+		E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSocialMediaViewController.swift; path = "Scenes/Create Card/Add Social Media/AddSocialMediaViewController.swift"; sourceTree = "<group>"; };
 		F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +219,7 @@
 				E4BC3DDC1D8C5D9200D01BD9 /* Common */,
 				E4BC3DDA1D8C5D7700D01BD9 /* Models */,
 				E4BC3DDB1D8C5D8400D01BD9 /* Scenes */,
+				E4C5B2521DDDF3850054BF01 /* API */,
 				E40A63EE1D88A61B005D2B3C /* Supporting Files */,
 			);
 			path = Swipe;
@@ -359,6 +366,7 @@
 		E4B1AC1A1DDBC29200BFB3DB /* Add User Info */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */,
 			);
 			name = "Add User Info";
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 		E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */,
 			);
 			name = "Add Contact Info";
 			sourceTree = "<group>";
@@ -380,6 +389,7 @@
 		E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */,
 			);
 			name = "Add Social media";
 			sourceTree = "<group>";
@@ -396,7 +406,6 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */,
-				E46D06771DC0FA23004066F8 /* SWActions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -453,6 +462,14 @@
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
 			name = "Sending view";
+			sourceTree = "<group>";
+		};
+		E4C5B2521DDDF3850054BF01 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,18 +713,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */,
-				E46D06781DC0FA23004066F8 /* SWActions.swift in Sources */,
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
+				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
 				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */,
+				E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
 				E4B1AC181DD9112800BFB3DB /* NumberPadView.swift in Sources */,
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
+				E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
@@ -716,6 +735,7 @@
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,
 				E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */,
+				E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */,
 				E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */,
 				E4B1AC221DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift in Sources */,
 			);
