@@ -20,12 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     FIRApp.configure()
     
-    let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
-    if (UserDefaults.standard.value(forKey: "hasCard") as? Bool) == true
-    {
-      window?.rootViewController = vc
-      window?.makeKeyAndVisible()
-    }    
+//    let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
+//    if (UserDefaults.standard.value(forKey: "hasCard") as? Bool) == true
+//    {
+//      window?.rootViewController = vc
+//      window?.makeKeyAndVisible()
+//    }    
     return true
   }
 
