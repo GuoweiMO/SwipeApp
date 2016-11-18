@@ -43,6 +43,16 @@ class SWCard {
             "contacts" : contacts,
             "status"   : status.rawValue
     ]
-    
+  }
+  
+  func updateCard(withData data: [String: Any]) {
+    fullName = data["fullName"] as? String
+    jobTitle = data["jobTitle"] as? String
+    employer = data["employer"] as? String
+    email    = data["email"] as? String
+    phone1   = data["phone1"] as? String
+    phone2   = data["phone2"] as? String
+    website  = data["website"] as? String
+    contacts = data["contacts"] as? [String] ?? []
   }
 }

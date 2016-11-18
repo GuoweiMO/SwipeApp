@@ -299,14 +299,17 @@
                     <rect key="frame" x="0.0" y="339" width="272" height="85"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-8F-RzZ">
-                            <rect key="frame" x="80" y="20" width="30" height="32"/>
+                            <rect key="frame" x="75.5" y="20" width="39" height="36"/>
                             <fontDescription key="fontDescription" name="UbuntuMono-Bold" family="Ubuntu Mono" pointSize="20"/>
                             <state key="normal" title="YES">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="yesButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZEq-IH-YWs"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-7u-21Y">
-                            <rect key="frame" x="162.5" y="20" width="30" height="32"/>
+                            <rect key="frame" x="162.5" y="20" width="30" height="36"/>
                             <fontDescription key="fontDescription" name="UbuntuMono-Bold" family="Ubuntu Mono" pointSize="20"/>
                             <state key="normal" title="NO">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

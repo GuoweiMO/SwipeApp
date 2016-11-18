@@ -63,6 +63,24 @@ class NumberPadView: UIView {
     thirdNumberLabel.textColor = UIColor.white
   }
   
+  @IBAction func yesButtonDidTap(_ sender: UIButton) {
+    let token = "\(firstNumberLabel.text!)\(secondNumberLabel.text!)\(thirdNumberLabel.text!)"
+    guard token.containsNumberOnly() else { return }
+    SWActions.requestToSendCard(withToken: token, andCompletion: {
+      (err, dbRef) -> Void in
+      if err == nil {
+        self.animateFadeOut()
+      }
+    })
+  }
   
-  
+  func animateFadeOut() {
+    UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseOut, animations: {
+      self.alpha = 0
+    }, completion:{
+      completed in
+      self.isHidden = true
+      self.alpha = 1
+    })
+  }
 }

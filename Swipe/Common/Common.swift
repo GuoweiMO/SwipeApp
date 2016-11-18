@@ -43,4 +43,32 @@ class Common: NSObject {
     imagePicker.sourceType = type
     return imagePicker
   }
+  
+  class func saveImage(image: UIImage, named name: String) {
+    let imageData = UIImagePNGRepresentation(image)
+    let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    let imageURL = documentsURL.appendingPathComponent("\(name).png")
+    
+    do {
+      try imageData?.write(to: imageURL)
+    }
+    catch {
+      
+    }
+    UserDefaults.standard.set(imageURL.absoluteString, forKey: "imagePath")
+  }
+  
+  class func retrieveImage(fromPath path: String) -> UIImage? {
+    if let imagePath = UserDefaults.standard.string(forKey: "imagePath") {
+      return UIImage(contentsOfFile: imagePath)
+    }
+    return nil
+  }
+}
+
+extension String {
+  func containsNumberOnly() -> Bool {
+    let notDigits = NSCharacterSet.decimalDigits.inverted
+    return self.rangeOfCharacter(from: notDigits) == nil
+  }
 }

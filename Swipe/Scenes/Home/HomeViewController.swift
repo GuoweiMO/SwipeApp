@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum CardState {
+enum CardViewState {
   case Normal
   case ToSend
   case Sending
@@ -34,7 +34,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   var navigationView: NavigationView?
   var numberPadView: NumberPadView?
   
-  var state: CardState? = .Normal {
+  var state: CardViewState? = .Normal {
     didSet {
       setCardView(toState: state!)
     }
@@ -44,43 +44,39 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
-    profilePicView.image = SWCard.myCard.largeProfileImage
-
+    fetchProfileImageOnLoad()
     
     updateNavBarTitleImage(named: "text-logo-red")
-    navBar.setBackgroundImage(UIImage(), for:.default)
-    navBar.shadowImage = UIImage()
-    navBar.backgroundColor = UIColor.clear
+    makeNavBarTransparent()
     
     SWActions.retrieveMyCard(withCompletion: {
       (dataDict) in
-        self.fullNameLabel.text = dataDict["fullName"] as? String
-        self.jobTitleLabel.text = dataDict["jobTitle"] as? String
-        self.workPlaceLabel.text = "at " + (dataDict["employer"] as! String)
+        SWCard.myCard.updateCard(withData: dataDict)
+        self.updateCardViewWithMyCard()
     }, andError: {
       err in
     })
     
-    SWActions.downloadProfileImage(withName: "profile", completion: {
-      data, error in
-      if data != nil && error == nil {
-        if let image = UIImage(data: data!)
-        {
-          SWActions.getFileMetadata(ofName: "profile", withCompletion: { (data, error) in
-             if let info = data {
-              if info["orientation"] == "portrait" && image.size.width > image.size.height {
-                self.profilePicView.image = image
-                self.profilePicView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));
-              }
-              
-            }
-          })
-          
-          self.profilePicView.contentMode = .scaleAspectFill
-          UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }
-      }
-    })
+//    SWActions.downloadProfileImage(withName: "profile", completion: {
+//      data, error in
+//      if data != nil && error == nil {
+//        if let image = UIImage(data: data!)
+//        {
+//          SWActions.getFileMetadata(ofName: "profile", withCompletion: { (data, error) in
+//             if let info = data {
+//              if info["orientation"] == "portrait" && image.size.width > image.size.height {
+//                self.profilePicView.image = image
+//                self.profilePicView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));
+//              }
+//              
+//            }
+//          })
+//          
+//          self.profilePicView.contentMode = .scaleAspectFill
+//          UIApplication.shared.isNetworkActivityIndicatorVisible = false
+//        }
+//      }
+//    })
     
     homeCardView.isUserInteractionEnabled = true
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))
@@ -103,18 +99,45 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     sendingView.frame = self.view.bounds
-
   }
   
-  func homeCardDidSwipe(sender: UIGestureRecognizer)
-  {
-    if sender.state == .began
-    {
+  func fetchProfileImageOnLoad() {
+    if SWCard.myCard.largeProfileImage == nil {
+      if let imagePath = UserDefaults.standard.string(forKey: "imagePath"),
+        let image = Common.retrieveImage(fromPath: imagePath) {
+        SWCard.myCard.largeProfileImage = image
+      }
+    }
+    updateProfileImage()
+  }
+  
+  func updateNavBarTitleImage(named name: String) {
+    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
+  }
+  
+  func updateProfileImage() {
+    profilePicView.image = SWCard.myCard.largeProfileImage
+  }
+  
+  func updateCardViewWithMyCard(){
+    self.fullNameLabel.text = SWCard.myCard.fullName
+    self.jobTitleLabel.text = SWCard.myCard.jobTitle
+    self.workPlaceLabel.text = "at \(SWCard.myCard.employer)"
+  }
+  
+  func makeNavBarTransparent() {
+    navBar.setBackgroundImage(UIImage(), for:.default)
+    navBar.shadowImage = UIImage()
+    navBar.backgroundColor = UIColor.clear
+  }
+  
+  func homeCardDidSwipe(sender: UIGestureRecognizer) {
+    if sender.state == .began {
       let yPoints = view.frame.height
       let velocityY = (sender as! UIPanGestureRecognizer).velocity(in: homeCardView).y
       let duration = abs((yPoints / velocityY) / 2.0)
       var offScreenCenter = homeCardView.center
-      var stateToChange: CardState?
+      var stateToChange: CardViewState?
       
       guard velocityY < -200 || velocityY > 200 else { return}
       
@@ -134,34 +157,34 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
 
       }
       
-      creatNumberPad()
+      animateNumberPad()
       
       
-//      UIView.animate(withDuration: Double(duration), animations: {
-//        self.homeCardView.center = offScreenCenter
-//        self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-//        self.homeCardView.alpha = 0
-//        
-//        if stateToChange == .ToSend
-//        {
-//          self.sendingView.alpha = 1
-//          self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-//        }
-//        else if stateToChange == .Receiving
-//        {
-//          self.receivingView.alpha = 1
-//          self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-//        }
-//        
-//        }, completion: { (done) in
-//          self.state = stateToChange
-//          self.homeCardView.alpha = 1
-//          self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
-//      })
+      UIView.animate(withDuration: Double(duration), animations: {
+        self.homeCardView.center = offScreenCenter
+        self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        self.homeCardView.alpha = 0
+        
+        if stateToChange == .ToSend
+        {
+          self.sendingView.alpha = 1
+          self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+        else if stateToChange == .Receiving
+        {
+          self.receivingView.alpha = 1
+          self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+        
+        }, completion: { (done) in
+          self.state = stateToChange
+          self.homeCardView.alpha = 1
+          self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
+      })
     }
   }
   
-  func creatNumberPad() {
+  func animateNumberPad() {
     if numberPadView == nil {
       numberPadView = NumberPadView.viewfromNib()
       numberPadView?.frame = view.bounds.insetBy(dx: 30, dy: 80)
@@ -172,11 +195,6 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseInOut, animations: {
       self.numberPadView?.alpha = 1
     }, completion: nil)
-  }
-  
-  func moveSendingViewToFront()
-  {
-    view.bringSubview(toFront: sendingView)
   }
   
   func refreshHomeView()
@@ -200,7 +218,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     state = .Normal
   }
   
-  func setCardView(toState state:CardState)
+  func setCardView(toState state:CardViewState)
   {
     switch state {
     case .Normal:
@@ -241,13 +259,6 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
       break
     }
   }
-  
-  func updateNavBarTitleImage(named name: String)
-  {
-    navBar.items?.first?.titleView = UIImageView(image: UIImage(named: name))
-  }
-  
-  
   
 }
 

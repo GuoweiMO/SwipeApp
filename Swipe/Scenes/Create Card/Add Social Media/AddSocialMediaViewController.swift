@@ -18,16 +18,25 @@ class AddSocialMediaViewController: UIViewController {
   }
   
   @IBAction func doneButtonDidTap(_ sender: Any) {
-    
+    saveMyCardInfo()
     initHomeController()
+  }
+  
+  func saveMyCardInfo() {
+    Common.saveImage(image: SWCard.myCard.largeProfileImage!, named: "profile")
+    SWActions.createCard(withInfo: SWCard.myCard.dictInfo(), andCompletion: {
+      error, dbRef in
+      if error == nil {
+      } else {
+        
+      }
+    })
   }
   
   func initHomeController() {
     if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as? HomeViewController
     {
-      let userDefault = UserDefaults.standard
-      userDefault.setValue(true, forKey: "hasCard")
-      
+      UserDefaults.standard.setValue(true, forKey: "hasCard")
       navigationController?.pushViewController(vc, animated: true)
     }
   }

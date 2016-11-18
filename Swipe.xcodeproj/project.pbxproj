@@ -312,7 +312,7 @@
 		E46447F21DBCBC8700093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
-				E4B1AC101DD8BF9200BFB3DB /* Number Pad Overlay */,
+				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
@@ -348,13 +348,13 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
-		E4B1AC101DD8BF9200BFB3DB /* Number Pad Overlay */ = {
+		E4B1AC101DD8BF9200BFB3DB /* Number Pad View */ = {
 			isa = PBXGroup;
 			children = (
 				E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */,
 				E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */,
 			);
-			name = "Number Pad Overlay";
+			name = "Number Pad View";
 			sourceTree = "<group>";
 		};
 		E4B1AC191DDBC27B00BFB3DB /* Add Profile Pic */ = {
@@ -436,13 +436,13 @@
 		E4BC3DE31D8C5DF200D01BD9 /* Create Card */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5B25B1DDF00DA0054BF01 /* Archived */,
 				E4B1AC1B1DDBC2A900BFB3DB /* Landing */,
 				E4B1AC191DDBC27B00BFB3DB /* Add Profile Pic */,
 				E4B1AC1E1DDD056600BFB3DB /* Change Profile Pic */,
 				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
 				E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */,
 				E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */,
-				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
 				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
 			name = "Create Card";
@@ -473,6 +473,14 @@
 				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
+			isa = PBXGroup;
+			children = (
+				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
+			);
+			name = Archived;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
