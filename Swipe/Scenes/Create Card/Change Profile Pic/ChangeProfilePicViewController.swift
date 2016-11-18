@@ -88,7 +88,11 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let outputImage = Common.crop(profileImage!, toRect: view.frame) {
+    let visiableRect = CGRect(x: imageScrollView.contentOffset.x * 2,
+                              y: imageScrollView.contentOffset.y * 2,
+                              width: imageScrollView.frame.width * 2,
+                              height: imageScrollView.frame.height * 2)
+    if let outputImage = Common.crop(profileImage!, toRect: visiableRect) {
        SWCard.myCard.largeProfileImage = outputImage
     }
   }

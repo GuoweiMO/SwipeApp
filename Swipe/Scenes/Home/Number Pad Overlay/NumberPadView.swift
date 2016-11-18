@@ -84,7 +84,7 @@ class NumberPadView: UIView {
       SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (senderInfo) in
         self.animateFadeOut()
         let senderCard = SWCard()
-        senderCard.updateCard(withData: senderInfo)
+        senderCard.updateCard(withFullData: senderInfo)
         
 //        SWActions.updateContactsWhenCardReceived(fromSender: )
         

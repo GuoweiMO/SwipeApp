@@ -23,7 +23,7 @@ class AddSocialMediaViewController: UIViewController {
   }
   
   func saveMyCardInfo() {
-    Common.saveImage(image: SWCard.myCard.largeProfileImage!, named: "profile")
+    Common.saveImage(image: SWCard.myCard.largeProfileImage!, toKeyPath: "largeImage")
     SWActions.createCard(withInfo: SWCard.myCard.dictInfo(), andCompletion: {
       error, dbRef in
       if error == nil {

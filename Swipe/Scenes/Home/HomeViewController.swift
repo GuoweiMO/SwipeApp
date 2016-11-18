@@ -51,7 +51,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     
     SWActions.retrieveMyCard(withCompletion: {
       (dataDict) in
-        SWCard.myCard.updateCard(withData: dataDict)
+        SWCard.myCard.updateCard(withFullData: dataDict)
         self.updateCardViewWithMyCard()
     }, andError: {
       err in
@@ -103,9 +103,8 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   
   func fetchProfileImageOnLoad() {
     if SWCard.myCard.largeProfileImage == nil {
-      if let imagePath = UserDefaults.standard.string(forKey: "imagePath"),
-        let image = Common.retrieveImage(fromPath: imagePath) {
-        SWCard.myCard.largeProfileImage = image
+      if let image = Common.retrieveImage(fromKeyPath: "largeImage") {
+         SWCard.myCard.largeProfileImage = image
       }
     }
     updateProfileImage()
@@ -120,9 +119,9 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
   }
   
   func updateCardViewWithMyCard(){
-    self.fullNameLabel.text = SWCard.myCard.fullName
-    self.jobTitleLabel.text = SWCard.myCard.jobTitle
-    self.workPlaceLabel.text = "at \(SWCard.myCard.employer)"
+    fullNameLabel.text = SWCard.myCard.fullName
+    jobTitleLabel.text = SWCard.myCard.jobTitle
+    workPlaceLabel.text = "at \(SWCard.myCard.employer!)"
   }
   
   func makeNavBarTransparent() {
@@ -158,7 +157,6 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
       }
       
       animateNumberPad()
-      
       
       UIView.animate(withDuration: Double(duration), animations: {
         self.homeCardView.center = offScreenCenter
@@ -196,6 +194,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
 
     UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseInOut, animations: {
       self.numberPadView?.alpha = 1
+      self.numberPadView?.isHidden = false
     }, completion: nil)
   }
   

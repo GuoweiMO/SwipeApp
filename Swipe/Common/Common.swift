@@ -46,23 +46,14 @@ class Common: NSObject {
     return imagePicker
   }
   
-  class func saveImage(image: UIImage, named name: String) {
+  class func saveImage(image: UIImage, toKeyPath keyPath: String) {
     let imageData = UIImagePNGRepresentation(image)
-    let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-    let imageURL = documentsURL.appendingPathComponent("\(name).png")
-    
-    do {
-      try imageData?.write(to: imageURL)
-    }
-    catch {
-      
-    }
-    UserDefaults.standard.set(imageURL.absoluteString, forKey: "imagePath")
+    UserDefaults.standard.set(imageData, forKey: keyPath)
   }
   
-  class func retrieveImage(fromPath path: String) -> UIImage? {
-    if let imagePath = UserDefaults.standard.string(forKey: "imagePath") {
-      return UIImage(contentsOfFile: imagePath)
+  class func retrieveImage(fromKeyPath keyPath: String) -> UIImage? {
+    if let imageData = UserDefaults.standard.data(forKey: keyPath) {
+      return UIImage(data: imageData)
     }
     return nil
   }

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,31 +17,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhZ-Pg-YCP">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="160" id="pcW-C3-v2j"/>
-                    </constraints>
-                </view>
                 <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receiver" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-oO-dh4">
+                    <rect key="frame" x="107.5" y="100" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="1Uk-oO-dh4" secondAttribute="height" id="7CG-9T-q9e"/>
                         <constraint firstAttribute="height" constant="160" id="eog-XX-ghL"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your card to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-Ep-bXw">
+                    <rect key="frame" x="38" y="284" width="299" height="21"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
+                    <rect key="frame" x="38" y="317" width="299" height="24"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-ay-eOz" userLabel="Buttons Container">
+                    <rect key="frame" x="0.0" y="427" width="375" height="240"/>
                     <subviews>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRo-pH-odB" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="92.5" y="24" width="190" height="60"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="5Qe-fI-OwG"/>
@@ -53,6 +55,7 @@
                             </connections>
                         </button>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-fN-iqg" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="92.5" y="108" width="190" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="190" id="SyL-0f-FqA"/>
                                 <constraint firstAttribute="height" constant="60" id="pAm-Wb-QIe"/>
@@ -66,6 +69,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-v6-hBo" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="60" y="40" width="80" height="80"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="2bj-Jx-pVJ"/>
@@ -80,6 +84,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-Tl-QBq" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="235" y="40" width="80" height="80"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="1Fe-BB-ERJ"/>
@@ -110,19 +115,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="1Uk-oO-dh4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="6Hz-ls-Aog"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="7Sc-V5-0qS"/>
-                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="rhZ-Pg-YCP" secondAttribute="bottom" constant="24" id="9pe-Wg-LLO"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="30" id="D1Y-fS-8iT"/>
                 <constraint firstItem="TKU-K4-Y0o" firstAttribute="top" secondItem="GQ6-Ep-bXw" secondAttribute="bottom" constant="12" id="F20-mm-gX8"/>
-                <constraint firstItem="rhZ-Pg-YCP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="HuI-Wn-Z6L"/>
                 <constraint firstAttribute="trailingMargin" secondItem="TKU-K4-Y0o" secondAttribute="trailing" constant="30" id="LSW-9W-bVK"/>
-                <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerY" secondItem="rhZ-Pg-YCP" secondAttribute="centerY" id="Lg3-bw-JuG"/>
                 <constraint firstAttribute="trailing" secondItem="5J6-ay-eOz" secondAttribute="trailing" id="MlT-kQ-N9s"/>
-                <constraint firstItem="rhZ-Pg-YCP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NqA-IS-2n4"/>
                 <constraint firstAttribute="trailingMargin" secondItem="GQ6-Ep-bXw" secondAttribute="trailing" constant="30" id="VCr-BM-3Dw"/>
                 <constraint firstAttribute="bottom" secondItem="5J6-ay-eOz" secondAttribute="bottom" id="Wul-bL-gEy"/>
-                <constraint firstAttribute="trailing" secondItem="rhZ-Pg-YCP" secondAttribute="trailing" id="a5D-SM-tcQ"/>
                 <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVn-3a-8ck"/>
+                <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="1Uk-oO-dh4" secondAttribute="bottom" constant="24" id="dOn-eV-kMQ"/>
                 <constraint firstItem="5J6-ay-eOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="is9-iQ-3yh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -132,7 +134,6 @@
                 <outlet property="noButton" destination="Z4z-Tl-QBq" id="nUl-f6-Y24"/>
                 <outlet property="receiverImageView" destination="1Uk-oO-dh4" id="D8D-mx-c2p"/>
                 <outlet property="receiverLabel" destination="TKU-K4-Y0o" id="5xf-vX-fIX"/>
-                <outlet property="receiversView" destination="rhZ-Pg-YCP" id="FFe-eT-4no"/>
                 <outlet property="sendingMessageLabel" destination="GQ6-Ep-bXw" id="GEE-n9-atm"/>
                 <outlet property="yesButton" destination="LMG-v6-hBo" id="0to-R2-oEZ"/>
             </connections>

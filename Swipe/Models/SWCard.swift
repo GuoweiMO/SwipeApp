@@ -30,22 +30,24 @@ class SWCard {
   var website: String?
   var status: CardStatus = .Normal
   var contacts = [String]()
+  var token: String?
   
   func dictInfo() -> [String: Any] {
-    return [
-            "fullName" : fullName,
-            "jobTitle" : jobTitle,
-            "employer" : employer,
-            "email"    : email,
-            "phone1"   : phone1,
-            "phone2"   : phone2 ?? "",
-            "website"  : website ?? "",
-            "contacts" : contacts,
-            "status"   : status.rawValue
-    ]
+    var dict: [String: Any] = [:]
+    dict["fullName"] = fullName
+    dict["jobTitle"] = jobTitle
+    dict["employer"] = employer
+    dict["email"]    = email
+    dict["phone1"]   = phone1
+    dict["phone2"]   = phone2 ?? ""
+    dict["website"]  = website ?? ""
+    dict["contacts"] = contacts
+    dict["status"]   = status.rawValue
+    dict["token"]    = token
+    return dict
   }
   
-  func updateCard(withData data: [String: Any]) {
+  func updateCard(withFullData data: [String: Any]) {
     fullName = data["fullName"] as? String
     jobTitle = data["jobTitle"] as? String
     employer = data["employer"] as? String

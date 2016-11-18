@@ -55,7 +55,6 @@
 		E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */; };
 		E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DD71D8C5D6B00D01BD9 /* AppDelegate.swift */; };
 		E4BC3DE11D8C5DCA00D01BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DDF1D8C5DCA00D01BD9 /* Assets.xcassets */; };
-		E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */; };
 		E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DEF1D8C9D1B00D01BD9 /* SWCard.swift */; };
 		E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DF11D8D574B00D01BD9 /* GoogleService-Info.plist */; };
 		E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */; };
@@ -727,7 +726,6 @@
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
-				E4BC3DE51D8C5E4E00D01BD9 /* CreateCardViewController.swift in Sources */,
 				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,

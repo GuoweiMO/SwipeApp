@@ -37,30 +37,39 @@ class SWActions: NSObject {
   }
   
   class func requestToSendCard(withToken token: String, andCompletion completion: @escaping SWCompletion) {
-    let info = ["token": token, "status" : CardStatus.Sending.rawValue]
-    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+    SWCard.myCard.token = token
+    SWCard.myCard.status = .Sending
+    db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: completion)
   }
   
   class func sendCardTimeExpires(andCompletion completion: @escaping SWCompletion) {
-    let info = ["token": nil, "status" : CardStatus.Normal.rawValue]
-    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+    SWCard.myCard.token = ""
+    SWCard.myCard.status = .Normal
+    db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: completion)
   }
   
   class func requestToReceiveCard(withToken token: String, senderFoundCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
-    let info = ["token": token, "status" : CardStatus.Receiving.rawValue]
-    db.child("cards").child(uid!).setValue(info, withCompletionBlock: {
+    SWCard.myCard.token = token
+    SWCard.myCard.status = .Receiving
+    db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: {
       (err, ref) -> Void in
       queryForSender(withToken: token, withCompletion: completion, andError: errorBlock)
     })
   }
   
   class func queryForSender(withToken token: String, withCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
-    db.child("cards").queryOrdered(byChild: "status").queryEqual(toValue: CardStatus.Sending.rawValue)
-                     .queryOrdered(byChild: "token").queryEqual(toValue: token)
+    db.child("cards").queryOrdered(byChild: "token")
+                     .queryEqual(toValue: token)
                      .observe(.value, with: {
                       (snapshot) -> Void in
-                        if let dataDict = snapshot.value as? [String : AnyObject] {
-                          completion(dataDict)
+                        if let results = snapshot.value as? [[String : AnyObject]] {
+                          if let senderDict = results.filter({ (dict) -> Bool in
+                            return (dict["status"] as? String) == CardStatus.Sending.rawValue
+                          }).first {
+                            completion(senderDict)
+                          } else {
+                            print("sender not found")
+                          }
                         }
                      }, withCancel: errorBlock )
   }
