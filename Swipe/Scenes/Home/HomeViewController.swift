@@ -169,11 +169,13 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
         {
           self.sendingView.alpha = 1
           self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+          self.numberPadView?.action = .send
         }
         else if stateToChange == .Receiving
         {
           self.receivingView.alpha = 1
           self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
+          self.numberPadView?.action = .receive
         }
         
         }, completion: { (done) in
@@ -242,6 +244,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
       
     case .Sending:
       sendingView.updateViewAtSending()
+      
     case .Sent:
       sendingView.updateViewWhenSent()
       

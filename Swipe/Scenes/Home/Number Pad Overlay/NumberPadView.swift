@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum Action {
+  case send
+  case receive
+}
+
 class NumberPadView: UIView {
   
   @IBOutlet weak var firstNumberLabel: UILabel!
@@ -17,6 +22,7 @@ class NumberPadView: UIView {
   @IBOutlet var numberButtons: [SWButton1]!
   
   var counter: Int = 0
+  var action: Action?
   
   class func viewfromNib() -> NumberPadView? {
     return Bundle.main.loadNibNamed("NumberPadView", owner: self, options: nil)?.first as? NumberPadView
@@ -66,12 +72,27 @@ class NumberPadView: UIView {
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
     let token = "\(firstNumberLabel.text!)\(secondNumberLabel.text!)\(thirdNumberLabel.text!)"
     guard token.containsNumbersOnly() else { return }
-    SWActions.requestToSendCard(withToken: token, andCompletion: {
-      (err, dbRef) -> Void in
-      if err == nil {
+    
+    if action == .send {
+      SWActions.requestToSendCard(withToken: token, andCompletion: {
+        (err, dbRef) -> Void in
+        if err == nil {
+          self.animateFadeOut()
+        }
+      })
+    } else if action == .receive {
+      SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (senderInfo) in
         self.animateFadeOut()
-      }
-    })
+        let senderCard = SWCard()
+        senderCard.updateCard(withData: senderInfo)
+        
+//        SWActions.updateContactsWhenCardReceived(fromSender: )
+        
+      }, andError: { (err) in
+        print("sender not found")
+      })
+    }
+    
   }
   
   func animateFadeOut() {

@@ -15,7 +15,7 @@ protocol SendingViewOutput:class {
 
 class SendingView: UIView, ReceiversCarouselOutput {
   
-  @IBOutlet weak var receiversView: UIView!
+//  @IBOutlet weak var receiversView: UIView!
   @IBOutlet weak var receiverLabel: UILabel!
   
   @IBOutlet weak var sendingMessageLabel: UILabel!
@@ -53,7 +53,7 @@ class SendingView: UIView, ReceiversCarouselOutput {
   {
     yesButton.isHidden = false
     noButton.isHidden = false
-    receiversView.isHidden = false
+//    receiversView.isHidden = false
     
     receiverImageView.isHidden = true
     contactsButton.isHidden = true
@@ -90,7 +90,7 @@ class SendingView: UIView, ReceiversCarouselOutput {
   func updateViewAtSending() {
     yesButton.isHidden = true
     noButton.isHidden = true
-    receiversView.isHidden = true
+//    receiversView.isHidden = true
     
     receiverImageView.isHidden = false
   }
