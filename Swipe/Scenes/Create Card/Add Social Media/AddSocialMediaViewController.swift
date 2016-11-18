@@ -27,6 +27,8 @@ class AddSocialMediaViewController: UIViewController {
     SWActions.createCard(withInfo: SWCard.myCard.dictInfo(), andCompletion: {
       error, dbRef in
       if error == nil {
+        print("create my card succeeds")
+        UserDefaults.standard.setValue(true, forKey: "hasCard")
       } else {
         
       }
@@ -34,9 +36,8 @@ class AddSocialMediaViewController: UIViewController {
   }
   
   func initHomeController() {
-    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as? HomeViewController
+    if let vc = mainStoryBoard.instantiateViewController(withIdentifier: "home") as? HomeViewController
     {
-      UserDefaults.standard.setValue(true, forKey: "hasCard")
       navigationController?.pushViewController(vc, animated: true)
     }
   }

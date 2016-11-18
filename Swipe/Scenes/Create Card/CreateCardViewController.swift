@@ -148,7 +148,7 @@ class CreateCardViewController: UIViewController,
       SWActions.uploadProfileImage(withData: imageData, name: "profile", extra: extraInfo)
     }
     
-    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
+    if let vc = mainStoryBoard.instantiateViewController(withIdentifier: "Home") as? HomeViewController
     {
       let userDefault = UserDefaults.standard
       userDefault.setValue(true, forKey: "hasCard")

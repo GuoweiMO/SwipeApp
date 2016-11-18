@@ -27,7 +27,7 @@ class AddProfilePicViewController: UIViewController, ImagePickerProtocol {
   
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
-       let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "create card nav") as? UINavigationController{
+       let vc = mainStoryBoard.instantiateViewController(withIdentifier: "create card nav") as? UINavigationController{
         picker.dismiss(animated: true, completion: nil)
         let changeProfileVC = vc.topViewController as! ChangeProfilePicViewController
         changeProfileVC.profileImage = pickedImage

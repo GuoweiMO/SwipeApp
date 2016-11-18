@@ -46,7 +46,7 @@ class NavigationView: UIView {
   
   @IBAction func myContactsBtnDidTap(_ sender: Any) {
     closeBtnDidTap(sender)
-    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contacts") as? ContactsViewController {
+    if let vc = mainStoryBoard.instantiateViewController(withIdentifier: "contacts") as? ContactsViewController {
       delegate?.present(withViewController: vc)
     }
   }

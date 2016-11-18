@@ -45,9 +45,9 @@ class NumberPadView: UIView {
     }
     if counter == 3 {
       numberButtons.forEach({ (btn) in
-        if !btn.btnSelected {
+//        if !btn.btnSelected {
           btn.disabledStyle()
-        }
+//        }
       })
     }
   }
@@ -65,7 +65,7 @@ class NumberPadView: UIView {
   
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
     let token = "\(firstNumberLabel.text!)\(secondNumberLabel.text!)\(thirdNumberLabel.text!)"
-    guard token.containsNumberOnly() else { return }
+    guard token.containsNumbersOnly() else { return }
     SWActions.requestToSendCard(withToken: token, andCompletion: {
       (err, dbRef) -> Void in
       if err == nil {

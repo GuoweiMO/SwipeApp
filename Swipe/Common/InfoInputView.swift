@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol InfoInputViewDelegate {
-  func textFieldBeginEditing(textField: UITextField)
-}
-
 class InfoInputView: UIView, UITextFieldDelegate {
   
   var textFields: [UITextField]? {

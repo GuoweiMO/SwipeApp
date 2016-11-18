@@ -443,7 +443,6 @@
 				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
 				E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */,
 				E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */,
-				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
 			name = "Create Card";
 			sourceTree = "<group>";
@@ -479,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
+				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
 			name = Archived;
 			sourceTree = "<group>";

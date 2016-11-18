@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let mainStoryBoard = { return UIStoryboard(name: "Main", bundle: nil) }()
+
 class Common: NSObject {
   
   class func appRedColor() -> UIColor
@@ -67,7 +69,7 @@ class Common: NSObject {
 }
 
 extension String {
-  func containsNumberOnly() -> Bool {
+  func containsNumbersOnly() -> Bool {
     let notDigits = NSCharacterSet.decimalDigits.inverted
     return self.rangeOfCharacter(from: notDigits) == nil
   }
