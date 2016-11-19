@@ -13,7 +13,7 @@ protocol SendingViewOutput:class {
   func cardSentNavigateToHome()
 }
 
-class SendingView: UIView, ReceiversCarouselOutput {
+class SendingView: UIView {
   
 //  @IBOutlet weak var receiversView: UIView!
   @IBOutlet weak var receiverLabel: UILabel!
@@ -46,14 +46,12 @@ class SendingView: UIView, ReceiversCarouselOutput {
     myCardButton.redStyle()
     receiverImageView.layer.cornerRadius = 75
     resetView()
-//    updateReceiversView()
   }
   
   func resetView()
   {
     yesButton.isHidden = false
     noButton.isHidden = false
-//    receiversView.isHidden = false
     
     receiverImageView.isHidden = true
     contactsButton.isHidden = true
@@ -61,21 +59,11 @@ class SendingView: UIView, ReceiversCarouselOutput {
     sendingMessageLabel.text = "Sending your card to"
   }
   
-//  func updateReceiversView()
-//  {
-//    let view = ReceiversCarouselView(frame: receiversView.bounds)
-//    view.output = self
-//    receiversView.addSubview(view)
-//    let items = [
-//      UIImage(named: "bg1"),
-//      UIImage(named: "bg2"),
-//      UIImage(named: "bg3"),
-//      UIImage(named: "receiver")
-//    ]
-//    view.updateView(items)
-//  }
-
-  func didSelectReceiver(with image: UIImage) {
+  func updateView(withSender sender: String) {
+    receiverLabel.text = sender
+  }
+  
+  func updateView(withImage image: UIImage) {
     receiverImageView.image = image
   }
   

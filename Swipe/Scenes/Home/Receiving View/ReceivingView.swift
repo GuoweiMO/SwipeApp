@@ -18,7 +18,7 @@ class ReceivingView: UIView {
   
   @IBOutlet weak var receivingMessageLabel: UILabel!
   
-  @IBOutlet weak var receiverImageView: UIImageView!
+  @IBOutlet weak var senderImageView: UIImageView!
   
   @IBOutlet weak var contactsButton: SWButton!
   @IBOutlet weak var myCardButton: SWButton!
@@ -40,7 +40,7 @@ class ReceivingView: UIView {
     
     contactsButton.whiteStyle()
     myCardButton.redStyle()
-    receiverImageView.layer.cornerRadius = 75
+    senderImageView.layer.cornerRadius = 75
   }
   
   func resetView() {
@@ -53,6 +53,14 @@ class ReceivingView: UIView {
     receivingMessageLabel.text = "sent you a card"
     contactsButton.isHidden = false
     myCardButton.isHidden = false
+  }
+  
+  func updateView(withSender sender: String) {
+    senderLabel.text = sender
+  }
+  
+  func updateView(withImage image: UIImage) {
+    senderImageView.image = image
   }
   
   @IBAction func myCardBtnDidTap(_ sender: AnyObject) {

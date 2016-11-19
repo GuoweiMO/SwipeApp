@@ -299,7 +299,7 @@
                     <rect key="frame" x="0.0" y="339" width="272" height="85"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-8F-RzZ">
-                            <rect key="frame" x="75.5" y="20" width="39" height="36"/>
+                            <rect key="frame" x="80" y="20" width="30" height="32"/>
                             <fontDescription key="fontDescription" name="UbuntuMono-Bold" family="Ubuntu Mono" pointSize="20"/>
                             <state key="normal" title="YES">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -309,7 +309,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-7u-21Y">
-                            <rect key="frame" x="162.5" y="20" width="30" height="36"/>
+                            <rect key="frame" x="162.5" y="20" width="30" height="32"/>
                             <fontDescription key="fontDescription" name="UbuntuMono-Bold" family="Ubuntu Mono" pointSize="20"/>
                             <state key="normal" title="NO">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -323,7 +323,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="4Jw-hc-frE" secondAttribute="trailing" id="0Vf-K8-aep"/>
                 <constraint firstItem="bSM-mR-dkU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Of-yZ-iz5"/>
@@ -347,14 +347,14 @@
                 <outlet property="secondNumberLabel" destination="IEB-AC-xg2" id="fEZ-8G-awe"/>
                 <outlet property="thirdNumberLabel" destination="aHz-h4-Upr" id="XGs-Xl-UjG"/>
                 <outletCollection property="numberButtons" destination="lbP-pb-tBw" collectionClass="NSMutableArray" id="VKC-R9-25x"/>
-                <outletCollection property="numberButtons" destination="5NX-Ze-BWp" id="YTP-Sz-zhV"/>
-                <outletCollection property="numberButtons" destination="zhR-1E-gOm" id="nJC-va-hPt"/>
-                <outletCollection property="numberButtons" destination="r1L-Yk-kkO" id="d8z-KL-HxE"/>
-                <outletCollection property="numberButtons" destination="Lf6-Cj-uZd" id="VR9-kv-fcd"/>
-                <outletCollection property="numberButtons" destination="ILJ-Xz-5Ec" id="1su-Qm-zaW"/>
-                <outletCollection property="numberButtons" destination="vbj-14-ViZ" id="6VX-fK-zQA"/>
-                <outletCollection property="numberButtons" destination="nZh-qu-4ic" id="OSp-t7-VNe"/>
-                <outletCollection property="numberButtons" destination="yPo-9K-YL3" id="3eu-ma-iyA"/>
+                <outletCollection property="numberButtons" destination="5NX-Ze-BWp" collectionClass="NSMutableArray" id="YTP-Sz-zhV"/>
+                <outletCollection property="numberButtons" destination="zhR-1E-gOm" collectionClass="NSMutableArray" id="nJC-va-hPt"/>
+                <outletCollection property="numberButtons" destination="r1L-Yk-kkO" collectionClass="NSMutableArray" id="d8z-KL-HxE"/>
+                <outletCollection property="numberButtons" destination="Lf6-Cj-uZd" collectionClass="NSMutableArray" id="VR9-kv-fcd"/>
+                <outletCollection property="numberButtons" destination="ILJ-Xz-5Ec" collectionClass="NSMutableArray" id="1su-Qm-zaW"/>
+                <outletCollection property="numberButtons" destination="vbj-14-ViZ" collectionClass="NSMutableArray" id="6VX-fK-zQA"/>
+                <outletCollection property="numberButtons" destination="nZh-qu-4ic" collectionClass="NSMutableArray" id="OSp-t7-VNe"/>
+                <outletCollection property="numberButtons" destination="yPo-9K-YL3" collectionClass="NSMutableArray" id="3eu-ma-iyA"/>
             </connections>
             <point key="canvasLocation" x="-17" y="188"/>
         </view>

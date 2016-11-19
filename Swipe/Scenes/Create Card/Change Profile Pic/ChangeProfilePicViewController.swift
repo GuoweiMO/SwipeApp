@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIScrollViewDelegate {
+class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIScrollViewDelegate{
   
   @IBOutlet weak var imageScrollView: UIScrollView!
   @IBOutlet weak var yesButton: SWButton!
@@ -18,6 +18,7 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   
   var imageView: UIImageView?
   var profileImage: UIImage?
+  var circleView: UIImageView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,6 +32,7 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     if profileImage != nil {
       setupBackgroundImage()
     }
+    
   }
   
   override func viewDidLayoutSubviews() {
@@ -55,6 +57,19 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     return imageView!
   }
   
+  func createCircleCropView() {
+    let circleView = UIImageView(image: UIImage(named: "circle-crop"))
+    circleView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+    view.addSubview(circleView)
+    self.circleView = circleView
+  }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    if let point = touches.first?.location(in: circleView) {
+      circleView?.center = point
+    }
+  }
+  
   @IBAction func noButtonDidTap(_ sender: UIButton) {
     
     if sender.currentTitle == "NO" {
@@ -66,7 +81,7 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   }
   
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
-
+     createCircleCropView()
   }
   
   @IBAction func cameraButtonDidTap(_ sender: Any) {

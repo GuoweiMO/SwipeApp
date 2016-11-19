@@ -22,10 +22,16 @@ class AddUserInfoViewController: UIViewController {
   
   @IBOutlet weak var infoInputView: InfoInputView!
   
+  @IBOutlet weak var labelVerticalCenterConstraint: NSLayoutConstraint!
+  @IBOutlet weak var stepButtonBottomConstraint: NSLayoutConstraint!
+
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     backgroundImageView.image = SWCard.myCard.largeProfileImage
     setupInfoView()
+    NotificationCenter.default.addObserver(self, selector: #selector(AddUserInfoViewController.keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+    navigationController?.interactivePopGestureRecognizer?.isEnabled = true
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,6 +43,14 @@ class AddUserInfoViewController: UIViewController {
   func setupInfoView(){
     infoInputView.textFields = [fullNameField, jobTitleField, companyField]
     infoInputView.labels = [fullNameLabel, jobTitleLabel,companyLabel]
+  }
+  
+  func keyboardWillShow(notification:NSNotification){
+    if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        let keyboardHeight = keyboardSize.height
+        labelVerticalCenterConstraint.constant = -100
+        stepButtonBottomConstraint.constant = keyboardHeight + 10
+    }
   }
   
   @IBAction func previousButtonDidTap(_ sender: Any) {

@@ -54,6 +54,9 @@ class SWButton1: SWButton {
   
   func defaultStyle() {
     btnSelected = false
+    isEnabled = true
+    alpha = 1
+    setTitleColor(UIColor.white, for: .normal)
     clearStyleWhiteBorder()
   }
   

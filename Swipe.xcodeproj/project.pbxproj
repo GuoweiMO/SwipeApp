@@ -29,7 +29,6 @@
 		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
 		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
-		E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
 		E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */; };
 		E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */; };
@@ -737,7 +736,6 @@
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
-				E49BADD71D98285F00870141 /* ReceiversCarouselView.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,

@@ -18,7 +18,10 @@ enum CardViewState {
   case Else
 }
 
-class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutput {
+class HomeViewController: UIViewController,
+                          SendingViewOutput,
+                          ReceivingViewOutput,
+                          NumberPadViewOutPut {
   
   @IBOutlet weak var fullNameLabel: UILabel!
   @IBOutlet weak var jobTitleLabel: UILabel!
@@ -156,8 +159,6 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
 
       }
       
-      animateNumberPad()
-      
       UIView.animate(withDuration: Double(duration), animations: {
         self.homeCardView.center = offScreenCenter
         self.homeCardView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
@@ -167,17 +168,16 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
         {
           self.sendingView.alpha = 1
           self.sendingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-          self.numberPadView?.action = .send
         }
         else if stateToChange == .Receiving
         {
           self.receivingView.alpha = 1
           self.receivingView.transform = CGAffineTransform(scaleX: 1, y: 1)
-          self.numberPadView?.action = .receive
         }
         
         }, completion: { (done) in
           self.state = stateToChange
+          self.animateNumberPad()
           self.homeCardView.alpha = 1
           self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
       })
@@ -189,6 +189,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
       numberPadView = NumberPadView.viewfromNib()
       numberPadView?.frame = view.bounds.insetBy(dx: 30, dy: 80)
       numberPadView?.alpha = 0
+      numberPadView?.output = self
       view.addSubview(numberPadView!)
     }
 
@@ -251,7 +252,7 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
       homeCardView.isHidden = true
       updateNavBarTitleImage(named: "text-logo-white")
       
-      DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
         self.state = .Received
       }
     case .Received:
@@ -262,6 +263,75 @@ class HomeViewController: UIViewController, SendingViewOutput,ReceivingViewOutpu
     }
   }
   
+  func didConfirmNumbers(withNumber token: String) {
+    if state == .ToSend {
+      didClaimToSendCard(withToken: token)
+    }
+    else if state == .Receiving {
+      didClaimToReceiveCard(withToken: token)
+    }
+  }
+  
+  private func didClaimToSendCard(withToken token: String) {
+    SWActions.requestToSendCard(withToken: token, receiverFoundCompletion: {
+      receiver -> Void in
+      let receiverCard = SWCard()
+      if let receiverInfo = receiver.values.first as? [String: Any] {
+        receiverCard.updateCard(withFullData: receiverInfo )
+        self.updateSendingView(withReceiver: receiverCard.fullName)
+      }
+      if let uid = receiver.keys.first {
+        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
+          if data != nil && err == nil {
+            if let image = UIImage(data: data!) {
+              self.updateSendingView(withImage: image)
+            }
+          }
+        })
+      }
+      }, andError: {
+        err in
+    })
+  }
+  
+  private func didClaimToReceiveCard(withToken token: String) {
+    SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (sender) in
+      let senderCard = SWCard()
+      if let senderInfo = sender.values.first as? [String: Any] {
+        senderCard.updateCard(withFullData: senderInfo )
+        self.updateReceivingView(withSender: senderCard.fullName)
+      }
+      if let uid = sender.keys.first {
+        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
+          if data != nil && err == nil {
+            if let image = UIImage(data: data!) {
+              self.updateReceivingView(withImage: image)
+            }
+          }
+        })
+      }
+      
+      
+    }, andError: { (err) in
+      print("sender not found")
+    })
+  }
+
+  func updateSendingView(withReceiver senderName: String) {
+    sendingView.updateView(withSender: senderName)
+  }
+  
+  func updateSendingView(withImage image: UIImage) {
+    sendingView.updateView(withImage: image)
+  }
+
+  func updateReceivingView(withSender senderName: String) {
+    receivingView.updateView(withSender: senderName)
+  }
+  
+  func updateReceivingView(withImage image: UIImage) {
+    receivingView.updateView(withImage: image)
+  }
 }
 
 

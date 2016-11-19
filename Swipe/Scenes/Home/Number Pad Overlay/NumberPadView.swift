@@ -8,9 +8,8 @@
 
 import UIKit
 
-enum Action {
-  case send
-  case receive
+protocol NumberPadViewOutPut {
+  func didConfirmNumbers(withNumber token: String)
 }
 
 class NumberPadView: UIView {
@@ -22,7 +21,7 @@ class NumberPadView: UIView {
   @IBOutlet var numberButtons: [SWButton1]!
   
   var counter: Int = 0
-  var action: Action?
+  var output: NumberPadViewOutPut?
   
   class func viewfromNib() -> NumberPadView? {
     return Bundle.main.loadNibNamed("NumberPadView", owner: self, options: nil)?.first as? NumberPadView
@@ -69,30 +68,17 @@ class NumberPadView: UIView {
     thirdNumberLabel.textColor = UIColor.white
   }
   
+  func resetView() {
+    counter = 0
+    resetSelectedNumbers()
+    numberButtons.forEach { $0.defaultStyle() }
+  }
+  
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
     let token = "\(firstNumberLabel.text!)\(secondNumberLabel.text!)\(thirdNumberLabel.text!)"
     guard token.containsNumbersOnly() else { return }
-    
-    if action == .send {
-      SWActions.requestToSendCard(withToken: token, andCompletion: {
-        (err, dbRef) -> Void in
-        if err == nil {
-          self.animateFadeOut()
-        }
-      })
-    } else if action == .receive {
-      SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (senderInfo) in
-        self.animateFadeOut()
-        let senderCard = SWCard()
-        senderCard.updateCard(withFullData: senderInfo)
-        
-//        SWActions.updateContactsWhenCardReceived(fromSender: )
-        
-      }, andError: { (err) in
-        print("sender not found")
-      })
-    }
-    
+    output?.didConfirmNumbers(withNumber: token)
+    animateFadeOut()
   }
   
   func animateFadeOut() {
@@ -102,6 +88,7 @@ class NumberPadView: UIView {
       completed in
       self.isHidden = true
       self.alpha = 1
+      self.resetView()
     })
   }
 }

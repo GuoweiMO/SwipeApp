@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,20 +17,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receiver" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-oO-dh4">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-oO-dh4">
+                    <rect key="frame" x="108" y="100" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="1Uk-oO-dh4" secondAttribute="height" id="7CG-9T-q9e"/>
                         <constraint firstAttribute="height" constant="160" id="eog-XX-ghL"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is sending you a card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-Ep-bXw">
+                    <rect key="frame" x="38" y="310" width="299" height="17"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-ay-eOz" userLabel="Buttons Container">
+                    <rect key="frame" x="0.0" y="427" width="375" height="240"/>
                     <subviews>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRo-pH-odB" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="93" y="24" width="190" height="60"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="5Qe-fI-OwG"/>
@@ -39,6 +46,7 @@
                             </state>
                         </button>
                         <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-fN-iqg" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                            <rect key="frame" x="93" y="108" width="190" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="190" id="SyL-0f-FqA"/>
                                 <constraint firstAttribute="height" constant="60" id="pAm-Wb-QIe"/>
@@ -62,6 +70,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
+                    <rect key="frame" x="38" y="280" width="299" height="22"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -85,14 +94,11 @@
             <connections>
                 <outlet property="contactsButton" destination="uRo-pH-odB" id="82s-Zx-zB5"/>
                 <outlet property="myCardButton" destination="iGg-fN-iqg" id="XCd-bg-C7A"/>
-                <outlet property="receiverImageView" destination="1Uk-oO-dh4" id="D8D-mx-c2p"/>
                 <outlet property="receivingMessageLabel" destination="GQ6-Ep-bXw" id="zmj-LW-IwH"/>
+                <outlet property="senderImageView" destination="1Uk-oO-dh4" id="qpX-bL-99g"/>
                 <outlet property="senderLabel" destination="TKU-K4-Y0o" id="Xlq-UJ-17e"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="receiver" width="299" height="299"/>
-    </resources>
 </document>

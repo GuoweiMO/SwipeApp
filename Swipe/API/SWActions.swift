@@ -36,10 +36,13 @@ class SWActions: NSObject {
     }, withCancel: errorBlock)
   }
   
-  class func requestToSendCard(withToken token: String, andCompletion completion: @escaping SWCompletion) {
+  class func requestToSendCard(withToken token: String, receiverFoundCompletion completion: @escaping ([String : Any]) -> Void, andError errorBlock: ((Error) -> Void)?) {
     SWCard.myCard.token = token
     SWCard.myCard.status = .Sending
-    db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: completion)
+    db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: {
+      (err, ref) -> Void in
+      queryForReceiver(withToken: token, withCompletion: completion, andError: nil)
+    })
   }
   
   class func sendCardTimeExpires(andCompletion completion: @escaping SWCompletion) {
@@ -48,7 +51,7 @@ class SWActions: NSObject {
     db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: completion)
   }
   
-  class func requestToReceiveCard(withToken token: String, senderFoundCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+  class func requestToReceiveCard(withToken token: String, senderFoundCompletion completion: @escaping ([String : Any]) -> Void, andError errorBlock: ((Error) -> Void)?) {
     SWCard.myCard.token = token
     SWCard.myCard.status = .Receiving
     db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: {
@@ -57,21 +60,45 @@ class SWActions: NSObject {
     })
   }
   
-  class func queryForSender(withToken token: String, withCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+  class func queryFor(target: String, withToken token: String, withCompletion completion: @escaping ([String : Any]) -> Void, andError errorBlock: ((Error) -> Void)?) {
     db.child("cards").queryOrdered(byChild: "token")
                      .queryEqual(toValue: token)
                      .observe(.value, with: {
-                      (snapshot) -> Void in
-                        if let results = snapshot.value as? [[String : AnyObject]] {
-                          if let senderDict = results.filter({ (dict) -> Bool in
-                            return (dict["status"] as? String) == CardStatus.Sending.rawValue
-                          }).first {
-                            completion(senderDict)
-                          } else {
-                            print("sender not found")
+                        (snapshot) -> Void in
+                        if let result = snapshot.value as? [String : AnyObject] {
+                          var sender: [String: Any]?
+                          result.forEach({ (k, v) in
+                            if let v = v as? [String: Any] {
+                              if v["status"] as? String == target {
+                                sender = [k : v]
+                              }
+                            }
+                          })
+                          
+                          if sender != nil {
+                            completion(sender!)
                           }
-                        }
+                      }
                      }, withCancel: errorBlock )
+  }
+  
+  class func queryForSender(withToken token: String, withCompletion completion: @escaping ([String : Any]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+    queryFor(target: CardStatus.Sending.rawValue, withToken: token, withCompletion: completion, andError: errorBlock)
+  }
+  
+  class func queryForReceiver(withToken token: String, withCompletion completion: @escaping ([String : Any]) -> Void, andError errorBlock: ((Error) -> Void)?) {
+    
+    if #available(iOS 10.0, *) {
+      Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer) in
+        queryFor(target: CardStatus.Receiving.rawValue, withToken: token, withCompletion:{ dict -> Void in
+          timer.invalidate()
+          completion(dict)
+        }, andError: errorBlock)
+      })
+    } else {
+      // Fallback on earlier versions
+    }
+
   }
   
   class func updateContactsWhenCardReceived(fromSender sender: String) {
@@ -97,11 +124,11 @@ class SWActions: NSObject {
     })
   }
   
-  class func uploadProfileImage(withData data: Data, name: String, extra: [String: String] ){
+  class func uploadProfileImage(withData data: Data, extra: [String: String] ){
     let metadata = FIRStorageMetadata()
     metadata.customMetadata = extra
     UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    storage.child("images/\(uid!)/\(name).png").put(data, metadata: metadata) { metadata, error in
+    storage.child("images/\(uid!)/profile.png").put(data, metadata: metadata) { metadata, error in
       if (error != nil) {
         print(error.debugDescription)
       } else {
@@ -111,9 +138,9 @@ class SWActions: NSObject {
     }
   }
   
-  class func downloadProfileImage(withName name: String, completion: @escaping (Data?, Error?) -> Void){
+  class func downloadProfileImage(withUID uid: String, completion: @escaping (Data?, Error?) -> Void){
     UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    storage.child("images/\(uid!)/\(name).png").data(withMaxSize: 5 * 1024 * 1024, completion: completion)
+    storage.child("images/\(uid)/profile.png").data(withMaxSize: 3 * 1024 * 1024, completion: completion)
   }
   
   class func getFileMetadata(ofName name: String, withCompletion completion: @escaping ([String: String]?, Error?) -> Void){
