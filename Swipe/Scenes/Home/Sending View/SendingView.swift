@@ -26,6 +26,8 @@ class SendingView: UIView {
   @IBOutlet weak var contactsButton: SWButton!
   @IBOutlet weak var myCardButton: SWButton!
   
+  @IBOutlet weak var finishedView: UIImageView!
+  
   weak var output: SendingViewOutput?
   
   class func viewfromNib() -> SendingView?
@@ -57,6 +59,7 @@ class SendingView: UIView {
     contactsButton.isHidden = true
     myCardButton.isHidden = true
     sendingMessageLabel.text = "Sending your card to"
+    finishedView.isHidden = true
   }
   
   func updateView(withSender sender: String) {
@@ -68,7 +71,7 @@ class SendingView: UIView {
   }
   
   @IBAction func noButtonDidTap(_ sender: AnyObject) {
-    moveViewToBack()
+    
   }
   
   @IBAction func yesButtonDidTap(_ sender: AnyObject) {
@@ -78,17 +81,16 @@ class SendingView: UIView {
   func updateViewAtSending() {
     yesButton.isHidden = true
     noButton.isHidden = true
-//    receiversView.isHidden = true
     
     receiverImageView.isHidden = false
   }
   
   func updateViewWhenSent(){
     sendingMessageLabel.text = "Your card has been sent to"
-    //TODO: update receiver image UI
     
     contactsButton.isHidden = false
     myCardButton.isHidden = false
+    finishedView.isHidden = false
   }
   
   @IBAction func myCardButtonDidTap(_ sender: AnyObject) {
@@ -98,10 +100,5 @@ class SendingView: UIView {
   @IBAction func myContactsButtonDidTap(_ sender: AnyObject) {
     //TODO: go to contacts view
     
-  }
-  
-  func moveViewToBack()
-  {
-    superview?.sendSubview(toBack: self)
   }
 }

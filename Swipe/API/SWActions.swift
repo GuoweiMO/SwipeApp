@@ -45,7 +45,7 @@ class SWActions: NSObject {
     })
   }
   
-  class func sendCardTimeExpires(andCompletion completion: @escaping SWCompletion) {
+  class func resetCardWhenFinished(andCompletion completion: @escaping SWCompletion) {
     SWCard.myCard.token = ""
     SWCard.myCard.status = .Normal
     db.child("cards").child(uid!).setValue(SWCard.myCard.dictInfo(), withCompletionBlock: completion)

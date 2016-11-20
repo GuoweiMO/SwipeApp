@@ -69,12 +69,19 @@
                         <constraint firstAttribute="height" constant="240" id="val-xw-GRz"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="waiting sender..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-K4-Y0o">
                     <rect key="frame" x="38" y="280" width="299" height="22"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action-done" translatesAutoresizingMaskIntoConstraints="NO" id="2ef-he-Fzc">
+                    <rect key="frame" x="163" y="155" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QLb-fC-wmU"/>
+                        <constraint firstAttribute="width" constant="50" id="mkb-DM-S3c"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -86,13 +93,16 @@
                 <constraint firstAttribute="trailing" secondItem="5J6-ay-eOz" secondAttribute="trailing" id="MlT-kQ-N9s"/>
                 <constraint firstAttribute="trailingMargin" secondItem="GQ6-Ep-bXw" secondAttribute="trailing" constant="30" id="VCr-BM-3Dw"/>
                 <constraint firstAttribute="bottom" secondItem="5J6-ay-eOz" secondAttribute="bottom" id="Wul-bL-gEy"/>
+                <constraint firstItem="2ef-he-Fzc" firstAttribute="centerY" secondItem="1Uk-oO-dh4" secondAttribute="centerY" id="aj6-5f-EuZ"/>
                 <constraint firstItem="1Uk-oO-dh4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVn-3a-8ck"/>
                 <constraint firstItem="GQ6-Ep-bXw" firstAttribute="top" secondItem="TKU-K4-Y0o" secondAttribute="bottom" constant="8" id="dgV-UH-0f8"/>
                 <constraint firstItem="5J6-ay-eOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="is9-iQ-3yh"/>
+                <constraint firstItem="2ef-he-Fzc" firstAttribute="centerX" secondItem="1Uk-oO-dh4" secondAttribute="centerX" id="pRe-mf-gIV"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="contactsButton" destination="uRo-pH-odB" id="82s-Zx-zB5"/>
+                <outlet property="finishedView" destination="2ef-he-Fzc" id="hdl-Pp-14n"/>
                 <outlet property="myCardButton" destination="iGg-fN-iqg" id="XCd-bg-C7A"/>
                 <outlet property="receivingMessageLabel" destination="GQ6-Ep-bXw" id="zmj-LW-IwH"/>
                 <outlet property="senderImageView" destination="1Uk-oO-dh4" id="qpX-bL-99g"/>
@@ -101,4 +111,7 @@
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="action-done" width="122" height="122"/>
+    </resources>
 </document>

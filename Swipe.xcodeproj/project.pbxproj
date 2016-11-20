@@ -26,6 +26,7 @@
 		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
+		E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3C1DE1AFAF00622ACC /* BaseView.swift */; };
 		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
 		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
@@ -118,6 +119,7 @@
 		E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-BI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
 		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
+		E4936C3C1DE1AFAF00622ACC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = Scenes/Home/BaseView.swift; sourceTree = "<group>"; };
 		E493F39F1DC519FC00D7298C /* NavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationView.xib; path = Scenes/Navigation/NavigationView.xib; sourceTree = "<group>"; };
 		E493F3A41DC5209100D7298C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Scenes/Navigation/NavigationView.swift; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		E46447F21DBCBC8700093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
+				E4936C3C1DE1AFAF00622ACC /* BaseView.swift */,
 				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
@@ -457,7 +460,6 @@
 		E4BC3DFB1D90717200D01BD9 /* Sending view */ = {
 			isa = PBXGroup;
 			children = (
-				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
 				E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */,
 				E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */,
 			);
@@ -475,6 +477,7 @@
 		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
 				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
@@ -722,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC3DF51D8EA83B00D01BD9 /* HomeViewController.swift in Sources */,
+				E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */,
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,

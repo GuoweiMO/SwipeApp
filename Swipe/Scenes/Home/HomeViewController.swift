@@ -246,8 +246,9 @@ class HomeViewController: UIViewController,
       sendingView.updateViewAtSending()
       
     case .Sent:
-      sendingView.updateViewWhenSent()
-      
+      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
+        self.sendingView.updateViewWhenSent()
+      })
     case .Receiving:
       homeCardView.isHidden = true
       updateNavBarTitleImage(named: "text-logo-white")
@@ -256,7 +257,9 @@ class HomeViewController: UIViewController,
         self.state = .Received
       }
     case .Received:
-      receivingView.updateViewWhenReceived()
+      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
+        self.receivingView.updateViewWhenReceived()
+      })
 
     default:
       break

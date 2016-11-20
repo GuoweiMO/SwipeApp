@@ -24,6 +24,7 @@ class ReceivingView: UIView {
   @IBOutlet weak var myCardButton: SWButton!
   
   weak var output: ReceivingViewOutput?
+  @IBOutlet weak var finishedView: UIImageView!
   
   class func viewfromNib() -> ReceivingView?
   {
@@ -47,12 +48,14 @@ class ReceivingView: UIView {
     receivingMessageLabel.text = "is sending you a card"
     contactsButton.isHidden = true
     myCardButton.isHidden = true
+    finishedView.isHidden = true
   }
   
   func updateViewWhenReceived() {
     receivingMessageLabel.text = "sent you a card"
     contactsButton.isHidden = false
     myCardButton.isHidden = false
+    finishedView.isHidden = false
   }
   
   func updateView(withSender sender: String) {
