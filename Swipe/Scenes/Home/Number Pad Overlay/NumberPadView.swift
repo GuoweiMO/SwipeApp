@@ -81,6 +81,11 @@ class NumberPadView: UIView {
     animateFadeOut()
   }
   
+  
+  @IBAction func noButtonDidTap(_ sender: Any) {
+    animateFadeOut()
+  }
+  
   func animateFadeOut() {
     UIView.animate(withDuration: 1, delay: 0.1, options: .curveEaseOut, animations: {
       self.alpha = 0

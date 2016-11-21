@@ -27,6 +27,8 @@
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
 		E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3C1DE1AFAF00622ACC /* BaseView.swift */; };
+		E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3E1DE24FC600622ACC /* Actions.swift */; };
+		E4936C411DE25A2700622ACC /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C401DE25A2700622ACC /* Locations.swift */; };
 		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
 		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
@@ -120,6 +122,8 @@
 		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
 		E4936C3C1DE1AFAF00622ACC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = Scenes/Home/BaseView.swift; sourceTree = "<group>"; };
+		E4936C3E1DE24FC600622ACC /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = API/Actions.swift; sourceTree = "<group>"; };
+		E4936C401DE25A2700622ACC /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = API/Locations.swift; sourceTree = "<group>"; };
 		E493F39F1DC519FC00D7298C /* NavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationView.xib; path = Scenes/Navigation/NavigationView.xib; sourceTree = "<group>"; };
 		E493F3A41DC5209100D7298C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Scenes/Navigation/NavigationView.swift; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
@@ -470,6 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
+				E4936C3E1DE24FC600622ACC /* Actions.swift */,
+				E4936C401DE25A2700622ACC /* Locations.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -728,11 +734,13 @@
 				E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */,
 				E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */,
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
+				E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
 				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
+				E4936C411DE25A2700622ACC /* Locations.swift in Sources */,
 				E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */,
 				E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */,
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,

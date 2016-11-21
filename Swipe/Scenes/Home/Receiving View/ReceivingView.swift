@@ -60,6 +60,7 @@ class ReceivingView: UIView {
   
   func updateView(withSender sender: String) {
     senderLabel.text = sender
+    contactsButton.setTitle("See \(sender)'s Card", for: .normal)
   }
   
   func updateView(withImage image: UIImage) {

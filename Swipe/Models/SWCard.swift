@@ -30,7 +30,8 @@ class SWCard {
   var website: String?
   var status: CardStatus = .Normal
   var contacts = [String]()
-  var token: String?
+  var location: Location?
+  var likes: [String]?
   
   func dictInfo() -> [String: Any] {
     var dict: [String: Any] = [:]
@@ -43,7 +44,6 @@ class SWCard {
     dict["website"]  = website ?? ""
     dict["contacts"] = contacts
     dict["status"]   = status.rawValue
-    dict["token"]    = token
     return dict
   }
   
@@ -56,5 +56,13 @@ class SWCard {
     phone2   = data["phone2"] as? String
     website  = data["website"] as? String
     contacts = data["contacts"] as? [String] ?? []
+  }
+}
+
+struct Location {
+  var longitude: Double
+  var latitude: Double
+  func toString() -> String {
+    return "\(longitude),\(latitude)"
   }
 }

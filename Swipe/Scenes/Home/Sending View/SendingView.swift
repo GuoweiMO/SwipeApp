@@ -60,6 +60,7 @@ class SendingView: UIView {
     myCardButton.isHidden = true
     sendingMessageLabel.text = "Sending your card to"
     finishedView.isHidden = true
+    receiverLabel.text = "waiting receiver..."
   }
   
   func updateView(withSender sender: String) {
@@ -67,6 +68,7 @@ class SendingView: UIView {
   }
   
   func updateView(withImage image: UIImage) {
+    receiverImageView.isHidden = false
     receiverImageView.image = image
   }
   
@@ -81,8 +83,6 @@ class SendingView: UIView {
   func updateViewAtSending() {
     yesButton.isHidden = true
     noButton.isHidden = true
-    
-    receiverImageView.isHidden = false
   }
   
   func updateViewWhenSent(){

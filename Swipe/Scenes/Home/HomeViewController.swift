@@ -246,20 +246,18 @@ class HomeViewController: UIViewController,
       sendingView.updateViewAtSending()
       
     case .Sent:
-      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
-        self.sendingView.updateViewWhenSent()
-      })
+      break
+//      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
+//        self.sendingView.updateViewWhenSent()
+//      })
     case .Receiving:
       homeCardView.isHidden = true
       updateNavBarTitleImage(named: "text-logo-white")
-      
-      DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-        self.state = .Received
-      }
     case .Received:
-      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
-        self.receivingView.updateViewWhenReceived()
-      })
+      break
+//      SWActions.resetCardWhenFinished(andCompletion: { (err, ref) in
+//        self.receivingView.updateViewWhenReceived()
+//      })
 
     default:
       break
@@ -276,48 +274,51 @@ class HomeViewController: UIViewController,
   }
   
   private func didClaimToSendCard(withToken token: String) {
-    SWActions.requestToSendCard(withToken: token, receiverFoundCompletion: {
-      receiver -> Void in
-      let receiverCard = SWCard()
-      if let receiverInfo = receiver.values.first as? [String: Any] {
-        receiverCard.updateCard(withFullData: receiverInfo )
-        self.updateSendingView(withReceiver: receiverCard.fullName)
-      }
-      if let uid = receiver.keys.first {
-        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
-          if data != nil && err == nil {
-            if let image = UIImage(data: data!) {
-              self.updateSendingView(withImage: image)
-            }
-          }
-        })
-      }
-      }, andError: {
-        err in
-    })
+//    SWActions.requestToSendCard(withToken: token, receiverFoundCompletion: {
+//      receiver -> Void in
+//      let receiverCard = SWCard()
+//      if let receiverInfo = receiver.values.first as? [String: Any] {
+//        receiverCard.updateCard(withFullData: receiverInfo )
+//        self.updateSendingView(withReceiver: receiverCard.fullName)
+//      }
+//      if let uid = receiver.keys.first {
+//        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
+//          if data != nil && err == nil {
+//            if let image = UIImage(data: data!) {
+//              self.updateSendingView(withImage: image)
+//            }
+//          }
+//        })
+//      }
+//      }, andError: {
+//        err in
+//    })
   }
   
   private func didClaimToReceiveCard(withToken token: String) {
-    SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (sender) in
-      let senderCard = SWCard()
-      if let senderInfo = sender.values.first as? [String: Any] {
-        senderCard.updateCard(withFullData: senderInfo )
-        self.updateReceivingView(withSender: senderCard.fullName)
-      }
-      if let uid = sender.keys.first {
-        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
-          if data != nil && err == nil {
-            if let image = UIImage(data: data!) {
-              self.updateReceivingView(withImage: image)
-            }
-          }
-        })
-      }
-      
-      
-    }, andError: { (err) in
-      print("sender not found")
-    })
+//    SWActions.requestToReceiveCard(withToken: token, senderFoundCompletion: { (sender) in
+//      let senderCard = SWCard()
+//      if let senderInfo = sender.values.first as? [String: Any] {
+//        senderCard.updateCard(withFullData: senderInfo )
+//        self.updateReceivingView(withSender: senderCard.fullName)
+//      }
+//      if let uid = sender.keys.first {
+//        SWActions.downloadProfileImage(withUID: uid, completion: { (data, err) in
+//          if data != nil && err == nil {
+//            if let image = UIImage(data: data!) {
+//              self.updateReceivingView(withImage: image)
+//              DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//                self.state = .Received
+//              }
+//            }
+//          }
+//        })
+//      }
+//      
+//      
+//    }, andError: { (err) in
+//      print("sender not found")
+//    })
   }
 
   func updateSendingView(withReceiver senderName: String) {
