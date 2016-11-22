@@ -10,7 +10,6 @@
 		05FA05D3C15624F65DCFF768 /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */; };
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
-		E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A63C31D85C743005D2B3C /* SwipeTests.swift */; };
 		E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */; };
 		E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */; };
 		E4145AB41DCE95BB00B905F1 /* ContactViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */; };
@@ -26,6 +25,7 @@
 		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
+		E480761D1DE306560064D752 /* Actions_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48076161DE2F48B0064D752 /* Actions_Tests.swift */; };
 		E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3C1DE1AFAF00622ACC /* BaseView.swift */; };
 		E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3E1DE24FC600622ACC /* Actions.swift */; };
 		E4936C411DE25A2700622ACC /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C401DE25A2700622ACC /* Locations.swift */; };
@@ -68,6 +68,8 @@
 		E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */; };
 		E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */; };
 		E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */; };
+		E4D9503C1DE3467D002834D5 /* sample_card.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4D9503B1DE3467D002834D5 /* sample_card.txt */; };
+		E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D950421DE4AC9C002834D5 /* DataBuilder.swift */; };
 		F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +92,6 @@
 		E40A63B31D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E40A63B81D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E40A63BF1D85C743005D2B3C /* SwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E40A63C31D85C743005D2B3C /* SwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTests.swift; sourceTree = "<group>"; };
 		E40A63C51D85C743005D2B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = Scenes/Contacts/ContactsViewController.swift; sourceTree = "<group>"; };
 		E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewCell.swift; path = Scenes/Contacts/ContactViewCell.swift; sourceTree = "<group>"; };
@@ -121,6 +122,8 @@
 		E47D3B941DBE0C9B004D6A43 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-BI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
 		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
+		E48076151DE2F48B0064D752 /* SwipeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E48076161DE2F48B0064D752 /* Actions_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions_Tests.swift; path = SwipeTests/Actions_Tests.swift; sourceTree = SOURCE_ROOT; };
 		E4936C3C1DE1AFAF00622ACC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = Scenes/Home/BaseView.swift; sourceTree = "<group>"; };
 		E4936C3E1DE24FC600622ACC /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = API/Actions.swift; sourceTree = "<group>"; };
 		E4936C401DE25A2700622ACC /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = API/Locations.swift; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 		E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoViewController.swift; path = "Scenes/Create Card/Add User Info/AddUserInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactInfoViewController.swift; path = "Scenes/Create Card/Add Contact Info/AddContactInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSocialMediaViewController.swift; path = "Scenes/Create Card/Add Social Media/AddSocialMediaViewController.swift"; sourceTree = "<group>"; };
+		E4D9503B1DE3467D002834D5 /* sample_card.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_card.txt; sourceTree = "<group>"; };
+		E4D950421DE4AC9C002834D5 /* DataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBuilder.swift; path = Common/DataBuilder.swift; sourceTree = "<group>"; };
 		F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,8 +239,8 @@
 		E40A63C21D85C743005D2B3C /* SwipeTests */ = {
 			isa = PBXGroup;
 			children = (
-				E40A63C31D85C743005D2B3C /* SwipeTests.swift */,
 				E40A63C51D85C743005D2B3C /* Info.plist */,
+				E48076151DE2F48B0064D752 /* SwipeTests-Bridging-Header.h */,
 			);
 			path = SwipeTests;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 		E40A63EE1D88A61B005D2B3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4D9503A1DE3450E002834D5 /* testFiles */,
 				E47D3B891DBE0C8A004D6A43 /* Fonts */,
 				E46447E61DBB88C700093C13 /* splash.png */,
 				E46447E81DBB88EF00093C13 /* splash-logo.png */,
@@ -342,6 +348,14 @@
 				E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E48076191DE2F8E50064D752 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E48076161DE2F48B0064D752 /* Actions_Tests.swift */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		E493F39E1DC519D600D7298C /* Navigation */ = {
@@ -434,6 +448,7 @@
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
 				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
 				E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */,
+				E4D950421DE4AC9C002834D5 /* DataBuilder.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -476,6 +491,7 @@
 				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
 				E4936C3E1DE24FC600622ACC /* Actions.swift */,
 				E4936C401DE25A2700622ACC /* Locations.swift */,
+				E48076191DE2F8E50064D752 /* Tests */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -488,6 +504,14 @@
 				E46447F11DBCBC5900093C13 /* UI Source */,
 			);
 			name = Archived;
+			sourceTree = "<group>";
+		};
+		E4D9503A1DE3450E002834D5 /* testFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E4D9503B1DE3467D002834D5 /* sample_card.txt */,
+			);
+			name = testFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,7 +584,7 @@
 					};
 					E40A63BE1D85C743005D2B3C = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						TestTargetID = E40A63AA1D85C743005D2B3C;
 					};
 				};
@@ -595,6 +619,7 @@
 				E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */,
 				E4B1ABD81DD1320800BFB3DB /* Ubuntu-L.ttf in Resources */,
 				E4B1ABD91DD1320800BFB3DB /* Ubuntu-LI.ttf in Resources */,
+				E4D9503C1DE3467D002834D5 /* sample_card.txt in Resources */,
 				E4B1ABDA1DD1320800BFB3DB /* Ubuntu-M.ttf in Resources */,
 				E4B1ABDB1DD1320800BFB3DB /* Ubuntu-MI.ttf in Resources */,
 				E4B1ABDC1DD1320800BFB3DB /* Ubuntu-R.ttf in Resources */,
@@ -750,6 +775,7 @@
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
+				E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
 				E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
@@ -765,7 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40A63C41D85C743005D2B3C /* SwipeTests.swift in Sources */,
+				E480761D1DE306560064D752 /* Actions_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,10 +970,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.SwipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTests/SwipeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};
@@ -959,10 +988,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.SwipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTests/SwipeTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};

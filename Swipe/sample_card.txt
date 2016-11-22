@@ -1,0 +1,9 @@
+{
+  "email" : "guowei.mo@hotmail.com",
+  "employer" : "mkodo",
+  "fullName" : "Guowei Mo",
+  "jobTitle" : "iOS Developer",
+  "mobile" : "07506744555",
+  "status" : "Normal",
+  "website" : "廖敔晗.com"
+}

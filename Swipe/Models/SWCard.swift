@@ -15,7 +15,7 @@ enum CardStatus: String {
   case Error
 }
 
-class SWCard {
+class SWCard: NSObject {
 
   static let myCard = SWCard()
   

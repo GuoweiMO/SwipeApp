@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		035A4D63B9E369B4A305EEF6DB2A04AC /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BB396A75421D52B5DADCD8E1A522E65D /* GTMSessionUploadFetcher.m */; };
 		0C66DC2BC97BF3FC13A02A91D4C97C0F /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B63A6E365F8D0D1E3AB98A1647D1A972 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D149A88C31F90A0B497CAC507E5A7F2 /* Pods-SwipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */; };
 		1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F202FF62D9F700B0F29A9F63DAFBC97 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11EBA22A7A0463C89A289266C0E06259 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 15355156C77D40DC38B1C5D39D1EE0CC /* GTMSessionFetcherService.m */; };
 		21227DDE7B81A8EFD433FDD9C565F081 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2EE7E149E8638EC0459A04D74ADE /* ALView+PureLayout.m */; };
@@ -26,8 +27,6 @@
 		766D706FE666801D24709E9F2541C656 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 731A3A440E6D85CD39E4B4D3CC97CA72 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		771B09812D840FDB266132F209F793F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C590D4A90C9AE8FF8D0DFBF73A4533BC /* QuartzCore.framework */; };
 		777A4449B1610448A089E87F06E13A9D /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 223FD74B87887A07AC3A4DE579C6AEDD /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7A7138C97D225B211560CCAD43C2DD76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A571C45CD96D3AAE585AF107CE1142D /* Foundation.framework */; };
-		7E10F35C35C62B3C38B610293FCBD353 /* Pods-SwipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 538B7F14418BCB92B7A617ACA1C4E07D /* Pods-SwipeTests-dummy.m */; };
 		7EC5B0832B1AF967D7AD0BC6BF46C157 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC521E240355DC9E82D4E55C9638CE9 /* PureLayout-dummy.m */; };
 		8309703847944DBF2CFC0EDADC01F143 /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 32441932F71BA8F681B6653694D56070 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835AF206D338D93F02712E4B01CCED57 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BE08A3B1C9585472A2E9D74D4A916FAB /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +38,7 @@
 		B46A7A640C5F3FE05CE5A04B5B350927 /* Pods-Swipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA38F5D67FFE308BDBC34BCB76BBA9 /* Pods-Swipe-dummy.m */; };
 		C14EEAE3B1B6DF06FE67672204723703 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A571C45CD96D3AAE585AF107CE1142D /* Foundation.framework */; };
 		C463ACA99D17FDBC5B6E8FD1148C71F0 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AC1C20E715926134AA301C506E7983 /* NSLayoutConstraint+PureLayout.m */; };
+		C79D93650FAD018DFC725F67800E7A2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A571C45CD96D3AAE585AF107CE1142D /* Foundation.framework */; };
 		D35EB0AC2F9C431C1D85D6EE9A412177 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE0D35D13FF6BA9E70B4FD8F92F9E23 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E746A6CC7DEFD30620ECD2848B80DF17 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6644A7C1F4C79200A5451D60A3159 /* GTMSessionFetcher-dummy.m */; };
 		EFA376D08A3E6DC48B147F32D4A45976 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 98216AD50D147B43047E7C3E376B99F1 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		20D1A43AF69ECED923100D9781CEAE47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D0BE9AB489DA96C874BA686EAC1EEE;
+			remoteInfo = GoogleToolboxForMac;
+		};
 		3034E754E228E58CBE748953F4BD9398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -59,6 +66,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7E7A10955259AA0631DBA17E6D2CF612;
 			remoteInfo = PureLayout;
+		};
+		B9AD13077A9FF6A6B967D9E0C72FC36A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0597E693453A9B9EB96A690DAEC03780;
+			remoteInfo = GTMSessionFetcher;
 		};
 		CE0432E55C54831BF559963B0FEBA0CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -167,11 +181,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63D567B4F9EA5FDC754F6BC99DCA80F9 /* Frameworks */ = {
+		8AE84CAFC726F2AC7395591F93A63DAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7138C97D225B211560CCAD43C2DD76 /* Foundation.framework in Frameworks */,
+				C79D93650FAD018DFC725F67800E7A2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,16 +754,18 @@
 			productReference = F4B3E2A45B11A952627F8D31CAD8185A /* libiCarousel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E47CE9DB33C8327F20036F8426ECD516 /* Pods-SwipeTests */ = {
+		9677F53C7215E3E0391FA87CF4825D37 /* Pods-SwipeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 562E39EF690AF9F49589870D0C63F613 /* Build configuration list for PBXNativeTarget "Pods-SwipeTests" */;
+			buildConfigurationList = 05028C7141A84443069DB772EADB07BA /* Build configuration list for PBXNativeTarget "Pods-SwipeTests" */;
 			buildPhases = (
-				F541F877828D8B47A7704B66F341F1CA /* Sources */,
-				63D567B4F9EA5FDC754F6BC99DCA80F9 /* Frameworks */,
+				39CC29E852D0E469CB60915007C4344D /* Sources */,
+				8AE84CAFC726F2AC7395591F93A63DAB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE253C4D9DBBFA5047A65AF457F30996 /* PBXTargetDependency */,
+				009213F551847EC2A920D549F13F5D74 /* PBXTargetDependency */,
 			);
 			name = "Pods-SwipeTests";
 			productName = "Pods-SwipeTests";
@@ -781,7 +797,7 @@
 				0597E693453A9B9EB96A690DAEC03780 /* GTMSessionFetcher */,
 				9494390523250106847516AB47E5F9FF /* iCarousel */,
 				1CCBFB5C57A59295A098B34A1BD8E4F7 /* Pods-Swipe */,
-				E47CE9DB33C8327F20036F8426ECD516 /* Pods-SwipeTests */,
+				9677F53C7215E3E0391FA87CF4825D37 /* Pods-SwipeTests */,
 				7E7A10955259AA0631DBA17E6D2CF612 /* PureLayout */,
 			);
 		};
@@ -797,6 +813,14 @@
 				93793D325D2372115CF45139AB3673FE /* GTMSessionFetcherLogging.m in Sources */,
 				11EBA22A7A0463C89A289266C0E06259 /* GTMSessionFetcherService.m in Sources */,
 				035A4D63B9E369B4A305EEF6DB2A04AC /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39CC29E852D0E469CB60915007C4344D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D149A88C31F90A0B497CAC507E5A7F2 /* Pods-SwipeTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,17 +861,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F541F877828D8B47A7704B66F341F1CA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E10F35C35C62B3C38B610293FCBD353 /* Pods-SwipeTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		009213F551847EC2A920D549F13F5D74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 12D0BE9AB489DA96C874BA686EAC1EEE /* GoogleToolboxForMac */;
+			targetProxy = 20D1A43AF69ECED923100D9781CEAE47 /* PBXContainerItemProxy */;
+		};
 		4623B8ABE79A0CD7AC2A3AACD97BCEDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
@@ -871,6 +893,12 @@
 			name = GTMSessionFetcher;
 			target = 0597E693453A9B9EB96A690DAEC03780 /* GTMSessionFetcher */;
 			targetProxy = 3034E754E228E58CBE748953F4BD9398 /* PBXContainerItemProxy */;
+		};
+		EE253C4D9DBBFA5047A65AF457F30996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 0597E693453A9B9EB96A690DAEC03780 /* GTMSessionFetcher */;
+			targetProxy = B9AD13077A9FF6A6B967D9E0C72FC36A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -946,29 +974,6 @@
 			};
 			name = Release;
 		};
-		5683206F956A48E65688D10B61F0A916 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A7FB5CD8EBDAA36E8F7DC079F954FC /* Pods-SwipeTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1013,19 +1018,19 @@
 			};
 			name = Debug;
 		};
-		6AB08815C21C35B594A1C24F4EA82412 /* Release */ = {
+		6813B0A9FFD1932104143908D0A04239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF99BAD5A1500440E34C5076F862AA7 /* Pods-SwipeTests.release.xcconfig */;
+			baseConfigurationReference = 66A7FB5CD8EBDAA36E8F7DC079F954FC /* Pods-SwipeTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1034,7 +1039,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		7E5123B20138519698E8C32B7582E235 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1083,6 +1088,29 @@
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
+		};
+		9AC3C8C3FA5A85B297FEF6D4E7C77FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF99BAD5A1500440E34C5076F862AA7 /* Pods-SwipeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		9B8FDD0297F85F39A894EDD55E3E37FC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1255,6 +1283,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		05028C7141A84443069DB772EADB07BA /* Build configuration list for PBXNativeTarget "Pods-SwipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6813B0A9FFD1932104143908D0A04239 /* Debug */,
+				9AC3C8C3FA5A85B297FEF6D4E7C77FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0958F2C0CF7A99DCD224725DB5E278E9 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1287,15 +1324,6 @@
 			buildConfigurations = (
 				980D9E3F180ABBE5043EDDDA4A8FB12B /* Debug */,
 				43F69356BA650113D7E15DA69348B091 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		562E39EF690AF9F49589870D0C63F613 /* Build configuration list for PBXNativeTarget "Pods-SwipeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5683206F956A48E65688D10B61F0A916 /* Debug */,
-				6AB08815C21C35B594A1C24F4EA82412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

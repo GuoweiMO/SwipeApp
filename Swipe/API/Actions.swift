@@ -9,12 +9,35 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-let db = FIRDatabase.database().reference()
+
+let db = {
+  return FIRDatabase.database().reference()
+}()
+
 typealias ReceiversCompletion = (Int, [[String : [String : Any]]?]) -> Void
 typealias MatchedCompletion = ([SWCard]) -> Void
+typealias FIRCompletion = (Error?, FIRDatabaseReference) -> Void
 
 class Actions: NSObject {
   static let shared = Actions()
+  var uid = UIDevice.current.identifierForVendor?.uuidString
+
+  func createCard(withInfo info: [String: Any], andCompletion completion: @escaping FIRCompletion) {
+    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+  }
+  
+  func updateCard(withInfo info: [String: Any], andCompletion completion: @escaping FIRCompletion) {
+    db.child("cards").child(uid!).setValue(info, withCompletionBlock: completion)
+  }
+  
+  func retrieveMyCard(withCompletion completion: @escaping ([String : AnyObject]) -> Void, andError errorBlock: ((Error) -> Void)? ){
+    db.child("cards").child(uid!).observe(.value, with: {
+      (snapshot) -> Void in
+      if let dataDict = snapshot.value as? [String : AnyObject] {
+        completion(dataDict)
+      }
+    }, withCancel: errorBlock)
+  }
   
   func requestToSendCard(withCompletion completion: @escaping ReceiversCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
     SWCard.myCard.status = .Sending
@@ -102,7 +125,7 @@ class Actions: NSObject {
       db.child("cards").child(id).observe(.value, with: {
         (snapshot) -> Void in
         if let dataDict = snapshot.value as? [String : Any] {
-          if let likes = dataDict["likes"] as? [String], likes.contains(uid!) {
+          if let likes = dataDict["likes"] as? [String], likes.contains(self.uid!) {
             // exchange card with card id
             
             SWCard.myCard.contacts.append(id)
@@ -125,5 +148,36 @@ class Actions: NSObject {
     })
     
     completion(matchedCards) //show the card you have exchanged!!!!!
+  }
+}
+
+import FirebaseStorage
+let storage = FIRStorage.storage().reference(forURL: "gs://swipe-3b687.appspot.com")
+
+extension Actions { //Storage extension
+  
+  func uploadProfileImage(withData data: Data, extra: [String: String] ){
+    let metadata = FIRStorageMetadata()
+    metadata.customMetadata = extra
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    storage.child("images/\(uid!)/profile.png").put(data, metadata: metadata) { metadata, error in
+      if (error != nil) {
+        print(error.debugDescription)
+      } else {
+        let _ = metadata!.downloadURL
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+      }
+    }
+  }
+  
+  func downloadProfileImage(withUID uid: String, completion: @escaping (Data?, Error?) -> Void){
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    storage.child("images/\(uid)/profile.png").data(withMaxSize: 3 * 1024 * 1024, completion: completion)
+  }
+  
+  func getFileMetadata(ofName name: String, withCompletion completion: @escaping ([String: String]?, Error?) -> Void){
+    storage.child("images/\(uid!)/\(name).png").metadata { (data, error) in
+      completion(data?.customMetadata, error)
+    }
   }
 }
