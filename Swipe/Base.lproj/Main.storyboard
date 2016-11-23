@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lMY-nj-r9w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="StG-Qi-2ki">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,6 +26,24 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="pX7-dq-tnH">
+            <objects>
+                <viewController id="StG-Qi-2ki" customClass="TestViewController" customModule="Swipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dAL-3W-KST"/>
+                        <viewControllerLayoutGuide type="bottom" id="SM3-c9-fL5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kGd-AT-uQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="241-Ma-R2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="280"/>
+        </scene>
         <!--Add Profile Pic View Controller-->
         <scene sceneID="fXT-Ep-i94">
             <objects>
@@ -249,7 +267,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-sa-c3k">
-                                        <rect key="frame" x="28" y="480.5" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="28" y="481" width="87" height="86"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="uZY-sa-c3k" secondAttribute="height" multiplier="1:1" id="FZv-uM-8Km"/>
@@ -259,7 +277,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icS-LK-ddL">
-                                        <rect key="frame" x="260.5" y="480.5" width="86.5" height="86.5"/>
+                                        <rect key="frame" x="261" y="481" width="86" height="86"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="icS-LK-ddL" secondAttribute="height" id="l2b-bi-kxt"/>
@@ -269,7 +287,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-Uv-xM8">
-                                        <rect key="frame" x="144.5" y="480.5" width="86" height="86.5"/>
+                                        <rect key="frame" x="145" y="481" width="86" height="86"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YYg-Uv-xM8" secondAttribute="height" id="8dq-ED-TWz"/>
@@ -505,23 +523,23 @@
                                         <rect key="frame" x="84" y="10" width="72" height="16"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-dX-7OI">
-                                                <rect key="frame" x="0.0" y="0.0" width="15.5" height="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-eE-qaf">
-                                                <rect key="frame" x="15.5" y="1" width="14" height="14"/>
+                                                <rect key="frame" x="16" y="1" width="14" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ekq-eE-qaf" secondAttribute="height" id="0Vt-Qi-8ec"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tZ-VL-TTg">
-                                                <rect key="frame" x="35.5" y="0.0" width="21" height="16"/>
+                                                <rect key="frame" x="36" y="0.0" width="21" height="16"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp2-uL-PCm">
-                                                <rect key="frame" x="56.5" y="0.0" width="15.5" height="16"/>
+                                                <rect key="frame" x="57" y="0.0" width="15" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -925,7 +943,7 @@
                 <navigationController storyboardIdentifier="create card nav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tbk-G1-OzY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="39k-dH-psO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39k-dH-psO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

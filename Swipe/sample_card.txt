@@ -3,7 +3,9 @@
   "employer" : "mkodo",
   "fullName" : "Guowei Mo",
   "jobTitle" : "iOS Developer",
-  "mobile" : "07506744555",
-  "status" : "Normal",
-  "website" : "廖敔晗.com"
+  "mobile"   : "07506744555",
+  "status"   : "Normal",
+  "website"  : "廖敔晗.com",
+  "contacts" : [],
+  "location" : "0.1,0.1"
 }

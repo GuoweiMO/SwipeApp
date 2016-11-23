@@ -25,7 +25,6 @@
 		E46447F01DBBFD6300093C13 /* ReceivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46447EE1DBBFD6300093C13 /* ReceivingView.xib */; };
 		E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4710EDE1DBAA98C00F6A48D /* AddContactsView.xib */; };
 		E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4710EE01DBAAA7E00F6A48D /* AddContactsView.swift */; };
-		E480761D1DE306560064D752 /* Actions_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48076161DE2F48B0064D752 /* Actions_Tests.swift */; };
 		E4936C3D1DE1AFAF00622ACC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3C1DE1AFAF00622ACC /* BaseView.swift */; };
 		E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C3E1DE24FC600622ACC /* Actions.swift */; };
 		E4936C411DE25A2700622ACC /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C401DE25A2700622ACC /* Locations.swift */; };
@@ -68,6 +67,7 @@
 		E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */; };
 		E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */; };
 		E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */; };
+		E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */; };
 		E4D9503C1DE3467D002834D5 /* sample_card.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4D9503B1DE3467D002834D5 /* sample_card.txt */; };
 		E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D950421DE4AC9C002834D5 /* DataBuilder.swift */; };
 		F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */; };
@@ -123,7 +123,6 @@
 		E47D3B951DBE0C9B004D6A43 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-R.ttf"; path = "Supporting Files/Fonts/UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		E47D3B961DBE0C9B004D6A43 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UbuntuMono-RI.ttf"; path = "Supporting Files/Fonts/UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
 		E48076151DE2F48B0064D752 /* SwipeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		E48076161DE2F48B0064D752 /* Actions_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions_Tests.swift; path = SwipeTests/Actions_Tests.swift; sourceTree = SOURCE_ROOT; };
 		E4936C3C1DE1AFAF00622ACC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = Scenes/Home/BaseView.swift; sourceTree = "<group>"; };
 		E4936C3E1DE24FC600622ACC /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = API/Actions.swift; sourceTree = "<group>"; };
 		E4936C401DE25A2700622ACC /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = API/Locations.swift; sourceTree = "<group>"; };
@@ -157,6 +156,7 @@
 		E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoViewController.swift; path = "Scenes/Create Card/Add User Info/AddUserInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactInfoViewController.swift; path = "Scenes/Create Card/Add Contact Info/AddContactInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSocialMediaViewController.swift; path = "Scenes/Create Card/Add Social Media/AddSocialMediaViewController.swift"; sourceTree = "<group>"; };
+		E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Scenes/TestViewController.swift; sourceTree = "<group>"; };
 		E4D9503B1DE3467D002834D5 /* sample_card.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_card.txt; sourceTree = "<group>"; };
 		E4D950421DE4AC9C002834D5 /* DataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBuilder.swift; path = Common/DataBuilder.swift; sourceTree = "<group>"; };
 		F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,14 +350,6 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		E48076191DE2F8E50064D752 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E48076161DE2F48B0064D752 /* Actions_Tests.swift */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
 		E493F39E1DC519D600D7298C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +430,7 @@
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4145AA91DCE8B8D00B905F1 /* Contacts */,
+				E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -491,7 +484,6 @@
 				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
 				E4936C3E1DE24FC600622ACC /* Actions.swift */,
 				E4936C401DE25A2700622ACC /* Locations.swift */,
-				E48076191DE2F8E50064D752 /* Tests */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -765,6 +757,7 @@
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
+				E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */,
 				E4936C411DE25A2700622ACC /* Locations.swift in Sources */,
 				E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */,
 				E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */,
@@ -791,7 +784,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E480761D1DE306560064D752 /* Actions_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

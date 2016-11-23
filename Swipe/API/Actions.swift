@@ -14,8 +14,8 @@ let db = {
   return FIRDatabase.database().reference()
 }()
 
-typealias ReceiversCompletion = (Int, [[String : [String : Any]]?]) -> Void
-typealias MatchedCompletion = ([SWCard]) -> Void
+typealias ReceiversCompletion = (_ count: Int, _ cardsSending: [[String : [String : Any]]?]) -> Void
+typealias MatchedCompletion = (_ matches: [SWCard]) -> Void
 typealias FIRCompletion = (Error?, FIRDatabaseReference) -> Void
 
 class Actions: NSObject {
@@ -54,13 +54,13 @@ class Actions: NSObject {
         if counter < 10 {
          self.requestReceivers(withCounter: counter, andCompletion: completion)
         } else {
-          self.cancelSending(completion: cancelled)
+          self.sendingTimesout(completion: cancelled)
         }
       }
     }
   }
   
-  func requestReceivers(withCounter counter: Int,andCompletion completion: @escaping ReceiversCompletion){
+  private func requestReceivers(withCounter counter: Int,andCompletion completion: @escaping ReceiversCompletion){
     db.child("cards")
       .queryOrdered(byChild: "status")
       .queryEqual(toValue: CardStatus.Sending.rawValue)
@@ -70,7 +70,7 @@ class Actions: NSObject {
           // [k : [k : v]]
           var outputs: [[String : [String : Any]]] = []
           result.forEach({ (k, v) in
-            if let v = v as? [String: Any] {
+            if let v = v as? [String: Any], k != self.uid! {
               if let locString = v["location"] as? String {
                 let locs = locString.components(separatedBy: ",")
                 guard locs.count == 2 else { return }
@@ -86,7 +86,7 @@ class Actions: NSObject {
       }, withCancel: nil )
   }
   
-  func cancelSending(completion done: @escaping (Bool) -> Void) {
+  private func sendingTimesout(completion done: @escaping (Bool) -> Void) {
     SWCard.myCard.status = .Normal
     db.child("cards").child("\(uid!)/status").setValue(CardStatus.Normal.rawValue, withCompletionBlock: {
       (err, ref) -> Void in
@@ -113,15 +113,15 @@ class Actions: NSObject {
         if counter < 10 {
           self.findReceiverILikedWhoLikesMe(withCounter: counter, andCompletion: completion)
         } else {
-          self.cancelSending(completion: cancelled)
+          self.sendingTimesout(completion: cancelled)
         }
       }
     }
   }
 
-  func findReceiverILikedWhoLikesMe(withCounter counter: Int, andCompletion completion: @escaping MatchedCompletion){
+  private func findReceiverILikedWhoLikesMe(withCounter counter: Int, andCompletion completion: @escaping MatchedCompletion){
     var matchedCards: [SWCard] = []
-    SWCard.myCard.likes?.forEach({ (id) in
+    SWCard.myCard.likes.forEach({ (id) in
       db.child("cards").child(id).observe(.value, with: {
         (snapshot) -> Void in
         if let dataDict = snapshot.value as? [String : Any] {
@@ -132,7 +132,7 @@ class Actions: NSObject {
             self.requestToUpdateContacts()
             
             //remove id in likes
-            SWCard.myCard.likes!.remove(at: SWCard.myCard.likes!.index(of: id)!)
+            SWCard.myCard.likes.remove(at: SWCard.myCard.likes.index(of: id)!)
             self.requestToUpdateLikes()
             
             // create card instance and add it to card array

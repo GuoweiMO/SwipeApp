@@ -31,7 +31,7 @@ class SWCard: NSObject {
   var status: CardStatus = .Normal
   var contacts = [String]()
   var location: Location?
-  var likes: [String]?
+  var likes = [String]()
   
   func dictInfo() -> [String: Any] {
     var dict: [String: Any] = [:]
@@ -44,6 +44,7 @@ class SWCard: NSObject {
     dict["website"]  = website ?? ""
     dict["contacts"] = contacts
     dict["status"]   = status.rawValue
+    dict["likes"] = likes
     return dict
   }
   
@@ -56,6 +57,13 @@ class SWCard: NSObject {
     phone2   = data["phone2"] as? String
     website  = data["website"] as? String
     contacts = data["contacts"] as? [String] ?? []
+    likes    = data["likes"] as? [String] ?? []
+    if let loc = data["location"] as? String {
+      let locStrs = loc.components(separatedBy: ",")
+      if locStrs.count == 2 {
+        location = Location(longitude: Double(locStrs[0])!, latitude: Double(locStrs[1])!)
+      }
+    }
   }
 }
 

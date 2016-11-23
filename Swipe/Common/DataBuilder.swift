@@ -27,16 +27,8 @@ class DataBuilder: NSObject {
     if let data = string.data(using: String.Encoding.utf8) {
       do {
         if let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
-          guard let response = dict["response"] as? [String: Any],
-            let body = response["body"] as? [String: Any]
-            else {
-              return nil
-          }
-          var games:[[String: Any]] = [[:]]
-          if let game = body["drawGame"] {
-            games = convertToArray(fromJSON: game)
-          }
-          return games
+          let cards = convertToArray(fromJSON: dict)
+          return cards
         }
       } catch let error as NSError {
         print(error)
