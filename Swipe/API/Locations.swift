@@ -16,6 +16,7 @@ class Locations: NSObject {
     let loc1 = CLLocation(latitude: location.latitude, longitude: location.longitude)
     if let myLat = SWCard.myCard.location?.latitude,
       let myLong = SWCard.myCard.location?.longitude {
+      
       let myLoc = CLLocation(latitude: myLat, longitude: myLong)
       let distance = myLoc.distance(from: loc1) // in meters
       if distance <= 50.0 {

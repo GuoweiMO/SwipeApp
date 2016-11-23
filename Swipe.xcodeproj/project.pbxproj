@@ -18,6 +18,7 @@
 		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
 		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
+		E42758941DE6061100014DB5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationManager.swift */; };
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
@@ -102,6 +103,7 @@
 		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swipe.entitlements; sourceTree = "<group>"; };
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
+		E42758931DE6061100014DB5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Common/LocationManager.swift; sourceTree = "<group>"; };
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
@@ -295,6 +297,15 @@
 			name = "UI Source";
 			sourceTree = "<group>";
 		};
+		E42758911DE6048C00014DB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */,
+				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E46447EC1DBBFD4700093C13 /* Receiving View */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,9 +450,9 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
-				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
-				E4B1AC231DDE547800BFB3DB /* InfoInputView.swift */,
 				E4D950421DE4AC9C002834D5 /* DataBuilder.swift */,
+				E42758931DE6061100014DB5 /* LocationManager.swift */,
+				E42758911DE6048C00014DB5 /* Views */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -568,6 +579,9 @@
 						SystemCapabilities = {
 							com.apple.ApplePay = {
 								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 1;
@@ -754,6 +768,7 @@
 				E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
 				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
+				E42758941DE6061100014DB5 /* LocationManager.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
