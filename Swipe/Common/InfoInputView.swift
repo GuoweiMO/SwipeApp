@@ -19,6 +19,7 @@ class InfoInputView: UIView, UITextFieldDelegate {
     }
   }
   var labels:[UILabel]?
+  var previewLabels: [UILabel]?
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -47,6 +48,7 @@ class InfoInputView: UIView, UITextFieldDelegate {
   func textDidChange(sender: UITextField) {
     if let index = textFields?.index(of: sender), let label = labels?[index] {
       label.isHidden = sender.text == nil || sender.text!.isEmpty
+      previewLabels?[index].text = sender.text
     }
   }
   

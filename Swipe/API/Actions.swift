@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
+var requestTimer: Timer?
+
 let db = {
   return FIRDatabase.database().reference()
 }()
@@ -43,7 +45,7 @@ class Actions: NSObject {
     SWCard.myCard.status = .Sending
     db.child("cards").child("\(uid!)/status").setValue(CardStatus.Sending.rawValue, withCompletionBlock: {
       (err, ref) -> Void in
-      self.startQuery(withCompletion: completion, cancelDone: cancelled) // repeat query every 5 seconds
+      self.startQuery(withCompletion: completion, cancelDone: cancelled) // repeat query every 3 seconds
     })
   }
   
@@ -107,19 +109,42 @@ class Actions: NSObject {
   }
   
   func startQueryMatched(withCompletion completion: @escaping MatchedCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
-    for counter in 0...10 {
-      DispatchQueue.main.asyncAfter(deadline: .now() + Double(counter) * 3.0 ) {
-        print("fired \(counter) times")
-        if counter < 10 {
-          self.findReceiverILikedWhoLikesMe(withCounter: counter, andCompletion: completion)
+    
+    if #available(iOS 10.0, *) {
+      requestTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: {
+        [unowned self] (timer) in
+        if !self.hasUnMatchCards() {
+          requestTimer?.invalidate()
         } else {
-          self.sendingTimesout(completion: cancelled)
+          self.findReceiverILikedWhoLikesMe(withCompletion: completion)
         }
-      }
+      })
+    } else {
+      // Fallback on earlier versions
     }
+    
   }
 
-  private func findReceiverILikedWhoLikesMe(withCounter counter: Int, andCompletion completion: @escaping MatchedCompletion){
+  var matchDict: [String: Bool] = {
+    var dict = [String: Bool]()
+    SWCard.myCard.likes.forEach({ (str) in
+      dict[str] = false
+  })
+    return dict
+  }()
+  
+  private func hasUnMatchCards() -> Bool {
+    let boolList = matchDict.map { $0.1 }
+    var unmatch = false
+    boolList.forEach { (item) in
+      if !item {
+        unmatch = true
+      }
+    }
+    return unmatch
+  }
+  
+  private func findReceiverILikedWhoLikesMe(withCompletion completion: @escaping MatchedCompletion){
     var matchedCards: [SWCard] = []
     SWCard.myCard.likes.forEach({ (id) in
       db.child("cards").child(id).observe(.value, with: {
@@ -127,6 +152,8 @@ class Actions: NSObject {
         if let dataDict = snapshot.value as? [String : Any] {
           if let likes = dataDict["likes"] as? [String], likes.contains(self.uid!) {
             // exchange card with card id
+            
+            self.matchDict[id] = true
             
             SWCard.myCard.contacts.append(id)
             self.requestToUpdateContacts()
@@ -151,33 +178,3 @@ class Actions: NSObject {
   }
 }
 
-import FirebaseStorage
-let storage = FIRStorage.storage().reference(forURL: "gs://swipe-3b687.appspot.com")
-
-extension Actions { //Storage extension
-  
-  func uploadProfileImage(withData data: Data, extra: [String: String] ){
-    let metadata = FIRStorageMetadata()
-    metadata.customMetadata = extra
-    UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    storage.child("images/\(uid!)/profile.png").put(data, metadata: metadata) { metadata, error in
-      if (error != nil) {
-        print(error.debugDescription)
-      } else {
-        let _ = metadata!.downloadURL
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-      }
-    }
-  }
-  
-  func downloadProfileImage(withUID uid: String, completion: @escaping (Data?, Error?) -> Void){
-    UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    storage.child("images/\(uid)/profile.png").data(withMaxSize: 3 * 1024 * 1024, completion: completion)
-  }
-  
-  func getFileMetadata(ofName name: String, withCompletion completion: @escaping ([String: String]?, Error?) -> Void){
-    storage.child("images/\(uid!)/\(name).png").metadata { (data, error) in
-      completion(data?.customMetadata, error)
-    }
-  }
-}

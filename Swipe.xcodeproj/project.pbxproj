@@ -19,6 +19,7 @@
 		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
 		E42758941DE6061100014DB5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationManager.swift */; };
+		E42C90971DFE0327004D9F76 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C90961DFE0327004D9F76 /* Storage.swift */; };
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
@@ -31,7 +32,10 @@
 		E4936C411DE25A2700622ACC /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C401DE25A2700622ACC /* Locations.swift */; };
 		E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493F39F1DC519FC00D7298C /* NavigationView.xib */; };
 		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
+		E49901511E129A7700D59BCC /* StepBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49901501E129A7700D59BCC /* StepBarView.xib */; };
+		E49901531E129D0000D59BCC /* StepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901521E129D0000D59BCC /* StepBarView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
+		E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
 		E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */; };
 		E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */; };
@@ -64,7 +68,6 @@
 		E4BC3DFD1D9071D200D01BD9 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */; };
 		E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */; };
 		E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BC3E001D90780500D01BD9 /* SWButton.swift */; };
-		E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2531DDDF48B0054BF01 /* SWActions.swift */; };
 		E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */; };
 		E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */; };
 		E4C5B25A1DDE10690054BF01 /* AddSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */; };
@@ -104,6 +107,7 @@
 		E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swipe.entitlements; sourceTree = "<group>"; };
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
 		E42758931DE6061100014DB5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Common/LocationManager.swift; sourceTree = "<group>"; };
+		E42C90961DFE0327004D9F76 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = API/Storage.swift; sourceTree = "<group>"; };
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
@@ -130,8 +134,11 @@
 		E4936C401DE25A2700622ACC /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = API/Locations.swift; sourceTree = "<group>"; };
 		E493F39F1DC519FC00D7298C /* NavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NavigationView.xib; path = Scenes/Navigation/NavigationView.xib; sourceTree = "<group>"; };
 		E493F3A41DC5209100D7298C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Scenes/Navigation/NavigationView.swift; sourceTree = "<group>"; };
+		E49901501E129A7700D59BCC /* StepBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StepBarView.xib; path = "Scenes/Add Info/StepBarView.xib"; sourceTree = "<group>"; };
+		E49901521E129D0000D59BCC /* StepBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepBarView.swift; path = "Scenes/Add Info/StepBarView.swift"; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
+		E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInfoViewController.swift; path = "Scenes/Add Info/AddInfoViewController.swift"; sourceTree = "<group>"; };
 		E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModeButton.swift; path = Scenes/Contacts/ViewModeButton.swift; sourceTree = "<group>"; };
 		E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactSlideView.xib; path = Scenes/Contacts/ContactSlideView.xib; sourceTree = "<group>"; };
 		E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactSlideView.swift; path = Scenes/Contacts/ContactSlideView.swift; sourceTree = "<group>"; };
@@ -154,7 +161,6 @@
 		E4BC3DFC1D9071D200D01BD9 /* SendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendingView.swift; path = "Scenes/Home/Sending View/SendingView.swift"; sourceTree = "<group>"; };
 		E4BC3DFE1D9071EF00D01BD9 /* SendingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SendingView.xib; path = "Scenes/Home/Sending View/SendingView.xib"; sourceTree = "<group>"; };
 		E4BC3E001D90780500D01BD9 /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWButton.swift; path = Common/SWButton.swift; sourceTree = "<group>"; };
-		E4C5B2531DDDF48B0054BF01 /* SWActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWActions.swift; path = API/SWActions.swift; sourceTree = "<group>"; };
 		E4C5B2551DDDF6C50054BF01 /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoViewController.swift; path = "Scenes/Create Card/Add User Info/AddUserInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2571DDE0F7F0054BF01 /* AddContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddContactInfoViewController.swift; path = "Scenes/Create Card/Add Contact Info/AddContactInfoViewController.swift"; sourceTree = "<group>"; };
 		E4C5B2591DDE10690054BF01 /* AddSocialMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSocialMediaViewController.swift; path = "Scenes/Create Card/Add Social Media/AddSocialMediaViewController.swift"; sourceTree = "<group>"; };
@@ -370,6 +376,24 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
+		E499014F1E129A2600D59BCC /* UI Source */ = {
+			isa = PBXGroup;
+			children = (
+				E49901501E129A7700D59BCC /* StepBarView.xib */,
+				E49901521E129D0000D59BCC /* StepBarView.swift */,
+			);
+			name = "UI Source";
+			sourceTree = "<group>";
+		};
+		E4A3F11B1E103363009152FC /* add Info */ = {
+			isa = PBXGroup;
+			children = (
+				E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */,
+				E499014F1E129A2600D59BCC /* UI Source */,
+			);
+			name = "add Info";
+			sourceTree = "<group>";
+		};
 		E4B1AC101DD8BF9200BFB3DB /* Number Pad View */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,9 +488,7 @@
 				E4B1AC1B1DDBC2A900BFB3DB /* Landing */,
 				E4B1AC191DDBC27B00BFB3DB /* Add Profile Pic */,
 				E4B1AC1E1DDD056600BFB3DB /* Change Profile Pic */,
-				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
-				E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */,
-				E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */,
+				E4A3F11B1E103363009152FC /* add Info */,
 			);
 			name = "Create Card";
 			sourceTree = "<group>";
@@ -492,9 +514,9 @@
 		E4C5B2521DDDF3850054BF01 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E4C5B2531DDDF48B0054BF01 /* SWActions.swift */,
 				E4936C3E1DE24FC600622ACC /* Actions.swift */,
 				E4936C401DE25A2700622ACC /* Locations.swift */,
+				E42C90961DFE0327004D9F76 /* Storage.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -502,6 +524,9 @@
 		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
+				E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */,
+				E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */,
 				E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */,
 				E4BC3DE41D8C5E4E00D01BD9 /* CreateCardViewController.swift */,
 				E46447F11DBCBC5900093C13 /* UI Source */,
@@ -646,6 +671,7 @@
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
 				E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */,
 				E4145AB41DCE95BB00B905F1 /* ContactViewCell.xib in Resources */,
+				E49901511E129A7700D59BCC /* StepBarView.xib in Resources */,
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
 				E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */,
@@ -771,6 +797,7 @@
 				E42758941DE6061100014DB5 /* LocationManager.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
+				E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */,
 				E4936C411DE25A2700622ACC /* Locations.swift in Sources */,
@@ -779,8 +806,8 @@
 				E46447EF1DBBFD6300093C13 /* ReceivingView.swift in Sources */,
 				E4B1AC181DD9112800BFB3DB /* NumberPadView.swift in Sources */,
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
-				E4C5B2541DDDF48B0054BF01 /* SWActions.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
+				E42C90971DFE0327004D9F76 /* Storage.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
 				E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */,
@@ -792,6 +819,7 @@
 				E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */,
 				E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */,
 				E4B1AC221DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift in Sources */,
+				E49901531E129D0000D59BCC /* StepBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +904,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -916,6 +945,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -975,7 +1005,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4D5FC42927161E41C2E36D2 /* Pods-SwipeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTests/Info.plist;
@@ -993,7 +1022,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTests/Info.plist;

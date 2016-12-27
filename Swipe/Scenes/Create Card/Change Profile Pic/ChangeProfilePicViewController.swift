@@ -19,6 +19,7 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   var imageView: UIImageView?
   var profileImage: UIImage?
   var circleView: UIImageView?
+  var scale: CGFloat = 1.0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -48,7 +49,10 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
         imageScrollView.addSubview(imageView!)
       }
       imageView!.image = image
-      imageView!.frame = CGRect(x: 0, y: 0, width: image.size.width/2, height: image.size.height/2)
+      
+      scale = min(image.size.width/imageScrollView.frame.width, image.size.height/imageScrollView.frame.height)
+      
+      imageView!.frame = CGRect(x: 0, y: 0, width: image.size.width/scale, height: image.size.height/scale)
       imageScrollView.contentSize = imageView!.bounds.size
     }
   }
@@ -57,18 +61,12 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     return imageView!
   }
   
-  func createCircleCropView() {
-    let circleView = UIImageView(image: UIImage(named: "circle-crop"))
-    circleView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-    view.addSubview(circleView)
-    self.circleView = circleView
-  }
-  
-  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-    if let point = touches.first?.location(in: circleView) {
-      circleView?.center = point
-    }
-  }
+//  func createCircleCropView() {
+//    let circleView = UIImageView(image: UIImage(named: "circle-crop"))
+//    circleView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+//    view.addSubview(circleView)
+//    self.circleView = circleView
+//  }
   
   @IBAction func noButtonDidTap(_ sender: UIButton) {
     
@@ -81,7 +79,7 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   }
   
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
-     createCircleCropView()
+//     createCircleCropView()
   }
   
   @IBAction func cameraButtonDidTap(_ sender: Any) {
@@ -103,10 +101,10 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let visiableRect = CGRect(x: imageScrollView.contentOffset.x * 2,
-                              y: imageScrollView.contentOffset.y * 2,
-                              width: imageScrollView.frame.width * 2,
-                              height: imageScrollView.frame.height * 2)
+    let visiableRect = CGRect(x: imageScrollView.contentOffset.x * scale,
+                              y: imageScrollView.contentOffset.y * scale,
+                              width: imageScrollView.frame.width * scale,
+                              height: imageScrollView.frame.height * scale)
     if let outputImage = Common.crop(profileImage!, toRect: visiableRect) {
        SWCard.myCard.largeProfileImage = outputImage
     }

@@ -52,13 +52,13 @@ class HomeViewController: UIViewController,
     updateNavBarTitleImage(named: "text-logo-red")
     makeNavBarTransparent()
     
-//    SWActions.retrieveMyCard(withCompletion: {
-//      (dataDict) in
-//        SWCard.myCard.updateCard(withFullData: dataDict)
-//        self.updateCardViewWithMyCard()
-//    }, andError: {
-//      err in
-//    })
+    Actions.shared.retrieveMyCard(withCompletion: {
+      (dataDict) in
+        SWCard.myCard.updateCard(withFullData: dataDict)
+        self.updateCardViewWithMyCard()
+    }, andError: {
+      err in
+    })
     
 //    SWActions.downloadProfileImage(withName: "profile", completion: {
 //      data, error in
