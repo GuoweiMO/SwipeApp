@@ -34,6 +34,11 @@
 		E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493F3A41DC5209100D7298C /* NavigationView.swift */; };
 		E49901511E129A7700D59BCC /* StepBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49901501E129A7700D59BCC /* StepBarView.xib */; };
 		E49901531E129D0000D59BCC /* StepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901521E129D0000D59BCC /* StepBarView.swift */; };
+		E49901591E12BEBF00D59BCC /* SwipedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49901581E12BEBF00D59BCC /* SwipedView.xib */; };
+		E499015B1E12C07500D59BCC /* nsdisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E499015A1E12C06B00D59BCC /* nsdisplay.ttf */; };
+		E499015D1E12C1DE00D59BCC /* RadarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E499015C1E12C1DE00D59BCC /* RadarView.xib */; };
+		E499015F1E12C4FF00D59BCC /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499015E1E12C4FF00D59BCC /* RadarView.swift */; };
+		E49901611E12C8E500D59BCC /* SwipedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901601E12C8E500D59BCC /* SwipedView.swift */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
@@ -136,6 +141,11 @@
 		E493F3A41DC5209100D7298C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Scenes/Navigation/NavigationView.swift; sourceTree = "<group>"; };
 		E49901501E129A7700D59BCC /* StepBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StepBarView.xib; path = "Scenes/Add Info/StepBarView.xib"; sourceTree = "<group>"; };
 		E49901521E129D0000D59BCC /* StepBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepBarView.swift; path = "Scenes/Add Info/StepBarView.swift"; sourceTree = "<group>"; };
+		E49901581E12BEBF00D59BCC /* SwipedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwipedView.xib; path = Scenes/Home/SwipedView.xib; sourceTree = "<group>"; };
+		E499015A1E12C06B00D59BCC /* nsdisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nsdisplay.ttf; sourceTree = "<group>"; };
+		E499015C1E12C1DE00D59BCC /* RadarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RadarView.xib; path = Scenes/Home/RadarView.xib; sourceTree = "<group>"; };
+		E499015E1E12C4FF00D59BCC /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadarView.swift; path = Scenes/Home/RadarView.swift; sourceTree = "<group>"; };
+		E49901601E12C8E500D59BCC /* SwipedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipedView.swift; path = Scenes/Home/SwipedView.swift; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInfoViewController.swift; path = "Scenes/Add Info/AddInfoViewController.swift"; sourceTree = "<group>"; };
@@ -340,7 +350,6 @@
 			isa = PBXGroup;
 			children = (
 				E4936C3C1DE1AFAF00622ACC /* BaseView.swift */,
-				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
@@ -350,6 +359,7 @@
 		E47D3B891DBE0C8A004D6A43 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E499015A1E12C06B00D59BCC /* nsdisplay.ttf */,
 				E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */,
 				E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */,
 				E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */,
@@ -381,6 +391,17 @@
 			children = (
 				E49901501E129A7700D59BCC /* StepBarView.xib */,
 				E49901521E129D0000D59BCC /* StepBarView.swift */,
+			);
+			name = "UI Source";
+			sourceTree = "<group>";
+		};
+		E49901571E12BE8A00D59BCC /* UI Source */ = {
+			isa = PBXGroup;
+			children = (
+				E49901581E12BEBF00D59BCC /* SwipedView.xib */,
+				E49901601E12C8E500D59BCC /* SwipedView.swift */,
+				E499015C1E12C1DE00D59BCC /* RadarView.xib */,
+				E499015E1E12C4FF00D59BCC /* RadarView.swift */,
 			);
 			name = "UI Source";
 			sourceTree = "<group>";
@@ -461,6 +482,7 @@
 		E4BC3DDB1D8C5D8400D01BD9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5B25B1DDF00DA0054BF01 /* Archived */,
 				E493F39E1DC519D600D7298C /* Navigation */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
@@ -484,7 +506,6 @@
 		E4BC3DE31D8C5DF200D01BD9 /* Create Card */ = {
 			isa = PBXGroup;
 			children = (
-				E4C5B25B1DDF00DA0054BF01 /* Archived */,
 				E4B1AC1B1DDBC2A900BFB3DB /* Landing */,
 				E4B1AC191DDBC27B00BFB3DB /* Add Profile Pic */,
 				E4B1AC1E1DDD056600BFB3DB /* Change Profile Pic */,
@@ -497,7 +518,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BC3DF41D8EA83B00D01BD9 /* HomeViewController.swift */,
-				E46447F21DBCBC8700093C13 /* UI Source */,
+				E49901571E12BE8A00D59BCC /* UI Source */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -524,6 +545,8 @@
 		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				E46447F21DBCBC8700093C13 /* UI Source */,
+				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
 				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
 				E4B1AC1C1DDBC2B200BFB3DB /* Add Contact Info */,
 				E4B1AC1D1DDBC2C800BFB3DB /* Add Social media */,
@@ -674,9 +697,12 @@
 				E49901511E129A7700D59BCC /* StepBarView.xib in Resources */,
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
+				E499015B1E12C07500D59BCC /* nsdisplay.ttf in Resources */,
 				E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
+				E49901591E12BEBF00D59BCC /* SwipedView.xib in Resources */,
 				E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */,
+				E499015D1E12C1DE00D59BCC /* RadarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,8 +836,10 @@
 				E42C90971DFE0327004D9F76 /* Storage.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
 				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
+				E499015F1E12C4FF00D59BCC /* RadarView.swift in Sources */,
 				E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
+				E49901611E12C8E500D59BCC /* SwipedView.swift in Sources */,
 				E4145AB31DCE95BB00B905F1 /* ContactViewCell.swift in Sources */,
 				E4BC3DF01D8C9D1B00D01BD9 /* SWCard.swift in Sources */,
 				E4BC3E011D90780500D01BD9 /* SWButton.swift in Sources */,

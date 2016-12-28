@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+        <array key="nsdisplay.ttf">
+            <string>.HelveticaNeueDeskInterface-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SwipedView" customModule="Swipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiR-ey-ecq">
+                    <rect key="frame" x="159" y="305" width="58" height="57"/>
+                    <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Regular" family="SFNS Display" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-Wc-jJI">
+                    <rect key="frame" x="161" y="366" width="53" height="16"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEe-5L-K5K" customClass="RadarView" customModule="Swipe" customModuleProvider="target">
+                    <rect key="frame" x="117" y="80" width="140" height="140"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="DgI-4W-5ag"/>
+                        <constraint firstAttribute="height" constant="140" id="Wtf-ho-acf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YEe-5L-K5K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0pM-RK-emE"/>
+                <constraint firstItem="7Q5-Wc-jJI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0tr-AG-5yS"/>
+                <constraint firstItem="YEe-5L-K5K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="8FG-ul-BVX"/>
+                <constraint firstItem="MiR-ey-ecq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hds-Xt-mJ1"/>
+                <constraint firstItem="MiR-ey-ecq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mtl-6z-oFj"/>
+                <constraint firstItem="7Q5-Wc-jJI" firstAttribute="top" secondItem="MiR-ey-ecq" secondAttribute="bottom" constant="4" id="pUY-CB-Wu7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="counterLabel" destination="MiR-ey-ecq" id="v0u-k6-vwQ"/>
+                <outlet property="radarContainer" destination="YEe-5L-K5K" id="85w-a7-qUl"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

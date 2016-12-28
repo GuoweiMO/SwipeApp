@@ -25,12 +25,7 @@ class ReceivingView: UIView {
   
   weak var output: ReceivingViewOutput?
   @IBOutlet weak var finishedView: UIImageView!
-  
-  class func viewfromNib() -> ReceivingView?
-  {
-    return Bundle.main.loadNibNamed("ReceivingView", owner: self, options: nil)?.first as? ReceivingView
-  }
-  
+    
   override func awakeFromNib() {
     super.awakeFromNib()
     

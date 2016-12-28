@@ -84,6 +84,15 @@ class AddInfoViewController: UIViewController, UIScrollViewDelegate {
   }
   
   @IBAction func doneButtonDidTap(_ sender: Any) {
+    
+    SWCard.myCard.fullName = fullNameField.text ?? ""
+    SWCard.myCard.jobTitle = jobTitleField.text ?? ""
+    SWCard.myCard.employer = companyField.text ?? ""
+    SWCard.myCard.email = emailField.text ?? ""
+    SWCard.myCard.phone1 = phone1Field.text ?? ""
+    SWCard.myCard.phone2 = phone2Field.text ?? ""
+    SWCard.myCard.website = websiteField.text ?? ""
+    
     saveMyCardInfo()
     initHomeController()
   }

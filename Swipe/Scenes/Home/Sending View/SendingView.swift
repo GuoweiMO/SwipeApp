@@ -29,12 +29,7 @@ class SendingView: UIView {
   @IBOutlet weak var finishedView: UIImageView!
   
   weak var output: SendingViewOutput?
-  
-  class func viewfromNib() -> SendingView?
-  {
-    return Bundle.main.loadNibNamed("SendingView", owner: self, options: nil)?.first as? SendingView
-  }
-  
+    
   override func awakeFromNib() {
     super.awakeFromNib()
   }
