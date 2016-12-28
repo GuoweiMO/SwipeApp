@@ -43,13 +43,18 @@ class Actions: NSObject {
   
   func requestToSendCard(withCompletion completion: @escaping ReceiversCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
     SWCard.myCard.status = .Sending
-    db.child("cards").child("\(uid!)/status").setValue(CardStatus.Sending.rawValue, withCompletionBlock: {
-      (err, ref) -> Void in
-      self.startQuery(withCompletion: completion, cancelDone: cancelled) // repeat query every 3 seconds
+    db.child("cards").child("\(uid!)/location").setValue(SWCard.myCard.location, withCompletionBlock: {
+      [unowned self] (err, ref) in
+      guard err == nil else { return } //update location done
+      
+      db.child("cards").child("\(self.uid!)/status").setValue(CardStatus.Sending.rawValue, withCompletionBlock: {
+        (err, ref) -> Void in
+        self.startQuery(withCompletion: completion, cancelDone: cancelled) // repeat query every 3 seconds
+      })
     })
   }
   
-  func startQuery(withCompletion completion: @escaping ReceiversCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
+  private func startQuery(withCompletion completion: @escaping ReceiversCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
     for counter in 0...10 {
       DispatchQueue.main.asyncAfter(deadline: .now() + Double(counter) * 3.0 ) {
         print("fired \(counter) times")

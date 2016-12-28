@@ -6,14 +6,8 @@ target 'Swipe' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'PureLayout'
-  pod 'Firebase'
-  pod 'Firebase/Database'
-  pod 'Firebase/Storage'
   pod 'iCarousel'
 end
 
 target 'SwipeTests' do
-  pod 'Firebase'
-  pod 'Firebase/Database'
-  pod 'Firebase/Storage'
 end

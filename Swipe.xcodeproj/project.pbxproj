@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05FA05D3C15624F65DCFF768 /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */; };
+		541EBEF430C818A18894BC86 /* libPods-SwipeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7118BFF1EED605AA46CBB15 /* libPods-SwipeTests.a */; };
 		E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B21D85C743005D2B3C /* Main.storyboard */; };
 		E40A63B91D85C743005D2B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A63B71D85C743005D2B3C /* LaunchScreen.storyboard */; };
 		E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4145AAA1DCE8BF300B905F1 /* ContactsViewController.swift */; };
@@ -18,8 +18,17 @@
 		E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41CD84A1DB96BBF0025DE8A /* ChangeProfilePicView.xib */; };
 		E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */; };
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
-		E42758941DE6061100014DB5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationManager.swift */; };
+		E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationHandler.swift */; };
 		E42C90971DFE0327004D9F76 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C90961DFE0327004D9F76 /* Storage.swift */; };
+		E42DB9B11E13DE0200E1D80D /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */; };
+		E42DB9B31E13DE2E00E1D80D /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */; };
+		E42DB9B71E13DF9900E1D80D /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */; };
+		E42DB9B91E13DFB300E1D80D /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */; };
+		E42DB9BB1E13E03E00E1D80D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */; };
+		E42DB9BD1E13E06300E1D80D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */; };
+		E42DB9C01E13E0B400E1D80D /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */; };
+		E42DB9C11E13E0B400E1D80D /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */; };
+		E42DB9C31E13E24D00E1D80D /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */; };
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
@@ -79,7 +88,7 @@
 		E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */; };
 		E4D9503C1DE3467D002834D5 /* sample_card.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4D9503B1DE3467D002834D5 /* sample_card.txt */; };
 		E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D950421DE4AC9C002834D5 /* DataBuilder.swift */; };
-		F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */; };
+		EE2749B911D6250406175DC3 /* libPods-Swipe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D228C62E37DCE81B58A078EC /* libPods-Swipe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +104,9 @@
 /* Begin PBXFileReference section */
 		008AD74E70D13132E308268A /* Pods-Swipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swipe/Pods-Swipe.release.xcconfig"; sourceTree = "<group>"; };
 		2CACA928A83D8E5DB4D28B04 /* Pods-Swipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swipe/Pods-Swipe.debug.xcconfig"; sourceTree = "<group>"; };
-		560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D5FC42927161E41C2E36D2 /* Pods-SwipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7118BFF1EED605AA46CBB15 /* libPods-SwipeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwipeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D228C62E37DCE81B58A078EC /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63AB1D85C743005D2B3C /* Swipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40A63B31D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E40A63B81D85C743005D2B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,8 +121,19 @@
 		E41CD84C1DB96D850025DE8A /* ChangeProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeProfilePicView.swift; path = "Scenes/Create Card/ChangeProfilePicView.swift"; sourceTree = "<group>"; };
 		E41CD84E1DB982BA0025DE8A /* Swipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swipe.entitlements; sourceTree = "<group>"; };
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
-		E42758931DE6061100014DB5 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Common/LocationManager.swift; sourceTree = "<group>"; };
+		E42758931DE6061100014DB5 /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHandler.swift; path = Common/LocationHandler.swift; sourceTree = "<group>"; };
 		E42C90961DFE0327004D9F76 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = API/Storage.swift; sourceTree = "<group>"; };
+		E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
+		E42DB9B41E13DF2400E1D80D /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		E42DB9B51E13DF2400E1D80D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
@@ -177,7 +198,6 @@
 		E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Scenes/TestViewController.swift; sourceTree = "<group>"; };
 		E4D9503B1DE3467D002834D5 /* sample_card.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_card.txt; sourceTree = "<group>"; };
 		E4D950421DE4AC9C002834D5 /* DataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBuilder.swift; path = Common/DataBuilder.swift; sourceTree = "<group>"; };
-		F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swipe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77182D1DA69DF0078D0DF09 /* Pods-SwipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeTests/Pods-SwipeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,7 +206,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15D08C356457F521BA76446 /* libPods-Swipe.a in Frameworks */,
+				E42DB9C11E13E0B400E1D80D /* GoogleSymbolUtilities.framework in Frameworks */,
+				E42DB9B71E13DF9900E1D80D /* FirebaseAnalytics.framework in Frameworks */,
+				E42DB9C01E13E0B400E1D80D /* GoogleInterchangeUtilities.framework in Frameworks */,
+				E42DB9B91E13DFB300E1D80D /* FirebaseCore.framework in Frameworks */,
+				E42DB9B11E13DE0200E1D80D /* FirebaseDatabase.framework in Frameworks */,
+				EE2749B911D6250406175DC3 /* libPods-Swipe.a in Frameworks */,
+				E42DB9BD1E13E06300E1D80D /* FirebaseInstanceID.framework in Frameworks */,
+				E42DB9BB1E13E03E00E1D80D /* GTMSessionFetcher.framework in Frameworks */,
+				E42DB9B31E13DE2E00E1D80D /* FirebaseStorage.framework in Frameworks */,
+				E42DB9C31E13E24D00E1D80D /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FA05D3C15624F65DCFF768 /* libPods-SwipeTests.a in Frameworks */,
+				541EBEF430C818A18894BC86 /* libPods-SwipeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +244,8 @@
 		723EEED39D80CF70DEF1EFC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F2039D02CCE854DD7846A5A5 /* libPods-Swipe.a */,
-				560756FC6BFF24914D7E4F85 /* libPods-SwipeTests.a */,
+				D228C62E37DCE81B58A078EC /* libPods-Swipe.a */,
+				A7118BFF1EED605AA46CBB15 /* libPods-SwipeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,6 +349,24 @@
 				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		E42DB9C41E13E29200E1D80D /* firebase frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42DB9B41E13DF2400E1D80D /* Firebase.h */,
+				E42DB9B51E13DF2400E1D80D /* module.modulemap */,
+				E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */,
+				E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */,
+				E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */,
+				E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */,
+				E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */,
+				E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */,
+				E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */,
+				E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */,
+				E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */,
+			);
+			name = "firebase frameworks";
 			sourceTree = "<group>";
 		};
 		E46447EC1DBBFD4700093C13 /* Receiving View */ = {
@@ -497,7 +544,7 @@
 			children = (
 				E4BC3DF61D8EAA6900D01BD9 /* Common.swift */,
 				E4D950421DE4AC9C002834D5 /* DataBuilder.swift */,
-				E42758931DE6061100014DB5 /* LocationManager.swift */,
+				E42758931DE6061100014DB5 /* LocationHandler.swift */,
 				E42758911DE6048C00014DB5 /* Views */,
 			);
 			name = Common;
@@ -535,6 +582,7 @@
 		E4C5B2521DDDF3850054BF01 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E42DB9C41E13E29200E1D80D /* firebase frameworks */,
 				E4936C3E1DE24FC600622ACC /* Actions.swift */,
 				E4936C401DE25A2700622ACC /* Locations.swift */,
 				E42C90961DFE0327004D9F76 /* Storage.swift */,
@@ -820,7 +868,7 @@
 				E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
 				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
-				E42758941DE6061100014DB5 /* LocationManager.swift in Sources */,
+				E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */,
@@ -988,6 +1036,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 385HFV6T8Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swipe",
+				);
 				INFOPLIST_FILE = Swipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1014,6 +1066,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 385HFV6T8Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swipe",
+				);
 				INFOPLIST_FILE = Swipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

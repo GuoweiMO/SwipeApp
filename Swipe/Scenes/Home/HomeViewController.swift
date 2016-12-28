@@ -14,7 +14,7 @@ enum ActionState {
   case None
 }
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, LocationHandlerOutput {
   
   @IBOutlet weak var fullNameLabel: UILabel!
   @IBOutlet weak var jobTitleLabel: UILabel!
@@ -73,6 +73,8 @@ class HomeViewController: UIViewController {
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))
     homeCardView.addGestureRecognizer(swipeUp)
     
+    LocationHandler.shared.output = self
+    LocationHandler.shared.startUpdatingLocation()
   }
   
   func fetchProfileImageOnLoad() {
@@ -111,15 +113,11 @@ class HomeViewController: UIViewController {
       let duration = abs((yPoints / velocityY) / 3.0)
       var offScreenCenter = homeCardView.center
       
-      guard velocityY < -200 || velocityY > 200 else { return}
+      guard velocityY < -200 else { return}
       
-      if velocityY < -200
-      {
-        offScreenCenter.y -= yPoints * 0.8
-        
-        self.swipedView.isHidden = false
-        swipedView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-      }
+      offScreenCenter.y -= yPoints * 0.8
+      swipedView.isHidden = false
+      swipedView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
       
       UIView.animate(withDuration: Double(duration), animations: {
         self.homeCardView.center = offScreenCenter
@@ -134,8 +132,22 @@ class HomeViewController: UIViewController {
         self.homeCardView.alpha = 1
         self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
         self.swipedView.startCounter()
+        
+        self.startQueryingSwipers()
       })
     }
   }
   
+  func locationUpdated(to location: Location) {
+    SWCard.myCard.location = location
+  }
+  
+  func startQueryingSwipers() {
+    Actions.shared.requestToSendCard(withCompletion: { (cnt, swiperList) in
+      
+    }, cancelDone: {
+      (done) in
+      print("no swipers found cancelled")
+    })
+  }
 }
