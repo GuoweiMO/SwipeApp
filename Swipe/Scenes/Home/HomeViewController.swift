@@ -75,6 +75,10 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
     homeCardView.addGestureRecognizer(swipeUp)
     
     LocationHandler.shared.output = self
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     LocationHandler.shared.startUpdatingLocation()
   }
   
@@ -147,8 +151,9 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
   }
   
   func startQueryingSwipers() {
-    Actions.shared.requestToSendCard(withCompletion: { (cnt, swiperList) in
-      
+    Actions.shared.requestToSendCard(withCompletion: {
+      [unowned self] (cnt, swiperList) in
+      self.swipedView.showSwipersView()
     }, cancelDone: {
       (done) in
       print("no swipers found cancelled")

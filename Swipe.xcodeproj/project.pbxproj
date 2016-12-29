@@ -20,15 +20,6 @@
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
 		E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationHandler.swift */; };
 		E42C90971DFE0327004D9F76 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C90961DFE0327004D9F76 /* Storage.swift */; };
-		E42DB9B11E13DE0200E1D80D /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */; };
-		E42DB9B31E13DE2E00E1D80D /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */; };
-		E42DB9B71E13DF9900E1D80D /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */; };
-		E42DB9B91E13DFB300E1D80D /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */; };
-		E42DB9BB1E13E03E00E1D80D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */; };
-		E42DB9BD1E13E06300E1D80D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */; };
-		E42DB9C01E13E0B400E1D80D /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */; };
-		E42DB9C11E13E0B400E1D80D /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */; };
-		E42DB9C31E13E24D00E1D80D /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */; };
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
@@ -51,9 +42,9 @@
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
-		E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */; };
-		E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */; };
-		E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */; };
+		E4B1ABD01DD1238D00BFB3DB /* LargeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */; };
+		E4B1ABD21DD1289900BFB3DB /* LargeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */; };
+		E4B1ABD41DD1293B00BFB3DB /* CardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */; };
 		E4B1ABD51DD1320800BFB3DB /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */; };
 		E4B1ABD61DD1320800BFB3DB /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */; };
 		E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */; };
@@ -123,17 +114,6 @@
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
 		E42758931DE6061100014DB5 /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHandler.swift; path = Common/LocationHandler.swift; sourceTree = "<group>"; };
 		E42C90961DFE0327004D9F76 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = API/Storage.swift; sourceTree = "<group>"; };
-		E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
-		E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
-		E42DB9B41E13DF2400E1D80D /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
-		E42DB9B51E13DF2400E1D80D /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
-		E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
-		E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
@@ -171,9 +151,9 @@
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInfoViewController.swift; path = "Scenes/Add Info/AddInfoViewController.swift"; sourceTree = "<group>"; };
 		E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModeButton.swift; path = Scenes/Contacts/ViewModeButton.swift; sourceTree = "<group>"; };
-		E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactSlideView.xib; path = Scenes/Contacts/ContactSlideView.xib; sourceTree = "<group>"; };
-		E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactSlideView.swift; path = Scenes/Contacts/ContactSlideView.swift; sourceTree = "<group>"; };
-		E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsCarouselView.swift; path = Scenes/Contacts/ContactsCarouselView.swift; sourceTree = "<group>"; };
+		E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LargeCardView.xib; path = Scenes/Contacts/LargeCardView.xib; sourceTree = "<group>"; };
+		E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LargeCardView.swift; path = Scenes/Contacts/LargeCardView.swift; sourceTree = "<group>"; };
+		E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCarouselView.swift; path = Scenes/Contacts/CardCarouselView.swift; sourceTree = "<group>"; };
 		E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NumberPadView.xib; path = "Scenes/Home/Number Pad Overlay/NumberPadView.xib"; sourceTree = "<group>"; };
 		E4B1AC131DD8C1C000BFB3DB /* numberlock.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberlock.PNG; sourceTree = "<group>"; };
 		E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPadView.swift; path = "Scenes/Home/Number Pad Overlay/NumberPadView.swift"; sourceTree = "<group>"; };
@@ -206,16 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E42DB9C11E13E0B400E1D80D /* GoogleSymbolUtilities.framework in Frameworks */,
-				E42DB9B71E13DF9900E1D80D /* FirebaseAnalytics.framework in Frameworks */,
-				E42DB9C01E13E0B400E1D80D /* GoogleInterchangeUtilities.framework in Frameworks */,
-				E42DB9B91E13DFB300E1D80D /* FirebaseCore.framework in Frameworks */,
-				E42DB9B11E13DE0200E1D80D /* FirebaseDatabase.framework in Frameworks */,
 				EE2749B911D6250406175DC3 /* libPods-Swipe.a in Frameworks */,
-				E42DB9BD1E13E06300E1D80D /* FirebaseInstanceID.framework in Frameworks */,
-				E42DB9BB1E13E03E00E1D80D /* GTMSessionFetcher.framework in Frameworks */,
-				E42DB9B31E13DE2E00E1D80D /* FirebaseStorage.framework in Frameworks */,
-				E42DB9C31E13E24D00E1D80D /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,9 +306,6 @@
 				E4145AB11DCE95BB00B905F1 /* ContactViewCell.swift */,
 				E4145AB21DCE95BB00B905F1 /* ContactViewCell.xib */,
 				E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */,
-				E4B1ABCF1DD1238D00BFB3DB /* ContactSlideView.xib */,
-				E4B1ABD11DD1289900BFB3DB /* ContactSlideView.swift */,
-				E4B1ABD31DD1293B00BFB3DB /* ContactsCarouselView.swift */,
 			);
 			name = "UI Source";
 			sourceTree = "<group>";
@@ -349,24 +317,6 @@
 				E4BC3E001D90780500D01BD9 /* SWButton.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		E42DB9C41E13E29200E1D80D /* firebase frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E42DB9B41E13DF2400E1D80D /* Firebase.h */,
-				E42DB9B51E13DF2400E1D80D /* module.modulemap */,
-				E42DB9C21E13E24D00E1D80D /* GoogleToolboxForMac.framework */,
-				E42DB9BE1E13E0B400E1D80D /* GoogleInterchangeUtilities.framework */,
-				E42DB9BF1E13E0B400E1D80D /* GoogleSymbolUtilities.framework */,
-				E42DB9BC1E13E06300E1D80D /* FirebaseInstanceID.framework */,
-				E42DB9B81E13DFB300E1D80D /* FirebaseCore.framework */,
-				E42DB9B61E13DF9900E1D80D /* FirebaseAnalytics.framework */,
-				E42DB9B21E13DE2E00E1D80D /* FirebaseStorage.framework */,
-				E42DB9B01E13DE0200E1D80D /* FirebaseDatabase.framework */,
-				E42DB9BA1E13E03E00E1D80D /* GTMSessionFetcher.framework */,
-			);
-			name = "firebase frameworks";
 			sourceTree = "<group>";
 		};
 		E46447EC1DBBFD4700093C13 /* Receiving View */ = {
@@ -453,6 +403,16 @@
 			name = "UI Source";
 			sourceTree = "<group>";
 		};
+		E49E08B71E156C0F0060E52F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */,
+				E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */,
+				E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		E4A3F11B1E103363009152FC /* add Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,8 +489,8 @@
 		E4BC3DDB1D8C5D8400D01BD9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E49E08B71E156C0F0060E52F /* Shared */,
 				E4C5B25B1DDF00DA0054BF01 /* Archived */,
-				E493F39E1DC519D600D7298C /* Navigation */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4145AA91DCE8B8D00B905F1 /* Contacts */,
@@ -582,7 +542,6 @@
 		E4C5B2521DDDF3850054BF01 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E42DB9C41E13E29200E1D80D /* firebase frameworks */,
 				E4936C3E1DE24FC600622ACC /* Actions.swift */,
 				E4936C401DE25A2700622ACC /* Locations.swift */,
 				E42C90961DFE0327004D9F76 /* Storage.swift */,
@@ -593,6 +552,7 @@
 		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				E493F39E1DC519D600D7298C /* Navigation */,
 				E46447F21DBCBC8700093C13 /* UI Source */,
 				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
 				E4B1AC1A1DDBC29200BFB3DB /* Add User Info */,
@@ -746,7 +706,7 @@
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
 				E499015B1E12C07500D59BCC /* nsdisplay.ttf in Resources */,
-				E4B1ABD01DD1238D00BFB3DB /* ContactSlideView.xib in Resources */,
+				E4B1ABD01DD1238D00BFB3DB /* LargeCardView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
 				E49901591E12BEBF00D59BCC /* SwipedView.xib in Resources */,
 				E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */,
@@ -867,7 +827,7 @@
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
 				E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
-				E4B1ABD21DD1289900BFB3DB /* ContactSlideView.swift in Sources */,
+				E4B1ABD21DD1289900BFB3DB /* LargeCardView.swift in Sources */,
 				E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
@@ -883,7 +843,7 @@
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E42C90971DFE0327004D9F76 /* Storage.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
-				E4B1ABD41DD1293B00BFB3DB /* ContactsCarouselView.swift in Sources */,
+				E4B1ABD41DD1293B00BFB3DB /* CardCarouselView.swift in Sources */,
 				E499015F1E12C4FF00D59BCC /* RadarView.swift in Sources */,
 				E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
@@ -1052,7 +1012,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = WeSwipe;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -1081,7 +1041,7 @@
 				PROVISIONING_PROFILE = "89f2b777-37ce-44dd-aab0-07aac127a526";
 				PROVISIONING_PROFILE_SPECIFIER = "WeSwipe-Adhoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -1097,7 +1057,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTests/SwipeTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};
 			name = Debug;
@@ -1113,7 +1073,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Guowei.SwipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTests/SwipeTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe.app/Swipe";
 			};
 			name = Release;

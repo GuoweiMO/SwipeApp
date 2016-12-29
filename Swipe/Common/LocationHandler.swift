@@ -48,5 +48,10 @@ class LocationHandler: NSObject, CLLocationManagerDelegate {
       output?.locationUpdated(to: latestLocation)
     }
   }
+  
+  func currentLocation() -> Location? {
+    guard let loc = manager!.location else { return nil }
+    return Location(longitude: loc.coordinate.longitude, latitude: loc.coordinate.latitude)
+  }
 }
 

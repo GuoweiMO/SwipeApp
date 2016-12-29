@@ -12,12 +12,12 @@ protocol SwipedViewOutput {
   func triggerSwipeAction()
 }
 
-
 class SwipedView: UIView {
 
   enum ViewState {
     case normal
     case error
+    case swipers
   }
   
   @IBOutlet weak var radarContainer: RadarView!
@@ -28,11 +28,15 @@ class SwipedView: UIView {
   
   var radarView: RadarView!
   var output: SwipedViewOutput?
+  var swipersView: CardCarouselView?
+  var timer: Timer?
+  
   var state: ViewState = .normal {
     didSet {
       if state == .normal {
         swipeAgainButton.isHidden = true
         timeoutErrorLabel.isHidden = true
+        swipersView?.isHidden = true
         
         counterLabel.isHidden = false
         secondsLabel.isHidden = false
@@ -43,6 +47,16 @@ class SwipedView: UIView {
         
         counterLabel.isHidden = true
         secondsLabel.isHidden = true
+        swipersView?.isHidden = true
+      }
+      else if state == .swipers {
+        swipeAgainButton.isHidden = true
+        timeoutErrorLabel.isHidden = true
+        counterLabel.isHidden = true
+        secondsLabel.isHidden = true
+        radarView.isHidden = true
+        
+        swipersView?.isHidden = false
       }
     }
   }
@@ -61,15 +75,13 @@ class SwipedView: UIView {
     var start = 30
     radarView.start()
     if #available(iOS 10.0, *) {
-      Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
+      timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
         [unowned self] (timer) in
         start -= 1
         self.counterLabel.text = "\(start)"
         if start == 0 {
-          timer.invalidate()
-          self.radarView.invalidate()
-//          self.output?.swipedTimeout()
           self.state = .error
+          self.stopCounter()
         }
       }
     } else {
@@ -81,5 +93,20 @@ class SwipedView: UIView {
     state = .normal
     startCounter()
     output?.triggerSwipeAction()
+  }
+  
+  func stopCounter(){
+    radarView.invalidate()
+    timer?.invalidate()
+  }
+  
+  func showSwipersView() {
+    if swipersView == nil {
+      swipersView = CardCarouselView(frame: self.bounds.insetBy(dx: 30, dy: 80))
+      addSubview(swipersView!)
+    }
+    swipersView!.reloadData()
+    state = .swipers
+    stopCounter()
   }
 }

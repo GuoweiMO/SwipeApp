@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lMY-nj-r9w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lMY-nj-r9w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -390,7 +390,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-sa-c3k">
-                                        <rect key="frame" x="28" y="481" width="87" height="86"/>
+                                        <rect key="frame" x="28" y="480.5" width="86.5" height="86.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="uZY-sa-c3k" secondAttribute="height" multiplier="1:1" id="FZv-uM-8Km"/>
@@ -400,7 +400,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icS-LK-ddL">
-                                        <rect key="frame" x="261" y="481" width="86" height="86"/>
+                                        <rect key="frame" x="260.5" y="480.5" width="86.5" height="86.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="icS-LK-ddL" secondAttribute="height" id="l2b-bi-kxt"/>
@@ -410,7 +410,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-Uv-xM8">
-                                        <rect key="frame" x="145" y="481" width="86" height="86"/>
+                                        <rect key="frame" x="144.5" y="480.5" width="86" height="86.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YYg-Uv-xM8" secondAttribute="height" id="8dq-ED-TWz"/>
@@ -464,9 +464,6 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="navBtn" id="sOq-kJ-eHM">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <action selector="navigationBtnDidTap:" destination="gTE-4P-IGZ" id="puS-WD-twV"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -528,9 +525,6 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="navBtn" id="jdt-6b-P0I">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <action selector="navigationBtnDidTap:" destination="f88-WR-m8t" id="6nn-i4-rqD"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -646,23 +640,23 @@
                                         <rect key="frame" x="84" y="10" width="72" height="16"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-dX-7OI">
-                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="15.5" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-eE-qaf">
-                                                <rect key="frame" x="16" y="1" width="14" height="14"/>
+                                                <rect key="frame" x="15.5" y="1" width="14" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ekq-eE-qaf" secondAttribute="height" id="0Vt-Qi-8ec"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tZ-VL-TTg">
-                                                <rect key="frame" x="36" y="0.0" width="21" height="16"/>
+                                                <rect key="frame" x="35.5" y="0.0" width="21" height="16"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp2-uL-PCm">
-                                                <rect key="frame" x="57" y="0.0" width="15" height="16"/>
+                                                <rect key="frame" x="56.5" y="0.0" width="15.5" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -920,7 +914,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your personal details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-6B-xxJ">
-                                                <rect key="frame" x="84" y="61" width="208" height="21"/>
+                                                <rect key="frame" x="85.5" y="61" width="205.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1223,7 +1217,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID6-Qc-A5n">
-                                                <rect key="frame" x="88" y="61" width="199" height="21"/>
+                                                <rect key="frame" x="88.5" y="61" width="198.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1900,7 +1894,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-Nz-pPC">
-                                                <rect key="frame" x="88" y="61" width="199" height="21"/>
+                                                <rect key="frame" x="89" y="61" width="197" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>

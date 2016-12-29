@@ -43,7 +43,7 @@ class Actions: NSObject {
   
   func requestToSendCard(withCompletion completion: @escaping ReceiversCompletion, cancelDone cancelled: @escaping (Bool) -> Void ){
     SWCard.myCard.status = .Sending
-    db.child("cards").child("\(uid!)/location").setValue(SWCard.myCard.location, withCompletionBlock: {
+    db.child("cards").child("\(uid!)/location").setValue(SWCard.myCard.location?.toString(), withCompletionBlock: {
       [unowned self] (err, ref) in
       guard err == nil else { return } //update location done
       
