@@ -40,7 +40,7 @@ class RadarView: UIView {
     for i in 0...4 {
       let interval = overallTimeInterval/Double(radars!.count) * Double(i)
       DispatchQueue.main.asyncAfter(deadline: .now() + interval) {
-        print("fired \(i) times")
+//        print("fired \(i) times")
         self.radars?.forEach({
           [unowned self] (radar) in
           if let index = self.radars?.index(of: radar) {

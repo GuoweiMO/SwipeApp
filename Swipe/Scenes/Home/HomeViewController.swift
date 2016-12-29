@@ -14,7 +14,7 @@ enum ActionState {
   case None
 }
 
-class HomeViewController: UIViewController, LocationHandlerOutput {
+class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOutput {
   
   @IBOutlet weak var fullNameLabel: UILabel!
   @IBOutlet weak var jobTitleLabel: UILabel!
@@ -67,6 +67,7 @@ class HomeViewController: UIViewController, LocationHandlerOutput {
     swipedView = SwipedView.viewFromNib()
     swipedView.frame = view.bounds
     swipedView.isHidden = true
+    swipedView.output = self
     view.addSubview(swipedView)
     
     homeCardView.isUserInteractionEnabled = true
@@ -132,7 +133,6 @@ class HomeViewController: UIViewController, LocationHandlerOutput {
         self.homeCardView.alpha = 1
         self.homeCardView.transform = CGAffineTransform(scaleX: 1, y: 1)
         self.swipedView.startCounter()
-        
         self.startQueryingSwipers()
       })
     }
@@ -140,6 +140,10 @@ class HomeViewController: UIViewController, LocationHandlerOutput {
   
   func locationUpdated(to location: Location) {
     SWCard.myCard.location = location
+  }
+  
+  func triggerSwipeAction() {
+    startQueryingSwipers()
   }
   
   func startQueryingSwipers() {

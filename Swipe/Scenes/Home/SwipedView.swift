@@ -9,22 +9,52 @@
 import UIKit
 
 protocol SwipedViewOutput {
-  func swipedTimeout()
+  func triggerSwipeAction()
 }
+
 
 class SwipedView: UIView {
 
+  enum ViewState {
+    case normal
+    case error
+  }
+  
   @IBOutlet weak var radarContainer: RadarView!
   @IBOutlet weak var counterLabel: UILabel!
+  @IBOutlet weak var secondsLabel: UILabel!
+  @IBOutlet weak var swipeAgainButton: SWButton!
+  @IBOutlet weak var timeoutErrorLabel: UILabel!
+  
   var radarView: RadarView!
   var output: SwipedViewOutput?
+  var state: ViewState = .normal {
+    didSet {
+      if state == .normal {
+        swipeAgainButton.isHidden = true
+        timeoutErrorLabel.isHidden = true
+        
+        counterLabel.isHidden = false
+        secondsLabel.isHidden = false
+      }
+      else if state == .error {
+        swipeAgainButton.isHidden = false
+        timeoutErrorLabel.isHidden = false
+        
+        counterLabel.isHidden = true
+        secondsLabel.isHidden = true
+      }
+    }
+  }
 
   override func draw(_ rect: CGRect) {
     super.draw(rect)
+    swipeAgainButton.clearStyleWhiteBorder()
     radarView = RadarView.viewFromNib()
     radarView.frame = radarContainer.bounds
     radarContainer.addSubview(radarView)
     radarView.initViews()
+    state = .normal
   }
   
   func startCounter() {
@@ -38,7 +68,8 @@ class SwipedView: UIView {
         if start == 0 {
           timer.invalidate()
           self.radarView.invalidate()
-          self.output?.swipedTimeout()
+//          self.output?.swipedTimeout()
+          self.state = .error
         }
       }
     } else {
@@ -46,4 +77,9 @@ class SwipedView: UIView {
     }
   }
   
+  @IBAction func swipeAgainDidTap(_ sender: Any) {
+    state = .normal
+    startCounter()
+    output?.triggerSwipeAction()
+  }
 }

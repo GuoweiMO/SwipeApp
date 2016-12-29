@@ -43,13 +43,37 @@
                         <constraint firstAttribute="height" constant="140" id="Wtf-ho-acf"/>
                     </constraints>
                 </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No sender found." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4S-Wl-pVa">
+                    <rect key="frame" x="121.5" y="323.5" width="133.5" height="20"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyx-T5-S2d" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                    <rect key="frame" x="97" y="537" width="180" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="7AW-Pg-VV0"/>
+                        <constraint firstAttribute="height" constant="50" id="YS7-Ps-Baf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                    <state key="normal" title="Swipe Again">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="swipeAgainDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fei-bN-mNy"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YEe-5L-K5K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0pM-RK-emE"/>
                 <constraint firstItem="7Q5-Wc-jJI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0tr-AG-5yS"/>
                 <constraint firstItem="YEe-5L-K5K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="8FG-ul-BVX"/>
+                <constraint firstItem="E4S-Wl-pVa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Eko-EL-uYy"/>
                 <constraint firstItem="MiR-ey-ecq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hds-Xt-mJ1"/>
+                <constraint firstItem="E4S-Wl-pVa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TRB-sH-Kzq"/>
+                <constraint firstItem="pyx-T5-S2d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hhm-e3-3Vf"/>
+                <constraint firstAttribute="bottom" secondItem="pyx-T5-S2d" secondAttribute="bottom" constant="80" id="kN3-9j-Vqv"/>
                 <constraint firstItem="MiR-ey-ecq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mtl-6z-oFj"/>
                 <constraint firstItem="7Q5-Wc-jJI" firstAttribute="top" secondItem="MiR-ey-ecq" secondAttribute="bottom" constant="4" id="pUY-CB-Wu7"/>
             </constraints>
@@ -57,6 +81,9 @@
             <connections>
                 <outlet property="counterLabel" destination="MiR-ey-ecq" id="v0u-k6-vwQ"/>
                 <outlet property="radarContainer" destination="YEe-5L-K5K" id="85w-a7-qUl"/>
+                <outlet property="secondsLabel" destination="7Q5-Wc-jJI" id="mvZ-Yn-CNi"/>
+                <outlet property="swipeAgainButton" destination="pyx-T5-S2d" id="mhX-fj-kpZ"/>
+                <outlet property="timeoutErrorLabel" destination="E4S-Wl-pVa" id="tfb-jM-fJc"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
