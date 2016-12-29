@@ -17,7 +17,7 @@ class ContactsViewController: UIViewController {
   
   @IBOutlet weak var contactsView: UIView!
   var collectionView: UICollectionView?
-  var slideView: ContactsCarouselView?
+  var slideView: CardCarouselView?
   
   @IBOutlet weak var searchBarHeight: NSLayoutConstraint!
   
@@ -71,7 +71,7 @@ class ContactsViewController: UIViewController {
   func showSlideCarouselView() {
     collectionView?.isHidden = true
     if slideView == nil {
-      slideView = ContactsCarouselView(frame: contactsView.bounds)
+      slideView = CardCarouselView(frame: contactsView.bounds)
       contactsView.addSubview(slideView!)
     }
     slideView?.isHidden = false

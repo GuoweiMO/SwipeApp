@@ -64,11 +64,12 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
 //        }
 //      }
 //    })
+    
     swipedView = SwipedView.viewFromNib()
     swipedView.frame = view.bounds
     swipedView.isHidden = true
     swipedView.output = self
-    view.addSubview(swipedView)
+    view.insertSubview(swipedView, belowSubview: homeCardView)
     
     homeCardView.isUserInteractionEnabled = true
     let swipeUp = UIPanGestureRecognizer(target: self, action: #selector(homeCardDidSwipe))
@@ -131,6 +132,7 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
         
         self.swipedView.alpha = 1
         self.swipedView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        self.updateNavBarTitleImage(named: "text-logo-white")
 
       }, completion: { (done) in
         self.homeCardView.isHidden = true
@@ -153,7 +155,14 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
   func startQueryingSwipers() {
     Actions.shared.requestToSendCard(withCompletion: {
       [unowned self] (cnt, swiperList) in
-      self.swipedView.showSwipersView()
+      guard swiperList.count > 0 else { return }
+      print(swiperList)
+      let cards: [SWCard] = swiperList.map {
+        let card = SWCard()
+        card.updateCard(withFullData: Array($0!.values)[0])
+        return card
+      }
+      self.swipedView.showSwipersView(withData: cards)
     }, cancelDone: {
       (done) in
       print("no swipers found cancelled")

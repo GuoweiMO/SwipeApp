@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lMY-nj-r9w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lMY-nj-r9w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -914,7 +914,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your personal details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-6B-xxJ">
-                                                <rect key="frame" x="85.5" y="61" width="205.5" height="21"/>
+                                                <rect key="frame" x="83.5" y="61" width="208" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1060,7 +1060,7 @@
                 <navigationController storyboardIdentifier="create card nav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tbk-G1-OzY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39k-dH-psO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="39k-dH-psO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1217,7 +1217,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID6-Qc-A5n">
-                                                <rect key="frame" x="88.5" y="61" width="198.5" height="21"/>
+                                                <rect key="frame" x="89" y="61" width="198.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1384,19 +1384,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-il-0Eh" userLabel="Label 1">
-                                <rect key="frame" x="50" y="128" width="0.0" height="0.0"/>
+                                <rect key="frame" x="40" y="128" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp0-hN-9MU" userLabel="Label 2">
-                                <rect key="frame" x="50" y="136" width="0.0" height="0.0"/>
+                                <rect key="frame" x="40" y="136" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7h-pk-YPQ" userLabel="Label 3">
-                                <rect key="frame" x="50" y="144" width="0.0" height="0.0"/>
+                                <rect key="frame" x="40" y="144" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1484,7 +1484,7 @@
                                                         <rect key="frame" x="0.0" y="156" width="375" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your personal details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-gL-xWd">
-                                                                <rect key="frame" x="84" y="5" width="208" height="21"/>
+                                                                <rect key="frame" x="83.5" y="5" width="208" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -1551,7 +1551,7 @@
                                                         <rect key="frame" x="0.0" y="156" width="375" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGR-N4-M4k">
-                                                                <rect key="frame" x="88" y="5" width="199" height="21"/>
+                                                                <rect key="frame" x="88.5" y="5" width="198.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -1802,7 +1802,7 @@
                             <constraint firstAttribute="trailing" secondItem="U0P-vq-FjC" secondAttribute="trailing" id="dYo-fT-v0z"/>
                             <constraint firstItem="x3b-UH-6xk" firstAttribute="top" secondItem="kVv-hU-WaO" secondAttribute="top" id="dvu-vj-QTZ"/>
                             <constraint firstItem="PTp-uA-Tv0" firstAttribute="leading" secondItem="kVv-hU-WaO" secondAttribute="leading" id="dyq-9d-dM8"/>
-                            <constraint firstItem="tNc-il-0Eh" firstAttribute="leading" secondItem="kVv-hU-WaO" secondAttribute="leadingMargin" constant="30" id="dzc-sl-6Iu"/>
+                            <constraint firstItem="tNc-il-0Eh" firstAttribute="leading" secondItem="kVv-hU-WaO" secondAttribute="leadingMargin" constant="20" id="dzc-sl-6Iu"/>
                             <constraint firstItem="kp0-hN-9MU" firstAttribute="top" secondItem="tNc-il-0Eh" secondAttribute="bottom" constant="8" id="h4X-nX-eJn"/>
                             <constraint firstItem="tNc-il-0Eh" firstAttribute="top" secondItem="kVv-hU-WaO" secondAttribute="top" constant="128" id="mch-O3-HeP"/>
                             <constraint firstItem="kp0-hN-9MU" firstAttribute="width" secondItem="tNc-il-0Eh" secondAttribute="width" id="oJA-3e-mC9"/>
@@ -1894,7 +1894,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-Nz-pPC">
-                                                <rect key="frame" x="89" y="61" width="197" height="21"/>
+                                                <rect key="frame" x="88.5" y="61" width="198.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>

@@ -39,12 +39,12 @@
 		E499015D1E12C1DE00D59BCC /* RadarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E499015C1E12C1DE00D59BCC /* RadarView.xib */; };
 		E499015F1E12C4FF00D59BCC /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499015E1E12C4FF00D59BCC /* RadarView.swift */; };
 		E49901611E12C8E500D59BCC /* SwipedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901601E12C8E500D59BCC /* SwipedView.swift */; };
+		E49901651E15ACC900D59BCC /* CardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901621E15ACC900D59BCC /* CardCarouselView.swift */; };
+		E49901661E15ACC900D59BCC /* LargeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49901631E15ACC900D59BCC /* LargeCardView.swift */; };
+		E49901671E15ACC900D59BCC /* LargeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49901641E15ACC900D59BCC /* LargeCardView.xib */; };
 		E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49B34441DBA75530031CB2F /* AddUserInfoView.xib */; };
 		E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */; };
 		E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */; };
-		E4B1ABD01DD1238D00BFB3DB /* LargeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */; };
-		E4B1ABD21DD1289900BFB3DB /* LargeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */; };
-		E4B1ABD41DD1293B00BFB3DB /* CardCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */; };
 		E4B1ABD51DD1320800BFB3DB /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8A1DBE0C9B004D6A43 /* Ubuntu-B.ttf */; };
 		E4B1ABD61DD1320800BFB3DB /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8B1DBE0C9B004D6A43 /* Ubuntu-BI.ttf */; };
 		E4B1ABD71DD1320800BFB3DB /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47D3B8C1DBE0C9B004D6A43 /* Ubuntu-C.ttf */; };
@@ -147,13 +147,14 @@
 		E499015C1E12C1DE00D59BCC /* RadarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RadarView.xib; path = Scenes/Home/RadarView.xib; sourceTree = "<group>"; };
 		E499015E1E12C4FF00D59BCC /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadarView.swift; path = Scenes/Home/RadarView.swift; sourceTree = "<group>"; };
 		E49901601E12C8E500D59BCC /* SwipedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipedView.swift; path = Scenes/Home/SwipedView.swift; sourceTree = "<group>"; };
+		E49901621E15ACC900D59BCC /* CardCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCarouselView.swift; path = Scenes/Shared/CardCarouselView.swift; sourceTree = "<group>"; };
+		E49901631E15ACC900D59BCC /* LargeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LargeCardView.swift; path = Scenes/Shared/LargeCardView.swift; sourceTree = "<group>"; };
+		E49901641E15ACC900D59BCC /* LargeCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LargeCardView.xib; path = Scenes/Shared/LargeCardView.xib; sourceTree = "<group>"; };
+		E49901681E15AD0900D59BCC /* GameCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameCarouselView.swift; path = Scenes/Shared/GameCarouselView.swift; sourceTree = "<group>"; };
 		E49B34441DBA75530031CB2F /* AddUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddUserInfoView.xib; path = "Scenes/Create Card/AddUserInfoView.xib"; sourceTree = "<group>"; };
 		E49BADD61D98285F00870141 /* ReceiversCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiversCarouselView.swift; path = "Scenes/Home/Sending View/ReceiversCarouselView.swift"; sourceTree = "<group>"; };
 		E4A3F11C1E1033C4009152FC /* AddInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInfoViewController.swift; path = "Scenes/Add Info/AddInfoViewController.swift"; sourceTree = "<group>"; };
 		E4B1ABCB1DCF839100BFB3DB /* ViewModeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModeButton.swift; path = Scenes/Contacts/ViewModeButton.swift; sourceTree = "<group>"; };
-		E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LargeCardView.xib; path = Scenes/Contacts/LargeCardView.xib; sourceTree = "<group>"; };
-		E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LargeCardView.swift; path = Scenes/Contacts/LargeCardView.swift; sourceTree = "<group>"; };
-		E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCarouselView.swift; path = Scenes/Contacts/CardCarouselView.swift; sourceTree = "<group>"; };
 		E4B1AC111DD8BFE100BFB3DB /* NumberPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NumberPadView.xib; path = "Scenes/Home/Number Pad Overlay/NumberPadView.xib"; sourceTree = "<group>"; };
 		E4B1AC131DD8C1C000BFB3DB /* numberlock.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberlock.PNG; sourceTree = "<group>"; };
 		E4B1AC171DD9112800BFB3DB /* NumberPadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPadView.swift; path = "Scenes/Home/Number Pad Overlay/NumberPadView.swift"; sourceTree = "<group>"; };
@@ -346,7 +347,6 @@
 		E46447F21DBCBC8700093C13 /* UI Source */ = {
 			isa = PBXGroup;
 			children = (
-				E4936C3C1DE1AFAF00622ACC /* BaseView.swift */,
 				E4BC3DFB1D90717200D01BD9 /* Sending view */,
 				E46447EC1DBBFD4700093C13 /* Receiving View */,
 			);
@@ -406,9 +406,11 @@
 		E49E08B71E156C0F0060E52F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E4B1ABCF1DD1238D00BFB3DB /* LargeCardView.xib */,
-				E4B1ABD11DD1289900BFB3DB /* LargeCardView.swift */,
-				E4B1ABD31DD1293B00BFB3DB /* CardCarouselView.swift */,
+				E4936C3C1DE1AFAF00622ACC /* BaseView.swift */,
+				E49901621E15ACC900D59BCC /* CardCarouselView.swift */,
+				E49901631E15ACC900D59BCC /* LargeCardView.swift */,
+				E49901641E15ACC900D59BCC /* LargeCardView.xib */,
+				E49901681E15AD0900D59BCC /* GameCarouselView.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -490,11 +492,10 @@
 			isa = PBXGroup;
 			children = (
 				E49E08B71E156C0F0060E52F /* Shared */,
-				E4C5B25B1DDF00DA0054BF01 /* Archived */,
 				E4BC3DE31D8C5DF200D01BD9 /* Create Card */,
 				E4BC3DF31D8EA80800D01BD9 /* Home */,
 				E4145AA91DCE8B8D00B905F1 /* Contacts */,
-				E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */,
+				E4C5B25B1DDF00DA0054BF01 /* Archived */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -552,6 +553,7 @@
 		E4C5B25B1DDF00DA0054BF01 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				E4C8BC991DE5DEB300B9F892 /* TestViewController.swift */,
 				E493F39E1DC519D600D7298C /* Navigation */,
 				E46447F21DBCBC8700093C13 /* UI Source */,
 				E4B1AC101DD8BF9200BFB3DB /* Number Pad View */,
@@ -705,8 +707,8 @@
 				E49901511E129A7700D59BCC /* StepBarView.xib in Resources */,
 				E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */,
 				E4BC3DFF1D9071EF00D01BD9 /* SendingView.xib in Resources */,
+				E49901671E15ACC900D59BCC /* LargeCardView.xib in Resources */,
 				E499015B1E12C07500D59BCC /* nsdisplay.ttf in Resources */,
-				E4B1ABD01DD1238D00BFB3DB /* LargeCardView.xib in Resources */,
 				E41CD84B1DB96BBF0025DE8A /* ChangeProfilePicView.xib in Resources */,
 				E49901591E12BEBF00D59BCC /* SwipedView.xib in Resources */,
 				E4710EDF1DBAA98C00F6A48D /* AddContactsView.xib in Resources */,
@@ -827,11 +829,11 @@
 				E4B1AC201DDD05D300BFB3DB /* AddProfilePicViewController.swift in Sources */,
 				E4936C3F1DE24FC600622ACC /* Actions.swift in Sources */,
 				E4C5B2581DDE0F7F0054BF01 /* AddContactInfoViewController.swift in Sources */,
-				E4B1ABD21DD1289900BFB3DB /* LargeCardView.swift in Sources */,
 				E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */,
 				E4710EE11DBAAA7E00F6A48D /* AddContactsView.swift in Sources */,
 				E4145AAC1DCE8BF300B905F1 /* ContactsViewController.swift in Sources */,
 				E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */,
+				E49901661E15ACC900D59BCC /* LargeCardView.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
 				E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */,
 				E4936C411DE25A2700622ACC /* Locations.swift in Sources */,
@@ -842,8 +844,8 @@
 				E493F3A51DC5209100D7298C /* NavigationView.swift in Sources */,
 				E4BC3DF71D8EAA6900D01BD9 /* Common.swift in Sources */,
 				E42C90971DFE0327004D9F76 /* Storage.swift in Sources */,
+				E49901651E15ACC900D59BCC /* CardCarouselView.swift in Sources */,
 				E4B1AC241DDE547800BFB3DB /* InfoInputView.swift in Sources */,
-				E4B1ABD41DD1293B00BFB3DB /* CardCarouselView.swift in Sources */,
 				E499015F1E12C4FF00D59BCC /* RadarView.swift in Sources */,
 				E4D950431DE4AC9C002834D5 /* DataBuilder.swift in Sources */,
 				E41CD84D1DB96D850025DE8A /* ChangeProfilePicView.swift in Sources */,
@@ -1012,7 +1014,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = WeSwipe;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1041,7 +1043,7 @@
 				PROVISIONING_PROFILE = "89f2b777-37ce-44dd-aab0-07aac127a526";
 				PROVISIONING_PROFILE_SPECIFIER = "WeSwipe-Adhoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swipe/Swipe-Bridging-Header.h";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

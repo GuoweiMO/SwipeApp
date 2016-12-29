@@ -10,6 +10,8 @@ import UIKit
 
 class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   
+  var cardItems: [SWCard] = []
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     delegate = self
@@ -30,7 +32,12 @@ class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   
   //MARK: carousel delegates
   func numberOfItems(in carousel: iCarousel) -> Int {
-    return 10
+    return cardItems.count
+  }
+  
+  func updateView(withCards cards:[SWCard]){
+    cardItems = cards
+    reloadData()
   }
   
   func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
@@ -50,6 +57,7 @@ class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
     let contactView = LargeCardView.viewFromNib()
     contactView.frame = CGRect(x: 50.0,y: 0.0, width: frame.width - 100.0,height: frame.height - 80)
+    contactView.updateView(withCard: cardItems[index])
     return contactView
   }
 }
