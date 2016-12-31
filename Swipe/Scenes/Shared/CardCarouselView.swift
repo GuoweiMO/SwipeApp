@@ -11,6 +11,7 @@ import UIKit
 class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
   
   var cardItems: [SWCard] = []
+  var cardKeys: [String] = []
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -35,8 +36,9 @@ class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
     return cardItems.count
   }
   
-  func updateView(withCards cards:[SWCard]){
+  func updateView(withCards cards:[SWCard], andKeys keys:[String]){
     cardItems = cards
+    cardKeys = keys
     reloadData()
   }
   
@@ -58,6 +60,14 @@ class CardCarouselView: iCarousel, iCarouselDelegate, iCarouselDataSource {
     let contactView = LargeCardView.viewFromNib()
     contactView.frame = CGRect(x: 50.0,y: 0.0, width: frame.width - 100.0,height: frame.height - 80)
     contactView.updateView(withCard: cardItems[index])
+    
+    Storage.shared.downloadProfileImage(withUID: cardKeys[index], completion: { (data, err) in
+      guard let data = data else { return }
+      if let img = UIImage(data: data) {
+        contactView.profilePicView.image = img
+      }
+    })
+    
     return contactView
   }
 }

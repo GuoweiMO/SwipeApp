@@ -99,6 +99,12 @@ class AddInfoViewController: UIViewController, UIScrollViewDelegate {
   
   func saveMyCardInfo() {
     Common.saveImage(image: SWCard.myCard.largeProfileImage!, toKeyPath: "largeImage")
+    
+    if let smallPic = SWCard.myCard.smallProfileImage,
+      let imgData = UIImagePNGRepresentation(smallPic) {
+      Storage.shared.uploadProfileImage(withData: imgData, extra: ["":""])
+    }
+    
     Actions.shared.createCard(withInfo: SWCard.myCard.dictInfo(), andCompletion: {
       error, dbRef in
       if error == nil {

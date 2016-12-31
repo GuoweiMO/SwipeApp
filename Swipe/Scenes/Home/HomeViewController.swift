@@ -161,8 +161,12 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
         let card = SWCard()
         card.updateCard(withFullData: Array($0!.values)[0])
         return card
+      }      
+      let keyList: [String] = swiperList.map {
+        return Array($0!.keys)[0]
       }
-      self.swipedView.showSwipersView(withData: cards)
+      self.swipedView.showSwipersView(withData: cards, andKeys: keyList)
+      
     }, cancelDone: {
       (done) in
       print("no swipers found cancelled")

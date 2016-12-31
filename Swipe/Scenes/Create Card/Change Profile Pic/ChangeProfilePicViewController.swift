@@ -15,11 +15,12 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   @IBOutlet weak var noButton: SWButton!
   @IBOutlet weak var cameraButton: UIButton!
   @IBOutlet weak var photoButton: UIButton!
-  
+  @IBOutlet weak var circleCropView: UIImageView!
+
   var imageView: UIImageView?
   var profileImage: UIImage?
-  var circleView: UIImageView?
   var scale: CGFloat = 1.0
+  var overlay: OverLayView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -61,13 +62,6 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     return imageView!
   }
   
-//  func createCircleCropView() {
-//    let circleView = UIImageView(image: UIImage(named: "circle-crop"))
-//    circleView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-//    view.addSubview(circleView)
-//    self.circleView = circleView
-//  }
-  
   @IBAction func noButtonDidTap(_ sender: UIButton) {
     
     if sender.currentTitle == "NO" {
@@ -79,7 +73,35 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
   }
   
   @IBAction func yesButtonDidTap(_ sender: UIButton) {
-//     createCircleCropView()
+    if sender.currentTitle == "YES" {
+      createCropOverLay()
+      sender.setTitle("NEXT", for: .normal)
+    } else if sender.currentTitle == "NEXT" {
+      saveLargeImage()
+      saveSmallImage()
+      if let vc = mainStoryBoard.instantiateViewController(withIdentifier: "add info") as? AddInfoViewController {
+        navigationController?.pushViewController(vc, animated: true)
+      }
+    }
+  }
+  
+  func createCropOverLay(){
+    
+    circleCropView.isHidden = false
+    overlay = OverLayView(frame: view.bounds)
+    overlay!.circleRect = circleCropView.frame
+    view.insertSubview(overlay!, belowSubview: circleCropView)
+    
+  }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    if let touch = touches.first,
+      circleCropView.bounds.contains(touch.location(in: circleCropView)) {
+      let location = touch.location(in: circleCropView.superview)
+      circleCropView.center = location
+      overlay!.circleRect = circleCropView.frame
+      overlay!.setNeedsDisplay()
+    }
   }
   
   @IBAction func cameraButtonDidTap(_ sender: Any) {
@@ -100,13 +122,24 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     }
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let visiableRect = CGRect(x: imageScrollView.contentOffset.x * scale,
+  func saveLargeImage() {
+    let visibleRect = CGRect(x: imageScrollView.contentOffset.x * scale,
                               y: imageScrollView.contentOffset.y * scale,
                               width: imageScrollView.frame.width * scale,
                               height: imageScrollView.frame.height * scale)
-    if let outputImage = Common.crop(profileImage!, toRect: visiableRect) {
+    if let outputImage = Common.crop(profileImage!, toRect: visibleRect) {
        SWCard.myCard.largeProfileImage = outputImage
+    }
+  }
+  
+  func saveSmallImage() {
+    let cropRect = CGRect(x: circleCropView.frame.origin.x * scale,
+                          y: circleCropView.frame.origin.y * scale,
+                          width: circleCropView.frame.size.width * scale,
+                          height: circleCropView.frame.size.height * scale)
+    
+    if let smallImage = Common.crop(SWCard.myCard.largeProfileImage!, toRect: cropRect) {
+      SWCard.myCard.smallProfileImage = smallImage
     }
   }
   
@@ -115,4 +148,33 @@ class ChangeProfilePicViewController: UIViewController, ImagePickerProtocol, UIS
     photoButton.isHidden = hidden
   }
   
+}
+
+class OverLayView: UIView {
+  var circleRect: CGRect?
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    isOpaque = false
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  override func draw(_ rect: CGRect) {
+    super.draw(rect)
+    if let context = UIGraphicsGetCurrentContext() {
+      context.clear(bounds)
+      let clipPath = UIBezierPath(rect: bounds)
+      let path = UIBezierPath(roundedRect: circleRect!,cornerRadius: circleRect!.width / 2)
+      clipPath.append(path)
+      clipPath.usesEvenOddFillRule = true
+      clipPath.addClip()
+      
+      UIColor(white: 0, alpha: 0.4).setFill()
+      clipPath.fill()
+    }
+
+  }
 }

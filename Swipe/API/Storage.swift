@@ -11,6 +11,9 @@ import Firebase
 import FirebaseStorage
 
 class Storage: NSObject {
+  
+  static let shared = Storage()
+  
   var uid = UIDevice.current.identifierForVendor?.uuidString
   let storage = FIRStorage.storage().reference(forURL: "gs://swipe-3b687.appspot.com")
   

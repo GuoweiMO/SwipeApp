@@ -20,6 +20,7 @@ class SWCard: NSObject {
   static let myCard = SWCard()
   
   var largeProfileImage: UIImage?
+  var smallProfileImage: UIImage?
   
   var fullName: String!
   var jobTitle: String!

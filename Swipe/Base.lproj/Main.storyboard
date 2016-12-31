@@ -255,6 +255,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
+                            <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-crop" translatesAutoresizingMaskIntoConstraints="NO" id="apK-Kb-43Z">
+                                <rect key="frame" x="93" y="239" width="188" height="188"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="apK-Kb-43Z" secondAttribute="height" id="03N-qm-CxS"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3g-Cq-LEc" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
                                 <rect key="frame" x="249" y="537" width="50" height="50"/>
                                 <constraints>
@@ -265,7 +272,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cQj-Oh-1X7" kind="show" id="wYo-Jy-QQj"/>
+                                    <action selector="yesButtonDidTap:" destination="upr-aF-jTl" eventType="touchUpInside" id="QG6-On-Xyu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAb-em-XUc" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
@@ -274,7 +281,7 @@
                                     <constraint firstAttribute="width" constant="50" id="G6q-6H-obO"/>
                                     <constraint firstAttribute="height" constant="50" id="qam-yH-8Kr"/>
                                 </constraints>
-                                <state key="normal" image="no-button">
+                                <state key="normal" title="NO" image="no-button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -310,7 +317,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="apK-Kb-43Z" firstAttribute="width" secondItem="Bm9-YF-PIV" secondAttribute="width" multiplier="0.5" id="3P0-42-0qp"/>
                             <constraint firstItem="juV-mg-lWq" firstAttribute="leading" secondItem="Bm9-YF-PIV" secondAttribute="leading" id="7HY-5v-OK1"/>
+                            <constraint firstItem="apK-Kb-43Z" firstAttribute="centerY" secondItem="Bm9-YF-PIV" secondAttribute="centerY" id="EIP-Qi-7my"/>
                             <constraint firstItem="dAb-em-XUc" firstAttribute="centerY" secondItem="u3g-Cq-LEc" secondAttribute="centerY" id="HSk-HD-cPK"/>
                             <constraint firstItem="7zQ-aX-Tl0" firstAttribute="top" secondItem="tHV-kP-zD2" secondAttribute="bottom" constant="25" id="JaB-Ui-eQs"/>
                             <constraint firstItem="tHV-kP-zD2" firstAttribute="centerX" secondItem="7zQ-aX-Tl0" secondAttribute="centerX" id="Nv1-uk-tBp"/>
@@ -322,11 +331,13 @@
                             <constraint firstItem="7lw-e2-p0C" firstAttribute="top" secondItem="u3g-Cq-LEc" secondAttribute="bottom" constant="80" id="i8s-G1-T2z"/>
                             <constraint firstItem="7lw-e2-p0C" firstAttribute="top" secondItem="juV-mg-lWq" secondAttribute="bottom" id="or3-Dd-PU1"/>
                             <constraint firstItem="dAb-em-XUc" firstAttribute="top" secondItem="7zQ-aX-Tl0" secondAttribute="bottom" constant="30" id="pot-Hw-lTf"/>
+                            <constraint firstItem="apK-Kb-43Z" firstAttribute="centerX" secondItem="Bm9-YF-PIV" secondAttribute="centerX" id="xYq-nA-FWe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vav-S3-kft"/>
                     <connections>
                         <outlet property="cameraButton" destination="7zQ-aX-Tl0" id="ExB-qB-YYb"/>
+                        <outlet property="circleCropView" destination="apK-Kb-43Z" id="0O3-3i-Aa3"/>
                         <outlet property="imageScrollView" destination="juV-mg-lWq" id="RFj-7t-4Z7"/>
                         <outlet property="noButton" destination="dAb-em-XUc" id="q9t-rm-eqD"/>
                         <outlet property="photoButton" destination="tHV-kP-zD2" id="fBZ-CB-pWY"/>
@@ -914,7 +925,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your personal details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-6B-xxJ">
-                                                <rect key="frame" x="83.5" y="61" width="208" height="21"/>
+                                                <rect key="frame" x="84" y="61" width="208" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1217,7 +1228,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID6-Qc-A5n">
-                                                <rect key="frame" x="89" y="61" width="198.5" height="21"/>
+                                                <rect key="frame" x="88" y="61" width="199" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1484,7 +1495,7 @@
                                                         <rect key="frame" x="0.0" y="156" width="375" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your personal details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-gL-xWd">
-                                                                <rect key="frame" x="83.5" y="5" width="208" height="21"/>
+                                                                <rect key="frame" x="84" y="5" width="208" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -1551,7 +1562,7 @@
                                                         <rect key="frame" x="0.0" y="156" width="375" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGR-N4-M4k">
-                                                                <rect key="frame" x="88.5" y="5" width="198.5" height="21"/>
+                                                                <rect key="frame" x="88" y="5" width="199" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -1894,7 +1905,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-Nz-pPC">
-                                                <rect key="frame" x="88.5" y="61" width="198.5" height="21"/>
+                                                <rect key="frame" x="88" y="61" width="199" height="21"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -2006,6 +2017,7 @@
         <image name="arrow-thin-right" width="28" height="22"/>
         <image name="big-camera" width="164" height="164"/>
         <image name="big-photo" width="164" height="164"/>
+        <image name="circle-crop" width="424" height="424"/>
         <image name="done" width="296" height="100"/>
         <image name="edit" width="90" height="90"/>
         <image name="email" width="160" height="160"/>

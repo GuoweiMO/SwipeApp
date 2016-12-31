@@ -21,7 +21,6 @@ class LargeCardView: UIView {
   }
   
   func updateView(withCard card: SWCard){
-    profilePicView.image = card.largeProfileImage
     fullNameLabel.text = card.fullName
     jobTitleLabel.text = card.jobTitle
     workplaceLabel.text = card.employer

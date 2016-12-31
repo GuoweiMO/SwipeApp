@@ -100,12 +100,12 @@ class SwipedView: UIView {
     timer?.invalidate()
   }
   
-  func showSwipersView(withData cards: [SWCard]) {
+  func showSwipersView(withData cards: [SWCard], andKeys keys: [String]) {
     if swipersView == nil {
       swipersView = CardCarouselView(frame: self.bounds.insetBy(dx: 30, dy: 80))
       addSubview(swipersView!)
     }
-    swipersView!.updateView(withCards: cards)
+    swipersView!.updateView(withCards: cards, andKeys: keys)
     state = .swipers
     stopCounter()
   }

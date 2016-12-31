@@ -76,7 +76,7 @@
                     <rect key="frame" x="0.0" y="86" width="300" height="66"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-0S-GRL">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-0S-GRL">
                     <rect key="frame" x="84" y="20" width="132" height="132"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="b8r-0S-GRL" secondAttribute="height" id="5HH-fA-Fyx"/>
@@ -115,7 +115,4 @@
             <point key="canvasLocation" x="34" y="54"/>
         </view>
     </objects>
-    <resources>
-        <image name="bg2" width="680" height="1172"/>
-    </resources>
 </document>
