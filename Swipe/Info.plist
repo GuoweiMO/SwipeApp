@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need to know your location to find people around you.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -23,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>15</string>
+	<string>18</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -33,6 +31,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Open your camera to capture a best of you.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need to know your location to find people around you.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Open your Photos to pick a best picture of you.</string>
 	<key>UIAppFonts</key>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatar" id="gTV-IL-0wX" customClass="AvatarCell" customModule="Swipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ze-Tx-zTH">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tu3-Vk-dMJ">
+                        <rect key="frame" x="0.0" y="14" width="50" height="23"/>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Tu3-Vk-dMJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2lY-kr-r0l"/>
+                <constraint firstAttribute="trailing" secondItem="Tu3-Vk-dMJ" secondAttribute="trailing" id="5q1-wC-os1"/>
+                <constraint firstItem="5ze-Tx-zTH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CfY-LX-o7Y"/>
+                <constraint firstItem="5ze-Tx-zTH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ElF-Oh-7qv"/>
+                <constraint firstItem="Tu3-Vk-dMJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RtK-Vu-dxC"/>
+                <constraint firstAttribute="trailing" secondItem="5ze-Tx-zTH" secondAttribute="trailing" id="gW9-wv-R4m"/>
+                <constraint firstAttribute="bottom" secondItem="5ze-Tx-zTH" secondAttribute="bottom" id="wJl-Gf-R4m"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="5ze-Tx-zTH" id="CUc-VL-Fz4"/>
+                <outlet property="nameLabel" destination="Tu3-Vk-dMJ" id="vAo-y4-fat"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

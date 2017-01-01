@@ -37,7 +37,6 @@ class LocationHandler: NSObject, CLLocationManagerDelegate {
     }
     else {
       manager?.requestAlwaysAuthorization()
-      manager?.allowsBackgroundLocationUpdates = true
     }
     manager?.startUpdatingLocation()
   }

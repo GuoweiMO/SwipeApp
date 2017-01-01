@@ -20,6 +20,9 @@
 		E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */; };
 		E42758941DE6061100014DB5 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42758931DE6061100014DB5 /* LocationHandler.swift */; };
 		E42C90971DFE0327004D9F76 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C90961DFE0327004D9F76 /* Storage.swift */; };
+		E45D19891E1822030007CDEE /* AvatarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D19881E1822030007CDEE /* AvatarsView.swift */; };
+		E45D198C1E1825A60007CDEE /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D198A1E1825A60007CDEE /* AvatarCell.swift */; };
+		E45D198D1E1825A60007CDEE /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45D198B1E1825A60007CDEE /* AvatarCell.xib */; };
 		E46447E71DBB88C700093C13 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E61DBB88C700093C13 /* splash.png */; };
 		E46447E91DBB88EF00093C13 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447E81DBB88EF00093C13 /* splash-logo.png */; };
 		E46447EB1DBB890D00093C13 /* splash-text-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E46447EA1DBB890D00093C13 /* splash-text-logo.png */; };
@@ -114,6 +117,9 @@
 		E41CD84F1DBA9AB10025DE8A /* AddUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddUserInfoView.swift; path = "Scenes/Create Card/AddUserInfoView.swift"; sourceTree = "<group>"; };
 		E42758931DE6061100014DB5 /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHandler.swift; path = Common/LocationHandler.swift; sourceTree = "<group>"; };
 		E42C90961DFE0327004D9F76 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = API/Storage.swift; sourceTree = "<group>"; };
+		E45D19881E1822030007CDEE /* AvatarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarsView.swift; path = Scenes/Home/AvatarsView.swift; sourceTree = "<group>"; };
+		E45D198A1E1825A60007CDEE /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarCell.swift; path = Scenes/Home/AvatarCell.swift; sourceTree = "<group>"; };
+		E45D198B1E1825A60007CDEE /* AvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AvatarCell.xib; path = Scenes/Home/AvatarCell.xib; sourceTree = "<group>"; };
 		E46447E61DBB88C700093C13 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		E46447E81DBB88EF00093C13 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
 		E46447EA1DBB890D00093C13 /* splash-text-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-text-logo.png"; sourceTree = "<group>"; };
@@ -399,6 +405,9 @@
 				E49901601E12C8E500D59BCC /* SwipedView.swift */,
 				E499015C1E12C1DE00D59BCC /* RadarView.xib */,
 				E499015E1E12C4FF00D59BCC /* RadarView.swift */,
+				E45D19881E1822030007CDEE /* AvatarsView.swift */,
+				E45D198A1E1825A60007CDEE /* AvatarCell.swift */,
+				E45D198B1E1825A60007CDEE /* AvatarCell.xib */,
 			);
 			name = "UI Source";
 			sourceTree = "<group>";
@@ -699,6 +708,7 @@
 				E49B34451DBA75530031CB2F /* AddUserInfoView.xib in Resources */,
 				E41CD8471DB95B560025DE8A /* AddProfilePicView.xib in Resources */,
 				E46447E71DBB88C700093C13 /* splash.png in Resources */,
+				E45D198D1E1825A60007CDEE /* AvatarCell.xib in Resources */,
 				E493F3A01DC519FC00D7298C /* NavigationView.xib in Resources */,
 				E40A63B41D85C743005D2B3C /* Main.storyboard in Resources */,
 				E4BC3DF21D8D574B00D01BD9 /* GoogleService-Info.plist in Resources */,
@@ -835,6 +845,7 @@
 				E4A3F11D1E1033C4009152FC /* AddInfoViewController.swift in Sources */,
 				E49901661E15ACC900D59BCC /* LargeCardView.swift in Sources */,
 				E4BC3DD91D8C5D6B00D01BD9 /* AppDelegate.swift in Sources */,
+				E45D19891E1822030007CDEE /* AvatarsView.swift in Sources */,
 				E4C8BC9A1DE5DEB300B9F892 /* TestViewController.swift in Sources */,
 				E4936C411DE25A2700622ACC /* Locations.swift in Sources */,
 				E4B1ABCC1DCF839100BFB3DB /* ViewModeButton.swift in Sources */,
@@ -856,6 +867,7 @@
 				E41CD8491DB95D610025DE8A /* AddProfilePicView.swift in Sources */,
 				E4C5B2561DDDF6C50054BF01 /* AddUserInfoViewController.swift in Sources */,
 				E41CD8501DBA9AB10025DE8A /* AddUserInfoView.swift in Sources */,
+				E45D198C1E1825A60007CDEE /* AvatarCell.swift in Sources */,
 				E4B1AC221DDD0C2200BFB3DB /* ChangeProfilePicViewController.swift in Sources */,
 				E49901531E129D0000D59BCC /* StepBarView.swift in Sources */,
 			);

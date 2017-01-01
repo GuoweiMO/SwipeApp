@@ -57,6 +57,14 @@ class Common: NSObject {
     }
     return nil
   }
+  
+//  class func image(fromText text: String, withSize size: CGSize) -> UIImage? {
+//    UIGraphicsBeginImageContext(size);
+//    (text as NSString).draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size), withAttributes: )
+//    let result = UIGraphicsGetImageFromCurrentImageContext()
+//    UIGraphicsEndImageContext()
+//    return result
+//  }
 }
 
 extension String {

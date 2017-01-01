@@ -24,13 +24,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiR-ey-ecq">
-                    <rect key="frame" x="159" y="305" width="58" height="57"/>
+                    <rect key="frame" x="158.5" y="305" width="58" height="57"/>
                     <fontDescription key="fontDescription" name=".HelveticaNeueDeskInterface-Regular" family="SFNS Display" pointSize="48"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-Wc-jJI">
-                    <rect key="frame" x="161" y="366" width="53" height="16"/>
+                    <rect key="frame" x="161.5" y="366" width="52.5" height="16"/>
                     <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -44,13 +44,13 @@
                     </constraints>
                 </view>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No sender found." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4S-Wl-pVa">
-                    <rect key="frame" x="121" y="324" width="134" height="20"/>
+                    <rect key="frame" x="121.5" y="324" width="133.5" height="20"/>
                     <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyx-T5-S2d" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
-                    <rect key="frame" x="97" y="537" width="180" height="50"/>
+                    <rect key="frame" x="97" y="495" width="180" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="180" id="7AW-Pg-VV0"/>
                         <constraint firstAttribute="height" constant="50" id="YS7-Ps-Baf"/>
@@ -63,23 +63,41 @@
                         <action selector="swipeAgainDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fei-bN-mNy"/>
                     </connections>
                 </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmV-M1-co0" customClass="SWButton" customModule="Swipe" customModuleProvider="target">
+                    <rect key="frame" x="97.5" y="557" width="180" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="4xK-HV-tRZ"/>
+                        <constraint firstAttribute="height" constant="50" id="xwO-qx-clH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                    <state key="normal" title="My Card">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="myCardButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Cf-VJ-hTQ"/>
+                        <action selector="swipeAgainDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="z2c-ep-EP6"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YEe-5L-K5K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0pM-RK-emE"/>
                 <constraint firstItem="7Q5-Wc-jJI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0tr-AG-5yS"/>
                 <constraint firstItem="YEe-5L-K5K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="8FG-ul-BVX"/>
+                <constraint firstAttribute="bottom" secondItem="HmV-M1-co0" secondAttribute="bottom" constant="60" id="BXF-0Y-s4m"/>
                 <constraint firstItem="E4S-Wl-pVa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Eko-EL-uYy"/>
                 <constraint firstItem="MiR-ey-ecq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hds-Xt-mJ1"/>
                 <constraint firstItem="E4S-Wl-pVa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TRB-sH-Kzq"/>
+                <constraint firstItem="HmV-M1-co0" firstAttribute="top" secondItem="pyx-T5-S2d" secondAttribute="bottom" constant="12" id="Z7M-6J-j1m"/>
+                <constraint firstItem="HmV-M1-co0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cpX-qM-fDN"/>
                 <constraint firstItem="pyx-T5-S2d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hhm-e3-3Vf"/>
-                <constraint firstAttribute="bottom" secondItem="pyx-T5-S2d" secondAttribute="bottom" constant="80" id="kN3-9j-Vqv"/>
                 <constraint firstItem="MiR-ey-ecq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mtl-6z-oFj"/>
                 <constraint firstItem="7Q5-Wc-jJI" firstAttribute="top" secondItem="MiR-ey-ecq" secondAttribute="bottom" constant="4" id="pUY-CB-Wu7"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
                 <outlet property="counterLabel" destination="MiR-ey-ecq" id="v0u-k6-vwQ"/>
+                <outlet property="myCardButton" destination="HmV-M1-co0" id="aPT-VP-aWi"/>
                 <outlet property="radarContainer" destination="YEe-5L-K5K" id="85w-a7-qUl"/>
                 <outlet property="secondsLabel" destination="7Q5-Wc-jJI" id="mvZ-Yn-CNi"/>
                 <outlet property="swipeAgainButton" destination="pyx-T5-S2d" id="mhX-fj-kpZ"/>

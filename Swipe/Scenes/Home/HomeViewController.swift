@@ -152,6 +152,11 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
     startQueryingSwipers()
   }
   
+  internal func showHomeCardView() {
+    swipedView.isHidden = true
+    homeCardView.isHidden = false
+  }
+  
   func startQueryingSwipers() {
     Actions.shared.requestToSendCard(withCompletion: {
       [unowned self] (cnt, swiperList) in
@@ -160,16 +165,14 @@ class HomeViewController: UIViewController, LocationHandlerOutput, SwipedViewOut
       let cards: [SWCard] = swiperList.map {
         let card = SWCard()
         card.updateCard(withFullData: Array($0!.values)[0])
+        card.uid = Array($0!.keys)[0]
         return card
-      }      
-      let keyList: [String] = swiperList.map {
-        return Array($0!.keys)[0]
       }
-      self.swipedView.showSwipersView(withData: cards, andKeys: keyList)
+      self.swipedView.showSwipersView(withData: cards)
       
     }, cancelDone: {
       (done) in
-      print("no swipers found cancelled")
+      print("30s timeout")
     })
   }
 }

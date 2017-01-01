@@ -22,6 +22,7 @@ class SWCard: NSObject {
   var largeProfileImage: UIImage?
   var smallProfileImage: UIImage?
   
+  var uid: String?
   var fullName: String!
   var jobTitle: String!
   var employer: String!
